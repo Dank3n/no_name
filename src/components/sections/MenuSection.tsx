@@ -58,8 +58,8 @@ export default function MenuSection() {
 
           <MenuFlipbook
             book={activeBook}
-            showPdfButton={activeMenu === "food"}
-            pdfUrl={activeMenu === "food" ? siteConfig.menuPdfUrl : undefined}
+            showPdfButton
+            pdfUrl={siteConfig.menuPdfUrl}
           />
         </div>
       </section>

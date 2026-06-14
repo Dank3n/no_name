@@ -42,8 +42,8 @@ export const siteConfig = {
     ru: "Премиальный гастрономический опыт в сердце Бухареста.",
     ar: "تجربة طعام فاخرة في قلب بوخارست.",
   },
-  menuPdfUrl: "/meniu-principal.pdf",
-  specialEventsPdfUrl: "/Editia-Gold.pdf",
+  menuPdfUrl: "/meniu-mancare-bauturi.pdf",
+  specialEventsPdfUrl: "/meniu-andreea-bld.pdf",
   hero: {
     subtitle: {
       ro: "Bucătărie de autor · Atmosferă rafinată",
@@ -268,8 +268,26 @@ const buildBookPages = (
 
 export const foodMenuBook: MenuBookConfig = {
   id: "food-menu",
-  title: RO("Meniul de Mâncare"),
-  subtitle: RO("A la Carte"),
+  title: {
+    ro: "Meniul de Mâncare",
+    en: "Food Menu",
+    it: "Menu Cibo",
+    es: "Menú de Comida",
+    fr: "Menu Nourriture",
+    tr: "Yemek Menüsü",
+    ru: "Меню Еды",
+    ar: "قائمة الطعام",
+  },
+  subtitle: {
+    ro: "A la Carte",
+    en: "A la Carte",
+    it: "À la Carte",
+    es: "A la Carta",
+    fr: "À la Carte",
+    tr: "Alakart",
+    ru: "А ля карт",
+    ar: "حسب الطلب",
+  },
   pages: buildBookPages(foodMenuCategories, {
     title: {
       ro: "MENIU MÂNCARE",
@@ -281,7 +299,16 @@ export const foodMenuBook: MenuBookConfig = {
       ru: "МЕНЮ ЕДЫ",
       ar: "قائمة الطعام",
     },
-    subtitle: RO("A la Carte"),
+    subtitle: {
+      ro: "A la Carte",
+      en: "A la Carte",
+      it: "À la Carte",
+      es: "A la Carta",
+      fr: "À la Carte",
+      tr: "Alakart",
+      ru: "А ля карт",
+      ar: "حسب الطلب",
+    },
   }),
 };
 

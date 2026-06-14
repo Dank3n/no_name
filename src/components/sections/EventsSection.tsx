@@ -30,12 +30,21 @@ export default function EventsSection() {
             <div className="gold-line mx-auto mt-6 max-w-sm" />
           </div>
 
-          <div className="mx-auto max-w-5xl border border-[var(--color-gold)]/25 bg-black/60 p-4 shadow-2xl shadow-black/50 sm:p-6">
+          <div className="mx-auto max-w-5xl rounded-lg border border-[var(--color-gold)]/25 bg-black/60 p-4 shadow-2xl shadow-black/50 sm:rounded-xl sm:p-6">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
               <p className="font-[family-name:var(--font-italiana)] text-base text-[var(--color-gold)]/85 italic sm:text-lg">
                 {ui("events.andreeaBldSubtitle")}
               </p>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <a
+                  href={siteConfig.specialEventsPdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 border border-[var(--color-gold)]/60 bg-transparent px-4 py-2 text-xs font-medium tracking-[0.16em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/10"
+                >
+                  <span aria-hidden>↓</span>
+                  {ui("events.downloadPdf")}
+                </a>
                 <button
                   type="button"
                   onClick={() => setIsFullscreen(true)}
@@ -43,21 +52,14 @@ export default function EventsSection() {
                 >
                   {ui("events.fullscreen")}
                 </button>
-                <a
-                  href={siteConfig.specialEventsPdfUrl}
-                  download
-                  className="inline-flex items-center justify-center border border-[var(--color-gold)]/60 bg-transparent px-4 py-2 text-xs font-medium tracking-[0.16em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/10"
-                >
-                  {ui("events.downloadPdf")}
-                </a>
               </div>
             </div>
 
-            <div className="overflow-hidden border border-[var(--color-gold)]/25 bg-black">
+            <div className="overflow-hidden rounded-md border border-[var(--color-gold)]/25 bg-black sm:rounded-lg">
               <iframe
                 src={`${siteConfig.specialEventsPdfUrl}#view=FitH`}
                 title={ui("events.andreeaBldTitle")}
-                className="h-[65vh] w-full"
+                className="h-[min(600px,70vh)] min-h-[400px] w-full sm:h-[600px]"
               />
             </div>
           </div>

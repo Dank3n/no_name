@@ -219,7 +219,8 @@ export default function MenuFlipbook({
       {showPdfButton && pdfUrl && (
         <a
           href={pdfUrl}
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-10 inline-flex items-center gap-2 border border-[var(--color-gold)] bg-transparent px-8 py-3 text-xs font-medium tracking-[0.25em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/10"
         >
           <span aria-hidden>↓</span>

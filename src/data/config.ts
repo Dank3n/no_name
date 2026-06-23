@@ -97,7 +97,8 @@ export const siteConfig = {
       },
     ],
     mapPlaceholder: "/images/map-placeholder.svg",
-    mapEmbedUrl: "",
+    mapEmbedUrl:
+      "https://www.google.com/maps?q=Bulevardul+Nicolae+Grigorescu+1A,+030431+Bucure%C8%99ti,+Rom%C3%A2nia&hl=ro&z=16&output=embed",
   },
   navigation: [
     { id: "hero" as const },

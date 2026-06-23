@@ -148,6 +148,16 @@ export const uiTranslations: UiTranslationTree = {
       "أضف Google Maps في config.ts"
     ),
     mapAlt: L("Hartă — placeholder", "Map — placeholder", "Mappa — placeholder", "Mapa — placeholder", "Carte — placeholder", "Harita — placeholder", "Карта — placeholder", "خريطة — placeholder"),
+    openInMaps: L(
+      "Deschide în Google Maps",
+      "Open in Google Maps",
+      "Apri in Google Maps",
+      "Abrir en Google Maps",
+      "Ouvrir dans Google Maps",
+      "Google Maps'te aç",
+      "Открыть в Google Maps",
+      "افتح في خرائط Google"
+    ),
   },
   footer: {
     rights: L(

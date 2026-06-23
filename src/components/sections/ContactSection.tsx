@@ -75,15 +75,26 @@ export default function ContactSection() {
               </a>
             </div>
 
-            <div className="relative min-h-[360px] overflow-hidden border border-[var(--color-gold)]/20 bg-black lg:aspect-auto">
+            <div className="relative min-h-[360px] overflow-hidden rounded-lg border border-[var(--color-gold)]/25 bg-black shadow-2xl shadow-black/40 sm:rounded-xl lg:min-h-[420px]">
               {contact.mapEmbedUrl ? (
-                <iframe
-                  src={contact.mapEmbedUrl}
-                  title={ui("contact.title")}
-                  className="h-full min-h-[360px] w-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                <>
+                  <iframe
+                    src={contact.mapEmbedUrl}
+                    title={ui("contact.title")}
+                    className="h-full min-h-[360px] w-full border-0 lg:min-h-[420px]"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute bottom-4 right-4 border border-[var(--color-gold)]/50 bg-black/80 px-4 py-2 text-[10px] tracking-[0.18em] text-[var(--color-gold-light)] uppercase backdrop-blur-sm transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/10"
+                  >
+                    {ui("contact.openInMaps")}
+                  </a>
+                </>
               ) : (
                 <>
                   <Image

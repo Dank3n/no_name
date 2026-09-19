@@ -211,6 +211,7 @@ export const uiTranslations: UiTranslationTree = {
     browseHint: L("Răsfoiește →", "Browse →", "Sfoglia →", "Explorar →", "Parcourir →", "Gez →", "Листать →", "تصفح ←"),
     tocTitle: L("Cuprins", "Contents", "Indice", "Índice", "Sommaire", "İçindekiler", "Содержание", "المحتويات"),
     tocHint: L("Alege o categorie", "Choose a category", "Scegli una categoria", "Elige una categoría", "Choisissez une catégorie", "Bir kategori seç", "Выберите категорию", "اختر فئة"),
+    tocContinued: L("continuare", "continued", "continua", "continuación", "suite", "devam", "продолжение", "متابعة"),
     details: L("Detalii", "Details", "Dettagli", "Detalles", "Détails", "Detay", "Подробнее", "تفاصيل"),
     price: L("Preț", "Price", "Prezzo", "Precio", "Prix", "Fiyat", "Цена", "السعر"),
     coverMenu: L("MENU", "MENU", "MENU", "MENÚ", "MENU", "MENÜ", "МЕНЮ", "قائمة"),

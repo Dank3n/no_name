@@ -154,29 +154,25 @@ export default function MenuFlipbook({
             )}
 
             {page.variant === "toc" && (
-              <div className="flex h-full min-h-0 w-full flex-col">
-                <div className="menu-ornament mx-auto mb-3 w-full max-w-[140px]">
+              <div className="flex min-h-0 w-full flex-1 flex-col self-stretch">
+                <div className="menu-ornament mx-auto mb-4 w-full max-w-[140px]">
                   <span className="menu-ornament-diamond" />
                 </div>
                 <h4 className="text-center font-[family-name:var(--font-cormorant)] text-2xl font-light tracking-[0.28em] text-gold-gradient uppercase">
                   {ui("menu.tocTitle")}
                 </h4>
-                <p className="mt-1 text-center text-[10px] tracking-[0.22em] text-[var(--color-text-muted)] uppercase">
-                  {ui("menu.tocHint")}
+                <p className="mt-2 text-center text-[10px] tracking-[0.22em] text-[var(--color-text-muted)] uppercase">
+                  {page.id === "toc" ? ui("menu.tocHint") : ui("menu.tocContinued")}
                 </p>
-                <ul
-                  className="mt-3 min-h-0 flex-1 overflow-y-auto overscroll-contain pr-1"
-                  onPointerDown={(event) => event.stopPropagation()}
-                  onTouchStart={(event) => event.stopPropagation()}
-                >
+                <ul className="mt-5 flex min-h-0 w-full flex-1 flex-col justify-evenly">
                   {page.tocEntries?.map((entry) => (
                     <li key={entry.id}>
                       <button
                         type="button"
                         onClick={(event) => handleTocClick(event, entry.pageIndex)}
-                        className="menu-flip-control group flex w-full items-baseline gap-2 py-[5px] text-start"
+                        className="menu-flip-control group flex w-full items-baseline gap-2 py-1 text-start"
                       >
-                        <span className="min-w-0 flex-1 break-words font-[family-name:var(--font-cormorant)] text-[13px] leading-tight tracking-wide text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-sm">
+                        <span className="min-w-0 flex-1 break-words font-[family-name:var(--font-cormorant)] text-sm leading-snug tracking-wide text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-base">
                           {t(entry.title)}
                         </span>
                         <span

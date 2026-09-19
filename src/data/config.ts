@@ -243,6 +243,7 @@ const slugify = (value: string): string =>
     .replace(/(^-|-$)/g, "");
 
 const MAX_ITEMS_PER_PAGE = 6;
+const MAX_TOC_ENTRIES_PER_PAGE = 6;
 
 const CONTINUATION_BY_LOCALE: Record<Locale, string> = {
   ro: "continuare",
@@ -279,20 +280,14 @@ const buildBookPages = (
     subtitle: RO("A la Carte"),
   }
 ): FlipbookPageConfig[] => {
-  const pages: FlipbookPageConfig[] = [
-    {
-      id: "cover",
-      variant: "cover",
-      title: cover.title,
-      subtitle: cover.subtitle,
-    },
-    {
-      id: "toc",
-      variant: "toc",
-      tocEntries: [],
-    },
-  ];
+  const coverPage: FlipbookPageConfig = {
+    id: "cover",
+    variant: "cover",
+    title: cover.title,
+    subtitle: cover.subtitle,
+  };
 
+  const contentPages: FlipbookPageConfig[] = [];
   const tocEntries: FlipbookTocEntry[] = [];
 
   for (const section of categories) {
@@ -301,16 +296,16 @@ const buildBookPages = (
     tocEntries.push({
       id: `cat-${categoryId}`,
       title: section.category,
-      pageIndex: pages.length,
+      pageIndex: contentPages.length,
     });
-    pages.push({
+    contentPages.push({
       id: `cat-${categoryId}`,
       variant: "category",
       title: section.category,
       subtitle: section.description,
     });
     itemChunks.forEach((chunk, chunkIndex) => {
-      pages.push({
+      contentPages.push({
         id: `items-${categoryId}-${chunkIndex + 1}`,
         variant: "items",
         title: chunkIndex === 0 ? section.category : withContinuationLabel(section.category),
@@ -319,12 +314,18 @@ const buildBookPages = (
     });
   }
 
-  pages[1] = {
-    ...pages[1],
-    tocEntries,
-  };
+  const tocChunks = chunkItems(tocEntries, MAX_TOC_ENTRIES_PER_PAGE);
+  const tocOffset = 1 + tocChunks.length;
+  const tocPages: FlipbookPageConfig[] = tocChunks.map((chunk, chunkIndex) => ({
+    id: chunkIndex === 0 ? "toc" : `toc-${chunkIndex + 1}`,
+    variant: "toc",
+    tocEntries: chunk.map((entry) => ({
+      ...entry,
+      pageIndex: entry.pageIndex + tocOffset,
+    })),
+  }));
 
-  return pages;
+  return [coverPage, ...tocPages, ...contentPages];
 };
 
 export const foodMenuBook: MenuBookConfig = {

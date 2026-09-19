@@ -209,6 +209,8 @@ export const uiTranslations: UiTranslationTree = {
     collapse: L("Restrânge", "Collapse", "Riduci", "Contraer", "Réduire", "Daralt", "Свернуть", "تصغير"),
     downloadPdf: L("Descarcă meniul PDF", "Download menu PDF", "Scarica menu PDF", "Descargar menú PDF", "Télécharger le menu PDF", "Menü PDF indir", "Скачать меню PDF", "تحميل قائمة PDF"),
     browseHint: L("Răsfoiește →", "Browse →", "Sfoglia →", "Explorar →", "Parcourir →", "Gez →", "Листать →", "تصفح ←"),
+    tocTitle: L("Cuprins", "Contents", "Indice", "Índice", "Sommaire", "İçindekiler", "Содержание", "المحتويات"),
+    tocHint: L("Alege o categorie", "Choose a category", "Scegli una categoria", "Elige una categoría", "Choisissez une catégorie", "Bir kategori seç", "Выберите категорию", "اختر فئة"),
     details: L("Detalii", "Details", "Dettagli", "Detalles", "Détails", "Detay", "Подробнее", "تفاصيل"),
     price: L("Preț", "Price", "Prezzo", "Precio", "Prix", "Fiyat", "Цена", "السعر"),
     coverMenu: L("MENU", "MENU", "MENU", "MENÚ", "MENU", "MENÜ", "МЕНЮ", "قائمة"),

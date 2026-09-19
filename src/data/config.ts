@@ -164,12 +164,19 @@ export type MainMenuCategory = {
   items: MenuItem[];
 };
 
+export type FlipbookTocEntry = {
+  id: string;
+  title: LocalizedText;
+  pageIndex: number;
+};
+
 export type FlipbookPageConfig = {
   id: string;
   title?: LocalizedText | string;
   subtitle?: LocalizedText;
-  variant: "cover" | "category" | "items";
+  variant: "cover" | "toc" | "category" | "items";
   itemIds?: string[];
+  tocEntries?: FlipbookTocEntry[];
 };
 
 export type MenuBookConfig = {
@@ -279,11 +286,23 @@ const buildBookPages = (
       title: cover.title,
       subtitle: cover.subtitle,
     },
+    {
+      id: "toc",
+      variant: "toc",
+      tocEntries: [],
+    },
   ];
+
+  const tocEntries: FlipbookTocEntry[] = [];
 
   for (const section of categories) {
     const categoryId = slugify(section.category.ro);
     const itemChunks = chunkItems(section.items, MAX_ITEMS_PER_PAGE);
+    tocEntries.push({
+      id: `cat-${categoryId}`,
+      title: section.category,
+      pageIndex: pages.length,
+    });
     pages.push({
       id: `cat-${categoryId}`,
       variant: "category",
@@ -299,6 +318,11 @@ const buildBookPages = (
       });
     });
   }
+
+  pages[1] = {
+    ...pages[1],
+    tocEntries,
+  };
 
   return pages;
 };

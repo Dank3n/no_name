@@ -51,6 +51,18 @@ export default function MenuFlipbook({
     return () => window.removeEventListener("resize", apply);
   }, [isExpanded]);
 
+  const handleTocClick = useCallback((event: MouseEvent<HTMLButtonElement>, pageIndex: number) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const flip = bookRef.current?.pageFlip?.();
+    if (!flip) return;
+    flippingRef.current = true;
+    flip.turnToPage(pageIndex);
+    window.setTimeout(() => {
+      flippingRef.current = false;
+    }, 200);
+  }, []);
+
   const handleItemClick = useCallback((event: MouseEvent<HTMLButtonElement>, id: string) => {
     event.preventDefault();
     event.stopPropagation();
@@ -141,6 +153,46 @@ export default function MenuFlipbook({
               </div>
             )}
 
+            {page.variant === "toc" && (
+              <div className="flex h-full min-h-0 w-full flex-col">
+                <div className="menu-ornament mx-auto mb-3 w-full max-w-[140px]">
+                  <span className="menu-ornament-diamond" />
+                </div>
+                <h4 className="text-center font-[family-name:var(--font-cormorant)] text-2xl font-light tracking-[0.28em] text-gold-gradient uppercase">
+                  {ui("menu.tocTitle")}
+                </h4>
+                <p className="mt-1 text-center text-[10px] tracking-[0.22em] text-[var(--color-text-muted)] uppercase">
+                  {ui("menu.tocHint")}
+                </p>
+                <ul
+                  className="mt-3 min-h-0 flex-1 overflow-y-auto overscroll-contain pr-1"
+                  onPointerDown={(event) => event.stopPropagation()}
+                  onTouchStart={(event) => event.stopPropagation()}
+                >
+                  {page.tocEntries?.map((entry) => (
+                    <li key={entry.id}>
+                      <button
+                        type="button"
+                        onClick={(event) => handleTocClick(event, entry.pageIndex)}
+                        className="menu-flip-control group flex w-full items-baseline gap-2 py-[5px] text-start"
+                      >
+                        <span className="min-w-0 flex-1 break-words font-[family-name:var(--font-cormorant)] text-[13px] leading-tight tracking-wide text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-sm">
+                          {t(entry.title)}
+                        </span>
+                        <span
+                          className="mb-1 flex-grow border-b border-dotted border-[var(--color-gold)]/30"
+                          aria-hidden
+                        />
+                        <span className="flex-none text-[10px] tracking-[0.18em] text-[var(--color-gold)]/70">
+                          →
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {page.variant === "category" && (
               <div className="flex w-full flex-col items-center text-center">
                 <div className="menu-ornament mb-4 w-full max-w-[140px]">
@@ -201,7 +253,7 @@ export default function MenuFlipbook({
           </FlipbookPage>
         );
       }),
-    [book, locale, handleItemClick]
+    [book, locale, handleItemClick, handleTocClick]
   );
 
   const ui = (path: string) => getUi(locale, path);

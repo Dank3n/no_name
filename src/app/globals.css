@@ -136,6 +136,7 @@ body {
   z-index: 1;
   margin: 1rem;
   flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,6 +146,7 @@ body {
   outline: 1px solid rgba(201, 169, 98, 0.12);
   outline-offset: 4px;
   padding: 1.25rem 1rem;
+  overflow: hidden;
 }
 
 .flipbook-shell {

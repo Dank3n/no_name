@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback, useEffect, useLayoutEffect, useMemo, type MouseEvent } from "react";
+import { useRef, useState, useCallback, useEffect, useLayoutEffect, useMemo, type ComponentProps, type MouseEvent } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { ChevronRight, List } from "lucide-react";
 import type { MenuBookConfig, MenuItem } from "@/data/config";
@@ -19,6 +19,52 @@ type MenuFlipbookProps = {
 
 const BOOK_STYLE = { margin: "0 auto" };
 
+function teardownPageFlip(flip: unknown) {
+  if (!flip || typeof flip !== "object") return;
+  const instance = flip as {
+    getRender?: () => { finishAnimation?: () => void };
+    getUI?: () => { removeHandlers?: () => void };
+  };
+  try {
+    instance.getRender?.()?.finishAnimation?.();
+  } catch {
+    /* instance already gone */
+  }
+  try {
+    instance.getUI?.()?.removeHandlers?.();
+  } catch {
+    /* instance already gone */
+  }
+}
+
+type FlipBookHandle = { pageFlip?: () => unknown };
+
+function ManagedHTMLFlipBook({
+  innerRef,
+  ...props
+}: ComponentProps<typeof HTMLFlipBook> & {
+  innerRef: { current: FlipBookHandle | null };
+}) {
+  const localRef = useRef<FlipBookHandle | null>(null);
+
+  const setRefs = useCallback(
+    (node: FlipBookHandle | null) => {
+      localRef.current = node;
+      innerRef.current = node;
+    },
+    [innerRef]
+  );
+
+  useEffect(
+    () => () => {
+      teardownPageFlip(localRef.current?.pageFlip?.());
+    },
+    []
+  );
+
+  return <HTMLFlipBook ref={setRefs} {...props} />;
+}
+
 export default function MenuFlipbook({
   book,
   showPdfButton = false,
@@ -29,6 +75,7 @@ export default function MenuFlipbook({
   const bookRef = useRef<any>(null);
   const shellRef = useRef<HTMLDivElement>(null);
   const flippingRef = useRef(false);
+  const currentPageRef = useRef(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [bookSize, setBookSize] = useState<{ width: number; height: number } | null>(null);
@@ -48,6 +95,12 @@ export default function MenuFlipbook({
     };
 
     apply();
+    const flip = bookRef.current?.pageFlip?.();
+    try {
+      flip?.update?.();
+    } catch {
+      /* book not ready yet */
+    }
     window.addEventListener("resize", apply);
     return () => window.removeEventListener("resize", apply);
   }, [isExpanded]);
@@ -105,6 +158,11 @@ export default function MenuFlipbook({
     if (event.data === "read") flippingRef.current = false;
   }, []);
 
+  const onFlip = useCallback((event: { data: number }) => {
+    currentPageRef.current = event.data;
+    flippingRef.current = false;
+  }, []);
+
   const flipNext = useCallback(
     (event?: MouseEvent<HTMLButtonElement>) => {
       event?.preventDefault();
@@ -123,17 +181,32 @@ export default function MenuFlipbook({
     [flipTo]
   );
 
-  const toggleExpanded = useCallback(() => {
+  const toggleExpanded = useCallback((event?: MouseEvent<HTMLButtonElement>) => {
+    event?.preventDefault();
+    event?.stopPropagation();
+    flippingRef.current = false;
+    try {
+      bookRef.current?.pageFlip?.()?.getRender?.()?.finishAnimation?.();
+    } catch {
+      /* book not ready */
+    }
     setIsExpanded((prev) => !prev);
   }, []);
-  const closeExpanded = useCallback(() => setIsExpanded(false), []);
+  const closeExpanded = useCallback(() => {
+    flippingRef.current = false;
+    try {
+      bookRef.current?.pageFlip?.()?.getRender?.()?.finishAnimation?.();
+    } catch {
+      /* book not ready */
+    }
+    setIsExpanded(false);
+  }, []);
 
   useEffect(() => {
     if (!isExpanded) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("menu-flip-expanded");
     return () => {
-      document.body.style.overflow = previousOverflow;
+      document.body.classList.remove("menu-flip-expanded");
     };
   }, [isExpanded]);
 
@@ -333,9 +406,9 @@ export default function MenuFlipbook({
           className={`flipbook-shell ${isExpanded ? "is-expanded" : ""}`}
         >
           {bookSize && (
-            <HTMLFlipBook
-              key={`${book.id}-${locale}-${isExpanded ? "xl" : "md"}-${bookSize.width}`}
-              ref={bookRef}
+            <ManagedHTMLFlipBook
+              innerRef={bookRef}
+              key={`${book.id}-${locale}-${bookSize.width}`}
               width={bookSize.width}
               height={bookSize.height}
               size="fixed"
@@ -343,7 +416,7 @@ export default function MenuFlipbook({
               maxWidth={bookSize.width}
               minHeight={bookSize.height}
               maxHeight={bookSize.height}
-              startPage={0}
+              startPage={currentPageRef.current}
               drawShadow
               flippingTime={800}
               usePortrait
@@ -359,11 +432,12 @@ export default function MenuFlipbook({
               disableFlipByClick={false}
               renderOnlyPageLengthChange
               onChangeState={onChangeState}
+              onFlip={onFlip}
               className="mx-auto"
               style={BOOK_STYLE}
             >
               {pageNodes}
-            </HTMLFlipBook>
+            </ManagedHTMLFlipBook>
           )}
         </div>
 

@@ -174,9 +174,9 @@ body {
   margin: 0 auto;
 }
 
-.menu-flip-control {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
+body.menu-flip-expanded,
+html:has(body.menu-flip-expanded) {
+  overflow: hidden;
 }
 
 /* Linie punctată între nume preparat și hover */

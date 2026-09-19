@@ -12,21 +12,21 @@ import ImageLightbox from "@/components/gallery/ImageLightbox";
 const signatures = [
   {
     id: "terrace",
-    image: "/images/venue/hero.webp",
+    image: "/images/venue/interior-4.webp",
     titleKey: "highlights.cardTerraceTitle",
     textKey: "highlights.cardTerraceText",
     featured: true,
   },
   {
     id: "grill",
-    image: "/images/venue/vibe-1.webp",
+    image: "/images/venue/dish-1.webp",
     titleKey: "highlights.cardGrillTitle",
     textKey: "highlights.cardGrillText",
     featured: false,
   },
   {
     id: "dessert",
-    image: "/images/venue/food-3.webp",
+    image: "/images/venue/dish-9.webp",
     titleKey: "highlights.cardDessertTitle",
     textKey: "highlights.cardDessertText",
     featured: false,

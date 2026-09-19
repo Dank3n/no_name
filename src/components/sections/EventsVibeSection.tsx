@@ -1,10 +1,12 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import Image from "next/image";
-import { Calendar } from "lucide-react";
+import { Calendar, Expand } from "lucide-react";
 import { upcomingEvents } from "@/data/events";
 import { useLocale } from "@/contexts/LocaleContext";
 import ReserveButton from "@/components/reservation/ReserveButton";
+import ImageLightbox from "@/components/gallery/ImageLightbox";
 
 type EventsVibeSectionProps = {
   headingLevel?: "h1" | "h2";
@@ -13,6 +15,11 @@ type EventsVibeSectionProps = {
 export default function EventsVibeSection({ headingLevel = "h2" }: EventsVibeSectionProps) {
   const { t, ui } = useLocale();
   const Heading = headingLevel;
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const lightboxItems = useMemo(
+    () => upcomingEvents.map((event) => ({ src: event.image, alt: t(event.title) })),
+    [t]
+  );
 
   return (
     <section id="vibe" className="relative border-t border-[var(--color-gold)]/10 bg-[var(--color-base)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
@@ -34,6 +41,12 @@ export default function EventsVibeSection({ headingLevel = "h2" }: EventsVibeSec
               className="group overflow-hidden border border-[var(--color-gold)]/15 bg-black/50 transition duration-500 hover:-translate-y-1 hover:border-[var(--color-gold)]/40 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)]"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
+                <button
+                  type="button"
+                  onClick={() => setLightboxIndex(upcomingEvents.findIndex((item) => item.id === event.id))}
+                  className="absolute inset-0 z-10 cursor-zoom-in"
+                  aria-label={`${ui("a11y.enlarge")}: ${t(event.title)}`}
+                />
                 <Image
                   src={event.image}
                   alt={t(event.title)}
@@ -42,8 +55,11 @@ export default function EventsVibeSection({ headingLevel = "h2" }: EventsVibeSec
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-                <span className="absolute top-3 left-3 border border-[var(--color-gold)]/40 bg-black/70 px-3 py-1 text-[10px] tracking-[0.2em] text-[var(--color-gold-light)] uppercase backdrop-blur-sm">
+                <span className="pointer-events-none absolute top-3 right-3 z-20 flex h-8 w-8 items-center justify-center border border-[var(--color-gold)]/40 bg-black/50 text-[var(--color-gold-light)] opacity-0 transition group-hover:opacity-100">
+                  <Expand className="h-4 w-4" />
+                </span>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+                <span className="pointer-events-none absolute top-3 left-3 z-20 border border-[var(--color-gold)]/40 bg-black/70 px-3 py-1 text-[10px] tracking-[0.2em] text-[var(--color-gold-light)] uppercase backdrop-blur-sm">
                   {t(event.weekday)} · {event.time}
                 </span>
               </div>
@@ -64,6 +80,13 @@ export default function EventsVibeSection({ headingLevel = "h2" }: EventsVibeSec
           ))}
         </div>
       </div>
+
+      <ImageLightbox
+        items={lightboxItems}
+        index={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onIndexChange={setLightboxIndex}
+      />
     </section>
   );
 }

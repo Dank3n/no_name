@@ -1,10 +1,13 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Expand } from "lucide-react";
 import { siteConfig } from "@/data/config";
 import { useLocale } from "@/contexts/LocaleContext";
 import ReserveButton from "@/components/reservation/ReserveButton";
+import ImageLightbox from "@/components/gallery/ImageLightbox";
 
 const signatures = [
   {
@@ -35,6 +38,15 @@ export default function HighlightsSection() {
   const { google } = siteConfig;
   const featured = signatures.find((item) => item.featured)!;
   const sideCards = signatures.filter((item) => !item.featured);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const lightboxItems = useMemo(
+    () => signatures.map((item) => ({ src: item.image, alt: ui(item.titleKey) })),
+    [ui]
+  );
+
+  const openAt = (id: (typeof signatures)[number]["id"]) => {
+    setLightboxIndex(signatures.findIndex((item) => item.id === id));
+  };
 
   return (
     <section className="relative border-t border-[var(--color-gold)]/10 bg-[var(--color-base)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
@@ -54,6 +66,12 @@ export default function HighlightsSection() {
 
         <div className="grid gap-4 lg:grid-cols-5">
           <article className="group relative min-h-[420px] overflow-hidden border border-[var(--color-gold)]/15 bg-black lg:col-span-3 lg:min-h-[560px]">
+            <button
+              type="button"
+              onClick={() => openAt(featured.id)}
+              className="absolute inset-0 z-10 cursor-zoom-in"
+              aria-label={`${ui("a11y.enlarge")}: ${ui(featured.titleKey)}`}
+            />
             <Image
               src={featured.image}
               alt={ui(featured.titleKey)}
@@ -62,8 +80,11 @@ export default function HighlightsSection() {
               sizes="(max-width: 1024px) 100vw, 60vw"
               className="object-cover object-[50%_85%] transition duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/10" />
-            <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+            <span className="pointer-events-none absolute top-4 right-4 z-20 flex h-8 w-8 items-center justify-center border border-[var(--color-gold)]/40 bg-black/50 text-[var(--color-gold-light)] opacity-0 transition group-hover:opacity-100">
+              <Expand className="h-4 w-4" />
+            </span>
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/10" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 p-6 sm:p-8">
               <p className="text-[10px] tracking-[0.28em] text-[var(--color-gold)] uppercase">{ui("highlights.hours")}</p>
               <h3 className="mt-3 font-[family-name:var(--font-cormorant)] text-3xl tracking-[0.12em] text-gold-gradient uppercase sm:text-4xl">
                 {ui(featured.titleKey)}
@@ -80,6 +101,12 @@ export default function HighlightsSection() {
                 key={card.id}
                 className="group relative min-h-[200px] overflow-hidden border border-[var(--color-gold)]/15 bg-black lg:min-h-[272px]"
               >
+                <button
+                  type="button"
+                  onClick={() => openAt(card.id)}
+                  className="absolute inset-0 z-10 cursor-zoom-in"
+                  aria-label={`${ui("a11y.enlarge")}: ${ui(card.titleKey)}`}
+                />
                 <Image
                   src={card.image}
                   alt={ui(card.titleKey)}
@@ -88,8 +115,11 @@ export default function HighlightsSection() {
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover transition duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-5">
+                <span className="pointer-events-none absolute top-3 right-3 z-20 flex h-8 w-8 items-center justify-center border border-[var(--color-gold)]/40 bg-black/50 text-[var(--color-gold-light)] opacity-0 transition group-hover:opacity-100">
+                  <Expand className="h-4 w-4" />
+                </span>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 p-5">
                   <h3 className="font-[family-name:var(--font-cormorant)] text-2xl tracking-[0.1em] text-gold-gradient uppercase">
                     {ui(card.titleKey)}
                   </h3>
@@ -122,6 +152,13 @@ export default function HighlightsSection() {
           </div>
         </div>
       </div>
+
+      <ImageLightbox
+        items={lightboxItems}
+        index={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onIndexChange={setLightboxIndex}
+      />
     </section>
   );
 }

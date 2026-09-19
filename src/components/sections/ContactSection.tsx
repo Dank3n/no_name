@@ -86,7 +86,7 @@ export default function ContactSection() {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              {["highlights.dineIn", "highlights.delivery", "highlights.pickup", "highlights.terrace", "highlights.music"].map(
+              {["highlights.dineIn", "highlights.terrace", "highlights.music"].map(
                 (key) => (
                   <span
                     key={key}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useMemo, useState, type FormEvent } from "react";
-import { Calendar, Check, Users, X } from "lucide-react";
+import { Calendar, Check, X } from "lucide-react";
 import { siteConfig } from "@/data/config";
 import { useLocale } from "@/contexts/LocaleContext";
 import { useReservation } from "@/contexts/ReservationContext";
@@ -150,7 +150,7 @@ export default function ReservationModal() {
                   min={minDate}
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
-                  className="mt-2 w-full border border-[var(--color-gold)]/25 bg-black/50 px-3 py-2.5 text-sm tracking-normal text-[var(--color-text)] normal-case outline-none focus:border-[var(--color-gold)]"
+                  className="reserve-field"
                 />
               </label>
               <label className="block text-[10px] tracking-[0.18em] text-[var(--color-gold)] uppercase">
@@ -159,7 +159,7 @@ export default function ReservationModal() {
                   required
                   value={time}
                   onChange={(e) => setTime(e.target.value)}
-                  className="mt-2 w-full border border-[var(--color-gold)]/25 bg-black/50 px-3 py-2.5 text-sm tracking-normal text-[var(--color-text)] normal-case outline-none focus:border-[var(--color-gold)]"
+                  className="reserve-field"
                 >
                   {RESERVATION_TIMES.map((slot) => (
                     <option key={slot} value={slot}>
@@ -170,21 +170,18 @@ export default function ReservationModal() {
               </label>
               <label className="block text-[10px] tracking-[0.18em] text-[var(--color-gold)] uppercase">
                 {ui("reserve.guests")}
-                <span className="relative mt-2 block">
-                  <Users className="pointer-events-none absolute top-3 left-3 h-4 w-4 text-[var(--color-gold)]/60" />
-                  <select
-                    required
-                    value={guests}
-                    onChange={(e) => setGuests(e.target.value)}
-                    className="w-full border border-[var(--color-gold)]/25 bg-black/50 py-2.5 pr-3 pl-10 text-sm tracking-normal text-[var(--color-text)] normal-case outline-none focus:border-[var(--color-gold)]"
-                  >
-                    {Array.from({ length: 12 }, (_, i) => String(i + 1)).map((n) => (
-                      <option key={n} value={n}>
-                        {n}
-                      </option>
-                    ))}
-                  </select>
-                </span>
+                <select
+                  required
+                  value={guests}
+                  onChange={(e) => setGuests(e.target.value)}
+                  className="reserve-field"
+                >
+                  {Array.from({ length: 12 }, (_, i) => String(i + 1)).map((n) => (
+                    <option key={n} value={n}>
+                      {n}
+                    </option>
+                  ))}
+                </select>
               </label>
               <label className="block text-[10px] tracking-[0.18em] text-[var(--color-gold)] uppercase">
                 {ui("reserve.phone")}
@@ -193,7 +190,7 @@ export default function ReservationModal() {
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="mt-2 w-full border border-[var(--color-gold)]/25 bg-black/50 px-3 py-2.5 text-sm tracking-normal text-[var(--color-text)] normal-case outline-none focus:border-[var(--color-gold)]"
+                  className="reserve-field"
                 />
               </label>
               <label className="block text-[10px] tracking-[0.18em] text-[var(--color-gold)] uppercase sm:col-span-2">
@@ -203,7 +200,7 @@ export default function ReservationModal() {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="mt-2 w-full border border-[var(--color-gold)]/25 bg-black/50 px-3 py-2.5 text-sm tracking-normal text-[var(--color-text)] normal-case outline-none focus:border-[var(--color-gold)]"
+                  className="reserve-field"
                 />
               </label>
               <label className="block text-[10px] tracking-[0.18em] text-[var(--color-gold)] uppercase sm:col-span-2">
@@ -212,7 +209,7 @@ export default function ReservationModal() {
                   rows={3}
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
-                  className="mt-2 w-full resize-none border border-[var(--color-gold)]/25 bg-black/50 px-3 py-2.5 text-sm tracking-normal text-[var(--color-text)] normal-case outline-none focus:border-[var(--color-gold)]"
+                  className="reserve-field"
                 />
               </label>
             </div>

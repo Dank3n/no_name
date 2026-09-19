@@ -184,6 +184,65 @@ body {
   background: linear-gradient(270deg, var(--color-gold), transparent);
 }
 
+.reserve-field {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  height: 2.625rem;
+  box-sizing: border-box;
+  border: 1px solid color-mix(in srgb, var(--color-gold) 25%, transparent);
+  background-color: rgb(0 0 0 / 0.5);
+  padding: 0.625rem 0.75rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--color-text);
+  outline: none;
+  border-radius: 0;
+  color-scheme: dark;
+  field-sizing: fixed;
+}
+
+textarea.reserve-field {
+  height: auto;
+  min-height: 5.125rem;
+  resize: none;
+}
+
+.reserve-field:focus {
+  border-color: var(--color-gold);
+}
+
+select.reserve-field {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23c9a962' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.9rem;
+  padding-right: 2.35rem;
+  cursor: pointer;
+}
+
+select.reserve-field option {
+  background-color: #0a0a0a;
+  color: #f5f0e8;
+}
+
+.reserve-field::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.75;
+  filter: invert(0.82) sepia(0.35) saturate(2.2) hue-rotate(6deg);
+}
+
+[dir="rtl"] select.reserve-field {
+  background-position: left 0.75rem center;
+  padding-right: 0.75rem;
+  padding-left: 2.35rem;
+}
+
 .btn-premium {
   transition:
     transform 0.25s ease,

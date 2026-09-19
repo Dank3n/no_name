@@ -8,7 +8,6 @@ import BrandLogo from "@/components/brand/BrandLogo";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import SocialLinks from "@/components/layout/SocialLinks";
 import OpenNowBadge from "@/components/layout/OpenNowBadge";
-import ReserveButton from "@/components/reservation/ReserveButton";
 import { useLocale } from "@/contexts/LocaleContext";
 import { PawPrint } from "lucide-react";
 
@@ -57,9 +56,6 @@ export default function SiteHeader() {
             <PawPrint className="h-4 w-4" />
           </span>
           <LanguageSwitcher variant="header" />
-          <ReserveButton className="hidden border border-[var(--color-gold)]/60 px-4 py-2 text-[10px] tracking-[0.18em] text-[var(--color-gold-light)] uppercase hover:border-[var(--color-gold)] hover:bg-[var(--color-gold)]/10 sm:inline-flex">
-            {ui("cta.reserveNow")}
-          </ReserveButton>
           <button
             type="button"
             className="flex flex-col gap-1.5"
@@ -98,12 +94,6 @@ export default function SiteHeader() {
               <PawPrint className="h-4 w-4" />
               <span>{ui("nav.petFriendly")}</span>
             </div>
-            <ReserveButton
-              onClick={closeMenu}
-              className="mt-2 w-full border border-[var(--color-gold)]/50 py-3 text-[11px] tracking-[0.2em] text-[var(--color-gold-light)] uppercase sm:hidden"
-            >
-              {ui("cta.reserveNow")}
-            </ReserveButton>
             <div className="mt-4 border-t border-[var(--color-gold)]/10 pt-4">
               <SocialLinks size="sm" showLabel />
             </div>

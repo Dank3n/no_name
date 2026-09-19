@@ -54,6 +54,7 @@ export default function MenuSection() {
           </div>
 
           <MenuFlipbook
+            key={activeBook.id}
             book={activeBook}
             showPdfButton
             pdfUrl={siteConfig.menuPdfUrl}

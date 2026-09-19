@@ -147,6 +147,10 @@ body {
   padding: 1.25rem 1rem;
 }
 
+.flipbook-wrapper {
+  min-height: 480px;
+}
+
 .flipbook-wrapper .stf__parent {
   margin: 0 auto;
 }

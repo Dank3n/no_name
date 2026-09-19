@@ -85,7 +85,7 @@ export const siteConfig = {
     subtitle: {
       ro: "Bucătărie românească · Terasă · Seri până la 4:00",
       en: "Romanian cuisine · Terrace · Open until 4:00",
-      it: "Cucina rumena · Terrazza · Aperti fino alle 4:00",
+      it: "Cucina rumena · Terrazza · Aperto fino alle 4:00",
       es: "Cocina rumana · Terraza · Abierto hasta las 4:00",
       fr: "Cuisine roumaine · Terrasse · Ouvert jusqu'à 4h00",
       tr: "Romen mutfağı · Teras · 04:00'e kadar açık",
@@ -95,7 +95,7 @@ export const siteConfig = {
     backgroundImage: "/images/venue/hero.webp",
     atmosphereVideo: "/videos/hero-banner.mp4",
     ctaMenu: {
-      ro: "Meniul Principal",
+      ro: "Meniul principal",
       en: "Main Menu",
       it: "Menu Principale",
       es: "Menú Principal",
@@ -105,14 +105,14 @@ export const siteConfig = {
       ar: "القائمة الرئيسية",
     },
     ctaEvents: {
-      ro: "Special & Events",
-      en: "Special & Events",
-      it: "Special & Eventi",
-      es: "Especial y Eventos",
-      fr: "Spécial & Événements",
-      tr: "Özel & Etkinlikler",
+      ro: "Evenimente speciale",
+      en: "Special events",
+      it: "Eventi speciali",
+      es: "Eventos especiales",
+      fr: "Événements spéciaux",
+      tr: "Özel etkinlikler",
       ru: "Особые события",
-      ar: "خاص والفعاليات",
+      ar: "فعاليات خاصة",
     },
   },
   contact: {
@@ -124,7 +124,7 @@ export const siteConfig = {
     hours: [
       {
         days: {
-          ro: "Luni - Duminică",
+          ro: "Luni–duminică",
           en: "Monday - Sunday",
           it: "Lunedì - Domenica",
           es: "Lunes - Domingo",
@@ -282,7 +282,7 @@ const buildBookPages = (
   categories: MainMenuCategory[],
   cover: { title: LocalizedText | string; subtitle?: LocalizedText } = {
     title: "MENU",
-    subtitle: RO("A la Carte"),
+    subtitle: RO("À la carte"),
   }
 ): FlipbookPageConfig[] => {
   const coverPage: FlipbookPageConfig = {
@@ -336,7 +336,7 @@ const buildBookPages = (
 export const foodMenuBook: MenuBookConfig = {
   id: "food-menu",
   title: {
-    ro: "Meniul de Mâncare",
+    ro: "Meniul de mâncare",
     en: "Food Menu",
     it: "Menu Cibo",
     es: "Menú de Comida",
@@ -346,11 +346,11 @@ export const foodMenuBook: MenuBookConfig = {
     ar: "قائمة الطعام",
   },
   subtitle: {
-    ro: "A la Carte",
-    en: "A la Carte",
-    it: "À la Carte",
-    es: "A la Carta",
-    fr: "À la Carte",
+    ro: "À la carte",
+    en: "À la carte",
+    it: "À la carte",
+    es: "A la carta",
+    fr: "À la carte",
     tr: "Alakart",
     ru: "А ля карт",
     ar: "حسب الطلب",
@@ -367,11 +367,11 @@ export const foodMenuBook: MenuBookConfig = {
       ar: "قائمة الطعام",
     },
     subtitle: {
-      ro: "A la Carte",
-      en: "A la Carte",
-      it: "À la Carte",
-      es: "A la Carta",
-      fr: "À la Carte",
+      ro: "À la carte",
+      en: "À la carte",
+      it: "À la carte",
+      es: "A la carta",
+      fr: "À la carte",
       tr: "Alakart",
       ru: "А ля карт",
       ar: "حسب الطلب",
@@ -382,7 +382,7 @@ export const foodMenuBook: MenuBookConfig = {
 export const drinksMenuBook: MenuBookConfig = {
   id: "drinks-menu",
   title: {
-    ro: "Meniul de Băuturi",
+    ro: "Meniul de băuturi",
     en: "Drinks Menu",
     it: "Menu Bevande",
     es: "Menú de Bebidas",

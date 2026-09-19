@@ -17,21 +17,21 @@ export type UiTranslationTree = {
 
 export const uiTranslations: UiTranslationTree = {
   nav: {
-    hero: L("Acasă", "Home", "Home", "Inicio", "Accueil", "Ana Sayfa", "Главная", "الرئيسية"),
+    hero: L("Acasă", "Home", "Inizio", "Inicio", "Accueil", "Ana Sayfa", "Главная", "الرئيسية"),
     menu: L("Meniu", "Menu", "Menu", "Menú", "Menu", "Menü", "Меню", "القائمة"),
     events: L("Evenimente", "Events", "Eventi", "Eventos", "Événements", "Etkinlikler", "События", "الفعاليات"),
     gallery: L("Galerie", "Gallery", "Galleria", "Galería", "Galerie", "Galeri", "Галерея", "معرض"),
     contact: L("Contact", "Contact", "Contatti", "Contacto", "Contact", "İletişim", "Контакты", "اتصل بنا"),
-    petFriendly: L("Permis cu animale", "Pet Friendly", "Animali ammessi", "Pet Friendly", "Animaux acceptés", "Evcil hayvan dostu", "Можно с питомцами", "صديق للحيوانات الأليفة"),
+    petFriendly: L("Animale permise", "Pet friendly", "Animali ammessi", "Se admiten mascotas", "Animaux acceptés", "Evcil hayvan dostu", "Можно с питомцами", "صديق للحيوانات الأليفة"),
   },
   hero: {
     scroll: L("Descoperă locul", "Discover the place", "Scopri il luogo", "Descubre el lugar", "Découvrir le lieu", "Mekanı keşfet", "Открыть место", "اكتشف المكان"),
     rating: L("Google", "Google", "Google", "Google", "Google", "Google", "Google", "Google"),
     reviews: L("recenzii", "reviews", "recensioni", "reseñas", "avis", "yorum", "отзывов", "تقييمات"),
-    videoLabel: L("Atmosfera terasei seara", "Evening terrace atmosphere", "Atmosfera della terrazza di sera", "Ambiente de la terraza por la noche", "Ambiance de la terrasse le soir", "Akşam teras atmosferi", "Вечерняя атмосфера террасы", "أجواء التراس مساءً"),
+    videoLabel: L("Atmosfera de pe terasă, seara", "Evening terrace atmosphere", "Atmosfera della terrazza di sera", "Ambiente de la terraza por la noche", "Ambiance de la terrasse le soir", "Akşam teras atmosferi", "Вечерняя атмосфера террасы", "أجواء التراس مساءً"),
   },
   hours: {
-    open: L("Deschis acum! Închide la", "Open now! Closes at", "Aperto ora! Chiude alle", "¡Abierto ahora! Cierra a las", "Ouvert maintenant ! Ferme à", "Şimdi açık! Kapanış", "Открыто сейчас! Закрытие в", "مفتوح الآن! يغلق عند"),
+    open: L("Deschis acum! Se închide la", "Open now! Closes at", "Aperto ora! Chiude alle", "¡Abierto ahora! Cierra a las", "Ouvert maintenant ! Ferme à", "Şimdi açık! Kapanış", "Открыто сейчас! Закрытие в", "مفتوح الآن! يغلق عند"),
     closed: L("Închis – Ne vedem la", "Closed – See you at", "Chiuso – Ci vediamo alle", "Cerrado – Nos vemos a las", "Fermé – On se retrouve à", "Kapalı – Görüşürüz", "Закрыто – увидимся в", "مغلق – نراك عند"),
     openShort: L("Deschis acum", "Open now", "Aperto ora", "Abierto ahora", "Ouvert", "Açık", "Открыто", "مفتوح"),
     closedShort: L("Închis", "Closed", "Chiuso", "Cerrado", "Fermé", "Kapalı", "Закрыто", "مغلق"),
@@ -65,7 +65,7 @@ export const uiTranslations: UiTranslationTree = {
   },
   vibe: {
     sectionLabel: L("Serile noastre", "Our nights", "Le nostre sere", "Nuestras noches", "Nos soirées", "Gecelerimiz", "Наши вечера", "أمسياتنا"),
-    title: L("Evenimente și Vibe", "Events and Vibe", "Eventi e Vibe", "Eventos y Vibe", "Événements et Vibe", "Etkinlikler ve Vibe", "События и вайб", "فعاليات وأجواء"),
+    title: L("Evenimente și atmosferă", "Events and atmosphere", "Eventi e atmosfera", "Eventos y ambiente", "Événements et ambiance", "Etkinlikler ve atmosfer", "События и атмосфера", "فعاليات وأجواء"),
     sectionDesc: L(
       "Concert live, karaoke și grill pe terasă — rezervă masa pentru seara potrivită.",
       "Live concert, karaoke and terrace grill — book the table for the right night.",
@@ -82,14 +82,14 @@ export const uiTranslations: UiTranslationTree = {
     sectionLabel: L("La masă", "At the table", "A tavola", "En la mesa", "À table", "Masada", "За столом", "على الطاولة"),
     title: L("Rămâi până târziu", "Stay out late", "Resta fino a tardi", "Quédate hasta tarde", "Reste jusqu'à tard", "Geceye kal", "Останься допоздна", "ابقَ حتى وقت متأخر"),
     sectionDesc: L(
-      "Terasă deschisă până la 4:00, grill pe jar și o farfurie de papanași când orașul s-a liniștit.",
-      "Terrace open until 4:00, grill on the coals and a plate of papanași once the city goes quiet.",
-      "Terrazza aperta fino alle 4:00, grill sulla brace e un piatto di papanași quando la città si calma.",
-      "Terraza abierta hasta las 4:00, parrilla al fuego y un plato de papanași cuando la ciudad se calla.",
-      "Terrasse ouverte jusqu'à 4h00, grill sur la braise et une assiette de papanași quand la ville s'endort.",
-      "04:00'e kadar açık teras, közde ızgara ve şehir sakinleşince bir tabak papanași.",
-      "Терраса до 4:00, гриль на углях и тарелка папанашь, когда город затихает.",
-      "تراس مفتوح حتى 4:00 ومشاوي على الجمر وصحن باباناش حين يهدأ المدينة."
+      "Terasă deschisă până la 4:00, grill pe jar și o felie de cheesecake când orașul s-a liniștit.",
+      "Terrace open until 4:00, grill on the coals and a slice of cheesecake once the city goes quiet.",
+      "Terrazza aperta fino alle 4:00, grill sulla brace e una fetta di cheesecake quando la città si calma.",
+      "Terraza abierta hasta las 4:00, parrilla al fuego y una porción de cheesecake cuando la ciudad se calla.",
+      "Terrasse ouverte jusqu'à 4h00, grill sur la braise et une part de cheesecake quand la ville s'endort.",
+      "04:00'e kadar açık teras, közde ızgara ve şehir sakinleşince bir dilim cheesecake.",
+      "Терраса до 4:00, гриль на углях и кусочек чизкейка, когда город затихает.",
+      "تراس مفتوح حتى 4:00 ومشاوي على الجمر وقطعة تشيزكيك حين تهدأ المدينة."
     ),
     cardTerraceTitle: L("Terasă, lumini, noapte lungă", "Terrace, lights, a long night", "Terrazza, luci, notte lunga", "Terraza, luces, noche larga", "Terrasse, lumières, nuit longue", "Teras, ışıklar, uzun gece", "Терраса, свет, долгая ночь", "تراس وأضواء وليلة طويلة"),
     cardTerraceText: L(
@@ -133,7 +133,7 @@ export const uiTranslations: UiTranslationTree = {
     dineIn: L("Servire la masă", "Dine-in", "Consumazione sul posto", "Comer en el local", "Sur place", "Masada servis", "Обслуживание в зале", "تناول في المكان"),
     delivery: L("Livrare", "Delivery", "Consegna", "Entrega", "Livraison", "Teslimat", "Доставка", "توصيل"),
     pickup: L("Ridicare la bordură", "Kerbside pickup", "Ritiro a bordo strada", "Recogida en acera", "Retrait en bordure", "Kenardan teslim", "Самовывоз у входа", "استلام من الرصيف"),
-    hours: L("Deschis până la 4:00", "Open until 4:00", "Aperti fino alle 4:00", "Abierto hasta las 4:00", "Ouvert jusqu'à 4h00", "04:00'e kadar açık", "Открыто до 4:00", "مفتوح حتى 4:00"),
+    hours: L("Deschis până la 4:00", "Open until 4:00", "Aperto fino alle 4:00", "Abierto hasta las 4:00", "Ouvert jusqu'à 4h00", "04:00'e kadar açık", "Открыто до 4:00", "مفتوح حتى 4:00"),
   },
   gallery: {
     sectionLabel: L("Galerie", "Gallery", "Galleria", "Galería", "Galerie", "Galeri", "Галерея", "معرض"),
@@ -151,7 +151,7 @@ export const uiTranslations: UiTranslationTree = {
       "معرضان: داخل المحل وأطباق المائدة — NO NAME by Casa Ede."
     ),
     seeMaps: L("Vezi mai multe pe Google Maps", "See more on Google Maps", "Altro su Google Maps", "Más en Google Maps", "Plus sur Google Maps", "Google Maps'te daha fazla", "Ещё в Google Maps", "المزيد على خرائط Google"),
-    teaserTitle: L("Înauntru și la masă", "Inside and at the table", "Dentro e a tavola", "Dentro y en la mesa", "Dedans et à table", "İçeride ve masada", "Внутри и за столом", "في الداخل وعلى المائدة"),
+    teaserTitle: L("Înăuntru și la masă", "Inside and at the table", "Dentro e a tavola", "Dentro y en la mesa", "Dedans et à table", "İçeride ve masada", "Внутри и за столом", "في الداخل وعلى المائدة"),
     teaserDesc: L(
       "Câteva cadre din interior și de la masă. Restul pozelor sunt în galerie.",
       "A few frames from the interior and the table. The rest of the photos are in the gallery.",
@@ -182,9 +182,9 @@ export const uiTranslations: UiTranslationTree = {
   },
   reviews: {
     sectionLabel: L("Google", "Google", "Google", "Google", "Google", "Google", "Google", "Google"),
-    title: L("Lasă un review", "Leave a review", "Lascia una recensione", "Deja una reseña", "Laissez un avis", "Yorum bırak", "Оставьте отзыв", "اترك تقييماً"),
+    title: L("Lasă o recenzie", "Leave a review", "Lascia una recensione", "Deja una reseña", "Laissez un avis", "Yorum bırak", "Оставьте отзыв", "اترك تقييماً"),
     invite: L(
-      "Dacă ai fost la masă, spune-ne pe Google cum a fost. Ajută și pe următorii oaspeți să ne găsească.",
+      "Dacă ai fost la masă, spune-ne pe Google cum a fost. Ajuți și următorii oaspeți să ne găsească.",
       "If you sat at our table, tell us on Google how it was. It also helps the next guests find us.",
       "Se sei stato a tavola, racconta su Google com'è andata. Aiuta anche i prossimi ospiti a trovarci.",
       "Si te sentaste a la mesa, cuéntanos en Google cómo fue. También ayudas a los siguientes huéspedes.",
@@ -193,40 +193,40 @@ export const uiTranslations: UiTranslationTree = {
       "Если вы были у нас, расскажите об этом в Google — так нас легче найти следующим гостям.",
       "إذا جلست على طاولتنا، أخبرنا على Google كيف كانت التجربة. هذا يساعد الضيوف القادمين أيضاً."
     ),
-    writeCta: L("Lasă un review pe Google", "Leave a Google review", "Lascia una recensione su Google", "Deja una reseña en Google", "Laisser un avis Google", "Google'da yorum bırak", "Оставить отзыв в Google", "اترك تقييماً على Google"),
+    writeCta: L("Lasă o recenzie pe Google", "Leave a Google review", "Lascia una recensione su Google", "Deja una reseña en Google", "Laisser un avis Google", "Google'da yorum bırak", "Оставить отзыв в Google", "اترك تقييماً على Google"),
     openReviews: L("Citește recenziile", "Read the reviews", "Leggi le recensioni", "Leer reseñas", "Lire les avis", "Yorumları oku", "Читать отзывы", "اقرأ التقييمات"),
     saysPrefix: L("spune:", "says:", "dice:", "dice:", "dit :", "diyor:", "пишет:", "يقول:"),
   },
   menu: {
-    sectionLabel: L("A la Carte", "A la Carte", "À la carte", "A la carta", "À la carte", "Alakart", "А ля карт", "آلا كارت"),
+    sectionLabel: L("À la carte", "À la carte", "À la carte", "A la carta", "À la carte", "Alakart", "А ля карт", "آلا كارت"),
     sectionDesc: L(
-      "Răsfoiește cartea interactivă. Apasă pe un preparat pentru preț, ingrediente și rețetar brut.",
-      "Browse the interactive book. Tap a dish for price, ingredients and raw recipe details.",
-      "Sfoglia il libro interattivo. Tocca un piatto per prezzo, ingredienti e ricetta grezza.",
-      "Explora el libro interactivo. Toca un plato para precio, ingredientes y receta bruta.",
-      "Parcourez le livre interactif. Touchez un plat pour le prix, les ingrédients et la recette brute.",
-      "İnteraktif kitabı gezinin. Fiyat, malzemeler ve ham reçete için bir yemeğe dokunun.",
-      "Листайте интерактивную книгу. Нажмите на блюдо для цены, ингредиентов и сырого рецепта.",
-      "تصفح الكتاب التفاعلي. اضغط على طبق للسعر والمكونات ووصفة التحضير الخام."
+      "Răsfoiește cartea interactivă. Apasă pe un preparat pentru preț, ingrediente și rețetă de preparare.",
+      "Browse the interactive book. Tap a dish for price, ingredients and recipe details.",
+      "Sfoglia il libro interattivo. Tocca un piatto per prezzo, ingredienti e ricetta.",
+      "Explora el libro interactivo. Toca un plato para precio, ingredientes y receta.",
+      "Parcourez le livre interactif. Touchez un plat pour le prix, les ingrédients et la recette.",
+      "İnteraktif kitabı gezinin. Fiyat, malzemeler ve tarif için bir yemeğe dokunun.",
+      "Листайте интерактивную книгу. Нажмите на блюдо для цены, ингредиентов и рецепта.",
+      "تصفح الكتاب التفاعلي. اضغط على طبق للسعر والمكونات ووصفة التحضير."
     ),
-    flipPrev: L("← Anterior", "← Previous", "← Precedente", "← Anterior", "← Précédent", "← Önceki", "← Назад", "→ السابق"),
-    flipNext: L("Următor →", "Next →", "Successivo →", "Siguiente →", "Suivant →", "Sonraki →", "Далее →", "التالي ←"),
-    foodTab: L("Meniu Mâncare", "Food Menu", "Menu Cibo", "Menú Comida", "Menu Nourriture", "Yemek Menüsü", "Меню Еды", "قائمة الطعام"),
-    drinksTab: L("Meniu Băuturi", "Drinks Menu", "Menu Bevande", "Menú Bebidas", "Menu Boissons", "İçecek Menüsü", "Меню Напитков", "قائمة المشروبات"),
+    flipPrev: L("← Înapoi", "← Previous", "← Precedente", "← Anterior", "← Précédent", "← Önceki", "← Назад", "→ السابق"),
+    flipNext: L("Înainte →", "Next →", "Successivo →", "Siguiente →", "Suivant →", "Sonraki →", "Далее →", "التالي ←"),
+    foodTab: L("Meniu de mâncare", "Food Menu", "Menu cibo", "Menú comida", "Menu plats", "Yemek menüsü", "Меню еды", "قائمة الطعام"),
+    drinksTab: L("Meniu de băuturi", "Drinks Menu", "Menu bevande", "Menú bebidas", "Menu boissons", "İçecek menüsü", "Меню напитков", "قائمة المشروبات"),
     expand: L("Extinde", "Expand", "Espandi", "Expandir", "Agrandir", "Genişlet", "Развернуть", "تكبير"),
     collapse: L("Restrânge", "Collapse", "Riduci", "Contraer", "Réduire", "Daralt", "Свернуть", "تصغير"),
     downloadPdf: L("Descarcă meniul PDF", "Download menu PDF", "Scarica menu PDF", "Descargar menú PDF", "Télécharger le menu PDF", "Menü PDF indir", "Скачать меню PDF", "تحميل قائمة PDF"),
     browseHint: L("Răsfoiește →", "Browse →", "Sfoglia →", "Explorar →", "Parcourir →", "Gez →", "Листать →", "تصفح ←"),
     tocTitle: L("Cuprins", "Contents", "Indice", "Índice", "Sommaire", "İçindekiler", "Содержание", "المحتويات"),
-    tocHint: L("Apasă o categorie", "Tap a category", "Tocca una categoria", "Toca una categoría", "Touchez une catégorie", "Bir kategoriye dokun", "Нажмите категорию", "اضغط فئة"),
+    tocHint: L("Apasă pe o categorie", "Tap a category", "Tocca una categoria", "Toca una categoría", "Touchez une catégorie", "Bir kategoriye dokun", "Нажмите категорию", "اضغط فئة"),
     tocContinued: L("continuare", "continued", "continua", "continuación", "suite", "devam", "продолжение", "متابعة"),
     tocBack: L("Cuprins", "Contents", "Indice", "Índice", "Sommaire", "İçindekiler", "Содержание", "المحتويات"),
     details: L("Detalii", "Details", "Dettagli", "Detalles", "Détails", "Detay", "Подробнее", "تفاصيل"),
     price: L("Preț", "Price", "Prezzo", "Precio", "Prix", "Fiyat", "Цена", "السعر"),
-    coverMenu: L("MENU", "MENU", "MENU", "MENÚ", "MENU", "MENÜ", "МЕНЮ", "قائمة"),
+    coverMenu: L("MENIU", "MENU", "MENU", "MENÚ", "MENU", "MENÜ", "МЕНЮ", "قائمة"),
     imagePlaceholder: L("Imagine preparat", "Dish image", "Immagine piatto", "Imagen del plato", "Image du plat", "Yemek görseli", "Фото блюда", "صورة الطبق"),
     ingredients: L("Ingrediente", "Ingredients", "Ingredienti", "Ingredientes", "Ingrédients", "Malzemeler", "Ингредиенты", "المكونات"),
-    recipe: L("Rețetar brut", "Raw recipe", "Ricetta grezza", "Receta bruta", "Recette brute", "Ham reçete", "Сырая рецептура", "وصفة خام"),
+    recipe: L("Rețetă de preparare", "Recipe", "Ricetta", "Receta", "Recette", "Tarif", "Рецепт", "وصفة"),
     nutritionTitle: L("Valori nutriționale", "Nutritional values", "Valori nutrizionali", "Valores nutricionales", "Valeurs nutritionnelles", "Besin değerleri", "Пищевая ценность", "القيم الغذائية"),
     nutritionPlaceholder: L(
       "Valori nutriționale în curs de completare.",
@@ -249,7 +249,7 @@ export const uiTranslations: UiTranslationTree = {
   },
   events: {
     sectionLabel: L("Ediții limitate", "Limited editions", "Edizioni limitate", "Ediciones limitadas", "Éditions limitées", "Sınırlı baskılar", "Лимитированные издания", "إصدارات محدودة"),
-    title: L("Special & Events", "Special & Events", "Special & Eventi", "Especial y Eventos", "Spécial & Événements", "Özel & Etkinlikler", "Особые события", "خاص والفعاليات"),
+    title: L("Evenimente speciale", "Special events", "Eventi speciali", "Eventos especiales", "Événements spéciaux", "Özel etkinlikler", "Особые события", "فعاليات خاصة"),
     sectionDesc: L(
       "Seri speciale, meniuri tematice și momente de sezon la NO NAME by Casa Ede.",
       "Special evenings, themed menus and seasonal moments at NO NAME by Casa Ede.",
@@ -262,7 +262,7 @@ export const uiTranslations: UiTranslationTree = {
     ),
     emptyTitle: L("Evenimente în curând", "Events coming soon", "Eventi in arrivo", "Eventos próximamente", "Événements bientôt", "Etkinlikler yakında", "Скоро события", "فعاليات قريباً"),
     emptyDesc: L(
-      "Revino curând pentru meniuri tematice și seri speciale. Urmărește-ne pe social media pentru noutăți.",
+      "Revino curând pentru meniuri tematice și seri speciale. Urmărește-ne pe rețelele sociale pentru noutăți.",
       "Come back soon for themed menus and special evenings. Follow us on social media for updates.",
       "Torna presto per menu a tema e serate speciali. Seguici sui social per le novità.",
       "Vuelve pronto para menús temáticos y noches especiales. Síguenos en redes para novedades.",
@@ -274,7 +274,7 @@ export const uiTranslations: UiTranslationTree = {
   },
   contact: {
     sectionLabel: L("Vizitează-ne", "Visit us", "Visitaci", "Visítanos", "Venez nous voir", "Bizi ziyaret edin", "Приходите к нам", "زورونا"),
-    title: L("Contact & Locație", "Contact & Location", "Contatti & Posizione", "Contacto y Ubicación", "Contact & Adresse", "İletişim & Konum", "Контакты и адрес", "اتصل بنا والموقع"),
+    title: L("Contact și locație", "Contact & Location", "Contatti e posizione", "Contacto y ubicación", "Contact et adresse", "İletişim ve konum", "Контакты и адрес", "اتصل بنا والموقع"),
     address: L("Adresă", "Address", "Indirizzo", "Dirección", "Adresse", "Adres", "Адрес", "العنوان"),
     reservations: L("Rezervări", "Reservations", "Prenotazioni", "Reservas", "Réservations", "Rezervasyon", "Бронирование", "الحجوزات"),
     hours: L("Program", "Opening hours", "Orari", "Horario", "Horaires", "Çalışma saatleri", "Часы работы", "ساعات العمل"),
@@ -301,7 +301,7 @@ export const uiTranslations: UiTranslationTree = {
       "افتح في خرائط Google"
     ),
     streetView: L("Street View", "Street View", "Street View", "Street View", "Street View", "Street View", "Street View", "عرض الشارع"),
-    plusCode: L("Plus code", "Plus code", "Plus code", "Plus code", "Plus code", "Plus code", "Plus code", "رمز Plus"),
+    plusCode: L("Cod Plus", "Plus code", "Plus code", "Plus code", "Plus code", "Plus code", "Plus code", "رمز Plus"),
     price: L("Preț mediu", "Average price", "Prezzo medio", "Precio medio", "Prix moyen", "Ortalama fiyat", "Средний чек", "متوسط السعر"),
     rating: L("Evaluare Google", "Google rating", "Valutazione Google", "Valoración de Google", "Note Google", "Google puanı", "Оценка Google", "تقييم Google"),
   },

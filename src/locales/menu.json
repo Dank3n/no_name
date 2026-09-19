@@ -2,7 +2,7 @@
   "foodMenuCategories": [
     {
       "category": {
-        "ro": "Antreuri Reci",
+        "ro": "Antreuri reci",
         "en": "Cold Starters",
         "it": "Antipasti Freddi",
         "es": "Entrantes Fríos",
@@ -14,7 +14,7 @@
       "items": [
         {
           "id": "bruschete-rosii",
-          "name": "Bruschete cu rosii",
+          "name": "Bruschete cu roșii",
           "price": "26 lei",
           "ingredients": {
             "ro": "Baghetă 125g, Roșii 300g, Usturoi 15g, Busuioc 20g, Ulei de măsline 30g, Sare 5g.",
@@ -40,7 +40,7 @@
         },
         {
           "id": "bruschete-creveti",
-          "name": "Bruschete cu creveti",
+          "name": "Bruschete cu creveți",
           "price": "44 lei",
           "ingredients": {
             "ro": "Baghetă 125g, Creveți 150g, Roșii 200g, Avocado 150g, Ulei de măsline 30g, Busuioc 10g, Usturoi 10g, Sare 5g.",
@@ -144,7 +144,7 @@
         },
         {
           "id": "humus-vita",
-          "name": "Humus cu muguri de pin si carne de vita",
+          "name": "Humus cu muguri de pin și carne de vită",
           "price": "44 lei",
           "ingredients": {
             "ro": "Carne de vită 75g, Humus 180g, Tahini 15g, Iaurt grecesc 5g, Usturoi 15g, Ulei de măsline 15g, Chimion 5g, Boia 5g, Muguri de pin 25g, Rodie 50g, Pâine libaneză 50g.",
@@ -170,7 +170,7 @@
         },
         {
           "id": "platou-branzeturi",
-          "name": "Platou branzeturi",
+          "name": "Platou brânzeturi",
           "price": "140 lei",
           "ingredients": {
             "ro": "Gorgonzola 100g, Cheddar 100g, Feta 100g, Parmezan 100g, Camembert 125g, Emmentaler 100g, Nuci 50g, Struguri 150g, Fructe confiate 50g, Miere 30g, Dulceață 50g, Crackers 70g.",
@@ -250,7 +250,7 @@
     },
     {
       "category": {
-        "ro": "Antreuri Calde",
+        "ro": "Antreuri calde",
         "en": "Hot Starters",
         "it": "Antipasti Caldi",
         "es": "Entrantes Calientes",
@@ -262,7 +262,7 @@
       "items": [
         {
           "id": "oua-ochi-fierte",
-          "name": "Oua Ochi / Fierte / Omleta simpla",
+          "name": "Ouă ochi / fierte / omletă simplă",
           "price": "18 lei",
           "ingredients": {
             "ro": "3 ouă (180g), Ulei 30g, Sare, piper 5g.",
@@ -288,7 +288,7 @@
         },
         {
           "id": "omleta-cascaval-sunca",
-          "name": "Omleta cu cascaval / sunca",
+          "name": "Omletă cu cașcaval / șuncă",
           "price": "22 lei",
           "ingredients": {
             "ro": "3 ouă (180g), Cașcaval 100g, Șuncă Praga 75g, Ulei 30g, Sare, piper 5g.",
@@ -314,7 +314,7 @@
         },
         {
           "id": "omleta-taraneasca",
-          "name": "Omleta cu cascaval si sunca / taraneasca",
+          "name": "Omletă cu cașcaval și șuncă / țărănească",
           "price": "24 lei",
           "ingredients": {
             "ro": "3 ouă (180g), Kaizer/Slănină 100g, Cașcaval ras 75g, Ardei roșu 50g, Ceapă verde 50g, Ulei 30g, Sare, piper 10g.",
@@ -340,7 +340,7 @@
         },
         {
           "id": "camembert-pane",
-          "name": "Camembert panne cu sos de afine",
+          "name": "Camembert pane cu sos de afine",
           "price": "45 lei",
           "ingredients": {
             "ro": "Camembert 125g, 1 ou (60g), Făină albă + Panko 20g, Sos de afine 75g, Sare, piper.",
@@ -392,7 +392,7 @@
         },
         {
           "id": "carnati-gratar-prajiti",
-          "name": "Carnati la gratar / prajiti cu cartofi prajiti",
+          "name": "Cârnați la grătar / prăjiți cu cartofi prăjiți",
           "price": "38 lei",
           "ingredients": {
             "ro": "Cârnați semiafumați 300g, Cartofi 300g, Muștar 50g.",
@@ -418,7 +418,7 @@
         },
         {
           "id": "cascaval-pane",
-          "name": "Cascaval Pane cu cartofi prajiti",
+          "name": "Cașcaval pane cu cartofi prăjiți",
           "price": "44 lei",
           "ingredients": {
             "ro": "Cașcaval 300g, Cartofi 300g, 1 ou, Făină 50g, Panko 50g, Sare, piper 10g, Ulei 100g.",
@@ -444,7 +444,7 @@
         },
         {
           "id": "bulete-cascaval",
-          "name": "Bulete de cascaval",
+          "name": "Bulete de cașcaval",
           "price": "34 lei",
           "ingredients": {
             "ro": "Cașcaval ras 200g, 2 albușuri de ou (60g), Făină albă 10g, Sare, piper 5g, Ulei 100g.",
@@ -496,7 +496,7 @@
         },
         {
           "id": "mamaliga-ardeleneasca",
-          "name": "Mamaliga Ardeleneasca cu branza burduf, carnati si slanina",
+          "name": "Mămăligă ardelenească cu brânză de burduf, cârnați și slănină",
           "price": "36 lei",
           "ingredients": {
             "ro": "Mălai 100g, Unt 50g, Brânză de burduf 100g, Brânză telemea 100g, Mozzarella 100g, Slănină 150g, Cârnați afumați 100g, Smântână 75g.",
@@ -524,7 +524,7 @@
     },
     {
       "category": {
-        "ro": "Salate Antreu si Focaccia",
+        "ro": "Salate antreu și focaccia",
         "en": "Starter Salads & Focaccia",
         "it": "Insalate Antipasto e Focaccia",
         "es": "Ensaladas Entrantes y Focaccia",
@@ -536,7 +536,7 @@
       "items": [
         {
           "id": "salata-somon",
-          "name": "Salata cu Somon",
+          "name": "Salată cu somon",
           "price": "52 lei",
           "ingredients": {
             "ro": "Somon la grătar 150g, Somon afumat 50g, Salată iceberg 150g, Ceapă roșie 50g, Avocado 100g, Castraveți 100g, Porumb 50g, Brânză tare 100g, Ulei măsline 20g, Dressing muștar, Sare, piper.",
@@ -562,7 +562,7 @@
         },
         {
           "id": "salata-caesar-pui",
-          "name": "Salata Caesar cu pui",
+          "name": "Salată Caesar cu pui",
           "price": "43 lei",
           "ingredients": {
             "ro": "Salată Iceberg 200g, Piept de pui 200g, Brânză tare 75g, Parmezan 50g, Capere 15g, Anșoa 25g, Maioneză 25g, Sos Worchester 10g, Crutoane 75g, Lămâie.",
@@ -588,7 +588,7 @@
         },
         {
           "id": "salata-caesar-creveti",
-          "name": "Salata Caesar cu creveti",
+          "name": "Salată Caesar cu creveți",
           "price": "50 lei",
           "ingredients": {
             "ro": "Salată Iceberg 200g, Creveți 200g, Brânză tare 75g, Parmezan 50g, Capere 15g, Anșoa 25g, Maioneză 25g, Sos Worchester 10g, Crutoane 75g, Lămâie.",
@@ -614,7 +614,7 @@
         },
         {
           "id": "salata-piemontese",
-          "name": "Salata Piemontese",
+          "name": "Salată Piemontese",
           "price": "46 lei",
           "ingredients": {
             "ro": "Piept pui pane 200g, Roșii 100g, Ardei roșu 75g, Ardei galben 75g, Castraveți 75g, Ceapă roșie 50g, Salată verde 50g, Măsline 50g, Ou fiert 60g, Ulei 20g, Lămâie.",
@@ -640,7 +640,7 @@
         },
         {
           "id": "salata-bulgareasca",
-          "name": "Salata Bulgareasca",
+          "name": "Salată bulgărească",
           "price": "41 lei",
           "ingredients": {
             "ro": "Salată verde 150g, Roșii 50g, Ardei roșu 50g, Ardei galben 50g, Ceapă roșie 50g, Castravete 50g, Șuncă 100g, Ou fiert 1 buc, Telemea 100g, Măsline 50g, Ulei 30g.",
@@ -666,7 +666,7 @@
         },
         {
           "id": "salata-greceasca",
-          "name": "Salata Greceasca",
+          "name": "Salată grecească",
           "price": "44 lei",
           "ingredients": {
             "ro": "Brânză feta 200g, Salată iceberg 100g, Roșii 50g, Ardei roșu 50g, Ardei galben 50g, Ceapă roșie 50g, Castravete 50g, Măsline 75g, Ulei de măsline 20g, Lămâie.",
@@ -692,7 +692,7 @@
         },
         {
           "id": "salata-ton",
-          "name": "Salata Ton",
+          "name": "Salată Ton",
           "price": "42 lei",
           "ingredients": {
             "ro": "Ton 160g, Salată iceberg 150g, Ou fiert 60g, Porumb 30g, Ceapă roșie 50g, Roșii 75g, Ardei kapia 50g, Castraveți 50g, Măsline 50g, Lămâie, Ulei măsline 50g, Sare, piper.",
@@ -718,7 +718,7 @@
         },
         {
           "id": "salata-casa-ede-pui",
-          "name": "Salata Casa EDE cu pui",
+          "name": "Salată Casa Ede cu pui",
           "price": "48 lei",
           "ingredients": {
             "ro": "Piept de pui grătar 250g, Parmezan 100g, Iceberg+rucola 150g, Ardei Kapia 50g, Nuci 50g, Măr 50g, Portocală 50g, Rodie 30g, Avocado 75g, Dressing portocală 30g.",
@@ -744,7 +744,7 @@
         },
         {
           "id": "salata-casa-ede-vita",
-          "name": "Salata Casa EDE cu vita",
+          "name": "Salată Casa Ede cu vită",
           "price": "58 lei",
           "ingredients": {
             "ro": "Mușchi de vită grătar 250g, Parmezan 100g, Iceberg+rucola 150g, Ardei Kapia 50g, Nuci 50g, Măr 50g, Portocală 50g, Rodie 30g, Avocado 75g, Dressing portocală 30g.",
@@ -770,7 +770,7 @@
         },
         {
           "id": "focaccia-simpla",
-          "name": "Focaccia simpla",
+          "name": "Focaccia simplă",
           "price": "16 lei",
           "ingredients": {
             "ro": "Aluat de focaccia 250g.",
@@ -876,7 +876,7 @@
     },
     {
       "category": {
-        "ro": "Ciorbe si panificatie",
+        "ro": "Ciorbe și panificație",
         "en": "Soups & Breads",
         "it": "Zuppe e Pane",
         "es": "Sopas y Pan",
@@ -888,7 +888,7 @@
       "items": [
         {
           "id": "ciorba-burta",
-          "name": "Ciorba de burta",
+          "name": "Ciorbă de burtă",
           "price": "29 lei",
           "ingredients": {
             "ro": "Burtă de vită, Oase de vită, Morcov, Ardei roșu, Ardei iute, Oțet, Smântână, Gălbenuș de ou, Usturoi, Ulei, Sare, Piper.",
@@ -914,10 +914,10 @@
         },
         {
           "id": "ciorba-vacuta",
-          "name": "Ciorba de vacuta",
+          "name": "Ciorbă de văcuță",
           "price": "27 lei",
           "ingredients": {
-            "ro": "Carne de vită, Oase de vită, Ardei, Morcov, Dovlecel, Pătrunjel, Pâstârnac, Țelină, Ceapă, Fasole păstăi, Mazăre, Roșii, Borș, Bulion, Leuștean, Ulei, Sare, Piper.",
+            "ro": "Carne de vită, Oase de vită, Ardei, Morcov, Dovlecel, Pătrunjel, Păstârnac, Țelină, Ceapă, Fasole păstăi, Mazăre, Roșii, Borș, Bulion, Leuștean, Ulei, Sare, Piper.",
             "en": "Beef, Beef bones, Pepper, Carrot, Zucchini, Parsley, Parsnip, Celery, Onion, Green beans, Peas, Tomatoes, Borscht, Tomato paste, Lovage, Oil, Salt, Pepper.",
             "it": "Carne di manzo, Ossa di manzo, Peperone, Carota, Zucchina, Prezzemolo, Pastinaca, Sedano, Cipolla, Fagiolini, Piselli, Pomodori, Borș, Concentrato di pomodoro, Levistico, Olio, Sale, Pepe.",
             "es": "Carne de res, Huesos de res, Pimiento, Zanahoria, Calabacín, Perejil, Chirivía, Apio, Cebolla, Judías verdes, Guisantes, Tomates, Borscht, Pasta de tomate, Levístico, Aceite, Sal, Pimienta.",
@@ -940,10 +940,10 @@
         },
         {
           "id": "ciorba-perisoare",
-          "name": "Ciorba de perisoare",
+          "name": "Ciorbă de perișoare",
           "price": "25 lei",
           "ingredients": {
-            "ro": "Carne tocată vită/porc, Piept de porc, Ouă, Morcov, Pătrunjel, Pâstârnac, Țelină, Ardei, Ceapă, Bulion, Roșii, Borș, Orez, Griș, Ulei, Mărar, Leuștean, Sare, Piper.",
+            "ro": "Carne tocată vită/porc, Piept de porc, Ouă, Morcov, Pătrunjel, Păstârnac, Țelină, Ardei, Ceapă, Bulion, Roșii, Borș, Orez, Griș, Ulei, Mărar, Leuștean, Sare, Piper.",
             "en": "Minced beef/pork, Pork belly, Eggs, Carrot, Parsley, Parsnip, Celery, Pepper, Onion, Tomato paste, Tomatoes, Borscht, Rice, Semolina, Oil, Dill, Lovage, Salt, Pepper.",
             "it": "Carne macinata manzo/maiale, Pancetta di maiale, Uova, Carota, Prezzemolo, Pastinaca, Sedano, Peperone, Cipolla, Concentrato di pomodoro, Pomodori, Borș, Riso, Semolino, Olio, Aneto, Levistico, Sale, Pepe.",
             "es": "Carne picada res/cerdo, Panceta de cerdo, Huevos, Zanahoria, Perejil, Chirivía, Apio, Pimiento, Cebolla, Pasta de tomate, Tomates, Borscht, Arroz, Sémola, Aceite, Eneldo, Levístico, Sal, Pimienta.",
@@ -966,10 +966,10 @@
         },
         {
           "id": "ciorba-pui-a-la-grec",
-          "name": "Ciorba de pui a la grec",
+          "name": "Ciorbă de pui à la grec",
           "price": "23 lei",
           "ingredients": {
-            "ro": "Carne de pui, Tăcâmuri pui, Ceapă, Morcov, Pătrunjel, Pâstârnac, Țelină, Ardei, Smântână, Gălbenuș de ou, Orez, Ulei, Sare de lămâie, Mărar, Sare, Piper.",
+            "ro": "Carne de pui, Tăcâmuri de pui, Ceapă, Morcov, Pătrunjel, Păstârnac, Țelină, Ardei, Smântână, Gălbenuș de ou, Orez, Ulei, Sare de lămâie, Mărar, Sare, Piper.",
             "en": "Chicken, Chicken bones, Onion, Carrot, Parsley, Parsnip, Celery, Pepper, Sour cream, Egg yolk, Rice, Oil, Lemon salt, Dill, Salt, Pepper.",
             "it": "Pollo, Ossa di pollo, Cipolla, Carota, Prezzemolo, Pastinaca, Sedano, Peperone, Panna acida, Tuorlo d'uovo, Riso, Olio, Sale al limone, Aneto, Sale, Pepe.",
             "es": "Pollo, Huesos de pollo, Cebolla, Zanahoria, Perejil, Chirivía, Apio, Pimiento, Crema agria, Yema de huevo, Arroz, Aceite, Sal de limón, Eneldo, Sal, Pimienta.",
@@ -992,10 +992,10 @@
         },
         {
           "id": "ciorba-legume",
-          "name": "Ciorba de legume",
+          "name": "Ciorbă de legume",
           "price": "20 lei",
           "ingredients": {
-            "ro": "Ardei, Morcov, Cartofi, Dovlecel, Pătrunjel, Pâstârnac, Țelină, Ceapă, Fasole păstăi, Mazăre, Roșii, Borș, Bulion, Leuștean, Ulei, Sare, Piper.",
+            "ro": "Ardei, Morcov, Cartofi, Dovlecel, Pătrunjel, Păstârnac, Țelină, Ceapă, Fasole păstăi, Mazăre, Roșii, Borș, Bulion, Leuștean, Ulei, Sare, Piper.",
             "en": "Pepper, Carrot, Potatoes, Zucchini, Parsley, Parsnip, Celery, Onion, Green beans, Peas, Tomatoes, Borscht, Tomato paste, Lovage, Oil, Salt, Pepper.",
             "it": "Peperone, Carota, Patate, Zucchina, Prezzemolo, Pastinaca, Sedano, Cipolla, Fagiolini, Piselli, Pomodori, Borș, Concentrato di pomodoro, Levistico, Olio, Sale, Pepe.",
             "es": "Pimiento, Zanahoria, Patatas, Calabacín, Perejil, Chirivía, Apio, Cebolla, Judías verdes, Guisantes, Tomates, Borscht, Pasta de tomate, Levístico, Aceite, Sal, Pimienta.",
@@ -1018,7 +1018,7 @@
         },
         {
           "id": "supa-crema-legume",
-          "name": "Supa crema de legume cu crutoane",
+          "name": "Supă cremă de legume cu crutoane",
           "price": "22 lei",
           "ingredients": {
             "ro": "Ciuperci 300g, Ceapă/usturoi, Țelină 75g, Smântână vegetală 75g, Sare, piper. Crutoane.",
@@ -1070,7 +1070,7 @@
         },
         {
           "id": "chifla-cartof",
-          "name": "Chifla cu cartof",
+          "name": "Chiflă cu cartof",
           "price": "3 lei",
           "ingredients": {
             "ro": "Chiflă cu cartof 60g.",
@@ -1096,7 +1096,7 @@
         },
         {
           "id": "franzeluta-crocanta",
-          "name": "Franzeluta crocanta",
+          "name": "Franzeluță crocantă",
           "price": "6 lei",
           "ingredients": {
             "ro": "Franzeluță crocantă 125g.",
@@ -1124,7 +1124,7 @@
     },
     {
       "category": {
-        "ro": "Specialitati Casa Ede",
+        "ro": "Specialități Casa Ede",
         "en": "Casa Ede Specialties",
         "it": "Specialità Casa Ede",
         "es": "Especialidades Casa Ede",
@@ -1136,7 +1136,7 @@
       "items": [
         {
           "id": "biftec-tartar",
-          "name": "Biftec Tartar",
+          "name": "Biftec tartar",
           "price": "92 lei",
           "ingredients": {
             "ro": "Biftec tartar preparat din carne crudă 270g (conform rețetei bucătarului).",
@@ -1162,7 +1162,7 @@
         },
         {
           "id": "tomahawk-manzat",
-          "name": "Tomahawk de manzat cu cartofi chips si salata Allepo",
+          "name": "Tomahawk de mânzat cu cartofi chips și salată Aleppo",
           "price": "95 lei",
           "ingredients": {
             "ro": "Antricot de vițel 500g, Cartofi chips 300g, Iaurt 150g, Roșie coaptă 100g, Ardei capia copt 100g, Castravete 50g, Usturoi, Mentă, Ardei iute copt, Ulei de palmier 150g, Condimente 5g.",
@@ -1188,7 +1188,7 @@
         },
         {
           "id": "tomahawk-porc",
-          "name": "Tomahawk de porc cu cartofi chips si sos tzatziki",
+          "name": "Tomahawk de porc cu cartofi chips și sos tzatziki",
           "price": "72 lei",
           "ingredients": {
             "ro": "Cotlet de porc cu scărițică 500g, Cartofi chips 300g, Sos tzatziki/mujdei 50g, Roșie coaptă 100g, Ardei capia copt 100g, Ardei iute copt, Ulei de palmier 150g, Condimente 5g.",
@@ -1214,7 +1214,7 @@
         },
         {
           "id": "steak-tom-jerry",
-          "name": "Steak de porc Tom & Jerry cu cartofi chips si salata coleslaw",
+          "name": "Steak de porc Tom & Jerry cu cartofi chips și salată coleslaw",
           "price": "95 lei",
           "ingredients": {
             "ro": "Steak de porc 800-900g, Cartofi chips 300g, Salată coleslaw/vară, Roșie coaptă 100g, Ardei capia copt 100g, Mujdei 50g, Ardei iute copt, Ulei de palmier 150g, Condimente 5g.",
@@ -1240,7 +1240,7 @@
         },
         {
           "id": "coaste-porc-casa-ede",
-          "name": "Coaste de porc \"Casa Ede\" cu sos BBQ si cartofi chips",
+          "name": "Coaste de porc \"Casa Ede\" cu sos BBQ și cartofi chips",
           "price": "68 lei",
           "ingredients": {
             "ro": "Coaste de porc 500-600g, Sos barbeque 75g, Cartofi chips 300g, Ulei de palmier 150g, Condimente 15g.",
@@ -1266,7 +1266,7 @@
         },
         {
           "id": "pastrama-berbecut",
-          "name": "Pastrama de berbecut la tigaie cu mamaliguta",
+          "name": "Pastramă de berbecuț la tigaie cu mămăliguță",
           "price": "67 lei",
           "ingredients": {
             "ro": "Pastramă de berbecuț/oaie 250g, Făină de mălai 150g, Unt 75g, Vin 50g, Cimbrișor 15g, Condimente 15g, Sare, piper 5g.",
@@ -1292,7 +1292,7 @@
         },
         {
           "id": "coaste-berbecut",
-          "name": "Coaste de berbecut cu cartofi prajiti si mujdei de usturoi",
+          "name": "Coaste de berbecuț cu cartofi prăjiți și mujdei de usturoi",
           "price": "72 lei",
           "ingredients": {
             "ro": "Coaste de berbecuț 350g, Cartofi 300g, Mujdei de usturoi 50g, Unt 50g, Ulei de palmier 150g, Cimbrișor 15g, Condimente 5g.",
@@ -1318,7 +1318,7 @@
         },
         {
           "id": "muschi-vita-piper",
-          "name": "Muschi de vita cu sos de piper verde si orez cu stafide si caju",
+          "name": "Mușchi de vită cu sos de piper verde și orez cu stafide și caju",
           "price": "86 lei",
           "ingredients": {
             "ro": "Mușchi de vită 270g, Orez 150g, Caju și stafide 100g, Sos de piper 75g, Unt 50g, Condimente 5g.",
@@ -1344,7 +1344,7 @@
         },
         {
           "id": "muschi-vita-gorgonzola",
-          "name": "Muschi de vita cu sos gorgonzola si cartofi piure",
+          "name": "Mușchi de vită cu sos gorgonzola și cartofi piure",
           "price": "89 lei",
           "ingredients": {
             "ro": "Mușchi de vită 270g, Cartofi 400g, Lapte și unt 100g, Sos gorgonzola 75g, Unt 50g, Condimente 5g.",
@@ -1370,7 +1370,7 @@
         },
         {
           "id": "tigaie-vitel",
-          "name": "Tigaie de vitel cu legume si orez cu stafide si caju",
+          "name": "Tigaie de vițel cu legume și orez cu stafide și caju",
           "price": "72 lei",
           "ingredients": {
             "ro": "Mușchi de vită 200g, Orez 125g, Stafide aurii 15g, Caju/alune 50g, Ardei bicolor 150g, Roșie 100g, Dovlecel 50g, Morcov 50g, Ceapă 50g, Usturoi 25g, Unt/ulei 75g, 7 Condimente 5g, Sare, boia.",
@@ -1396,7 +1396,7 @@
         },
         {
           "id": "pui-ceaun",
-          "name": "Jumatate de pui la ceaun, cartofi chips si mujdei",
+          "name": "Jumătate de pui la ceaun, cartofi chips și mujdei",
           "price": "58 lei",
           "ingredients": {
             "ro": "Jumătate de pui 600g, Cartofi chips 300g, Sos de mujdei 75g, Usturoi 25g, Ulei de palmier 250g, Condimente 5g.",
@@ -1424,7 +1424,7 @@
     },
     {
       "category": {
-        "ro": "Snitele",
+        "ro": "Șnițele",
         "en": "Schnitzels",
         "it": "Cotolette",
         "es": "Escalopes",
@@ -1436,7 +1436,7 @@
       "items": [
         {
           "id": "snitel-pane",
-          "name": "Snitel de pui / porc pane cu cartofi prajiti",
+          "name": "Șnițel de pui / porc pane cu cartofi prăjiți",
           "price": "42 lei",
           "ingredients": {
             "ro": "Piept de pui sau pulpă de porc 200-250g, Făină albă 50g, Ou 60g, Cartofi 300g, Ulei de palmier 150g, Panko 50g, Sare, piper, boia.",
@@ -1462,7 +1462,7 @@
         },
         {
           "id": "snitel-vita",
-          "name": "Snitel de vita pane cu cartofi prajiti",
+          "name": "Șnițel de vită pane cu cartofi prăjiți",
           "price": "80 lei",
           "ingredients": {
             "ro": "Mușchi de vită 200g, Cartofi 300g, Sos de piper 75g, Unt 50g, Sare, piper, condimente 5g.",
@@ -1488,7 +1488,7 @@
         },
         {
           "id": "snitel-crocant",
-          "name": "Snitel de pui / porc crocant cu cartofi prajiti",
+          "name": "Șnițel de pui / porc crocant cu cartofi prăjiți",
           "price": "45 lei",
           "ingredients": {
             "ro": "Piept de pui sau pulpă de porc 200-250g, Făină albă 50g, Ou 60g, Fulgi de porumb 50-100g, Cartofi 300g, Ulei de palmier 150g, Sare, piper.",
@@ -1514,7 +1514,7 @@
         },
         {
           "id": "snitel-casa-ede",
-          "name": "Snitel de pui / porc \"Casa Ede\" cu cartofi prajiti",
+          "name": "Șnițel de pui / porc \"Casa Ede\" cu cartofi prăjiți",
           "price": "59 lei",
           "ingredients": {
             "ro": "2 șnițele suprapuse (Piept de pui sau pulpă porc 400g), Făină 100g, 2 Ouă 120g, Mozzarella 150g, Brânză Cheddar 100g, Cartofi 300g, Ulei 150g, Sare, piper.",
@@ -1540,7 +1540,7 @@
         },
         {
           "id": "snitel-gratinat",
-          "name": "Snitel de pui / porc gratinat si sos rosu cu cartofi prajiti",
+          "name": "Șnițel de pui / porc gratinat și sos roșu cu cartofi prăjiți",
           "price": "55 lei",
           "ingredients": {
             "ro": "Piept de pui sau pulpă de porc 200-250g, Făină, Ou, Mozzarella/Cașcaval (pentru gratinat), Sos roșu, Cartofi 300g, Ulei, Sare, piper.",
@@ -1566,7 +1566,7 @@
         },
         {
           "id": "snitel-merisoare",
-          "name": "Snitel de pui / porc cu dulceata de merisoare si cartofi piure",
+          "name": "Șnițel de pui / porc cu dulceață de merișoare și cartofi piure",
           "price": "52 lei",
           "ingredients": {
             "ro": "Piept de pui sau pulpă de porc 200-250g, Făină, Ou, Dulceață de merișoare, Piure de cartofi (Cartofi 250g, Unt 50g, Lapte 50ml), Sare, piper.",
@@ -1592,7 +1592,7 @@
         },
         {
           "id": "grujoane-pui",
-          "name": "Grujoane de pui cu cartofi chipps si sos ketchup / samurai",
+          "name": "Gujiioane de pui cu cartofi chips și sos ketchup / samurai",
           "price": "42 lei",
           "ingredients": {
             "ro": "Piept de pui 250g, Făină 50g, Ou 60g, Panko 50g, Cartofi chips 300g, Sos ketchup/samurai 50g, Ulei de palmier 150g, Sare, piper.",
@@ -1618,7 +1618,7 @@
         },
         {
           "id": "crispy-pui",
-          "name": "Crispy de pui cu cartofi chipps si sos ketchup / samurai",
+          "name": "Crispy de pui cu cartofi chips și sos ketchup / samurai",
           "price": "44 lei",
           "ingredients": {
             "ro": "Piept de pui 250g, Făină 50g, Ou 60g, Fulgi de porumb 50g, Cartofi chips 400g, Sos ketchup/samurai 50g, Ulei de palmier 150g, Sare, piper.",
@@ -1684,7 +1684,7 @@
         },
         {
           "id": "burger-splash-pui",
-          "name": "Burgeri splash de pui cu cartofi prajiti",
+          "name": "Burgeri splash de pui cu cartofi prăjiți",
           "price": "57 lei",
           "ingredients": {
             "ro": "Piept de pui 200g, Ou 120g, Panko 100g, Castraveți murați 50g, Sos mamouth 75g, Salată verde 100g, Ceapă crocantă 20g, Chiflă, Cartofi 300g, Ulei de palmier 150g, Sare, piper 10g.",
@@ -1710,7 +1710,7 @@
         },
         {
           "id": "burger-vita",
-          "name": "Burgeri de vita cu cartofi chips",
+          "name": "Burgeri de vită cu cartofi chips",
           "price": "56 lei",
           "ingredients": {
             "ro": "Burger de vită 200g, Salată verde 50g, Dulceață de bacon/ceapă crocantă 50g, Brânză cheddar 75g, Sos cheddar 75g, Bacon 75g, Castraveți murați 50g, Chiflă, Maioneză 30g, Cartofi 300g, Ulei de palmier 150g.",
@@ -1736,7 +1736,7 @@
         },
         {
           "id": "burger-splash-vita",
-          "name": "Burgeri splash de vita cu cartofi prajiti",
+          "name": "Burgeri splash de vită cu cartofi prăjiți",
           "price": "59 lei",
           "ingredients": {
             "ro": "Burger de vită 200g, Salată verde 50g, Dulceață de bacon/ceapă crocantă 50g, Brânză cheddar 75g, Sos cheddar 75g, Bacon 75g, Castraveți murați 50g, Chiflă, Maioneză 30g, Cartofi 300g, Ulei de palmier 150g.",
@@ -1762,7 +1762,7 @@
         },
         {
           "id": "eggs-burger-vita",
-          "name": "Eggs burger de vita cu cartofi chips",
+          "name": "Eggs burger de vită cu cartofi chips",
           "price": "59 lei",
           "ingredients": {
             "ro": "Burger de vită 200g, Ou ochi 1 buc, Salată verde 50g, Dulceață de bacon 50g, Cheddar 75g, Sos cheddar 75g, Bacon 75g, Castraveți murați 50g, Chiflă, Maioneză 30g, Cartofi 300g, Ulei palmier 150g.",
@@ -1840,7 +1840,7 @@
         },
         {
           "id": "mici-burger",
-          "name": "Mici burger cu cartofi prajiti",
+          "name": "Mici burger cu cartofi prăjiți",
           "price": "48 lei",
           "ingredients": {
             "ro": "Carne de mici 200g, Salată iceberg 50g, Sos muștar + muștar dijon 50g, Brânză burduf 75g, Ceapă roșie 25g, Bacon 75g, Castraveți murați 50g, Chiflă, Maioneză 30g, Cartofi 300g, Ulei palmier 150g.",
@@ -1868,7 +1868,7 @@
     },
     {
       "category": {
-        "ro": "Preparate peste si fructe de mare",
+        "ro": "Preparate pește și fructe de mare",
         "en": "Fish & Seafood",
         "it": "Pesce e Frutti di Mare",
         "es": "Pescado y Mariscos",
@@ -1880,7 +1880,7 @@
       "items": [
         {
           "id": "saramura-crap",
-          "name": "Saramura de crap ne/picanta cu mamaliguta",
+          "name": "Saramură de crap nepicantă / picantă, cu mămăliguță",
           "price": "55 lei",
           "ingredients": {
             "ro": "Crap 350g, Ceapă 100g, Ardei bicolor 150g, Roșie 125g, Usturoi 25g, Pătrunjel, Sos ardei/roșii 15g, Ardei iute 1 buc, Făină de mălai 150g, Unt 30g, Lămâie, Sare, piper 10g.",
@@ -1906,7 +1906,7 @@
         },
         {
           "id": "crap-gratar-prajit",
-          "name": "Crap la gratar sau prajit cu mamaliguta",
+          "name": "Crap la grătar sau prăjit cu mămăliguță",
           "price": "52 lei",
           "ingredients": {
             "ro": "Crap 350g, Ulei 150g, Sare, piper 10g, Făină 150g, Unt 30g, Usturoi 25g, Lămâie, Sos mujdei de usturoi 75g, Mălai 150g.",
@@ -1932,7 +1932,7 @@
         },
         {
           "id": "saramura-pastrav",
-          "name": "Saramura de pastrav ne/picanta cu mamaliguta",
+          "name": "Saramură de păstrăv nepicantă / picantă, cu mămăliguță",
           "price": "48 lei",
           "ingredients": {
             "ro": "Păstrăv 350g, Ceapă 100g, Ardei bicolor 150g, Roșie 125g, Usturoi 25g, Pătrunjel, Sos ardei/roșii 15g, Ardei iute 1 buc, Făină de mălai 150g, Unt 30g, Lămâie, Sare, piper 10g.",
@@ -1958,7 +1958,7 @@
         },
         {
           "id": "pastrav-gratar-prajit",
-          "name": "Pastrav pe gratar sau prajit cu mamaliguta",
+          "name": "Păstrăv la grătar sau prăjit cu mămăliguță",
           "price": "45 lei",
           "ingredients": {
             "ro": "Păstrăv 350g, Ulei 150g, Sare, piper 10g, Făină 150g, Unt 30g, Usturoi 25g, Lămâie, Sos mujdei de usturoi 75g, Mălai 150g.",
@@ -1984,7 +1984,7 @@
         },
         {
           "id": "dorada-gratar",
-          "name": "Dorada la gratar cu legume",
+          "name": "Doradă la grătar cu legume",
           "price": "65 lei",
           "ingredients": {
             "ro": "Doradă 400-600g, Morcov 100g, Dovlecel 100g, Ardei bicolor 100g, Broccoli/cartof natur 100g, Unt 75g, Usturoi 10g, Lămâie, Sare, piper 5g, Ulei măsline 30g, Pătrunjel.",
@@ -2010,16 +2010,16 @@
         },
         {
           "id": "somon-gratar-legume",
-          "name": "Somon la gratar cu legume",
+          "name": "Somon la grătar cu legume",
           "price": "74 lei",
           "ingredients": {
-            "ro": "Somon 300g, Ardei bicolor 100g, Morcov 100g, Dovlecel 100g, Broccoli 100g, Unt/ulei 50g. Sos: Unt/ulei măsline 50g, Usturoi 10g, Gran cuccina 50g, Lămâie, Amidon 5g, Arpagic, Sare, piper.",
-            "en": "Salmon 300g, Bicolor pepper 100g, Carrot 100g, Zucchini 100g, Broccoli 100g, Butter/oil 50g. Sauce: Butter/olive oil 50g, Garlic 10g, Gran cucina 50g, Lemon, Starch 5g, Chives, Salt, pepper.",
-            "it": "Salmone 300g, Peperone bicolore 100g, Carota 100g, Zucchina 100g, Broccoli 100g, Burro/olio 50g. Salsa: Burro/olio d'oliva 50g, Aglio 10g, Gran cucina 50g, Limone, Amido 5g, Erba cipollina, Sale, pepe.",
-            "es": "Salmón 300g, Pimiento bicolor 100g, Zanahoria 100g, Calabacín 100g, Brócoli 100g, Mantequilla/aceite 50g. Salsa: Mantequilla/aceite de oliva 50g, Ajo 10g, Gran cucina 50g, Limón, Almidón 5g, Cebollino, Sal, pimienta.",
-            "fr": "Saumon 300g, Poivron bicolore 100g, Carotte 100g, Courgette 100g, Brocoli 100g, Beurre/huile 50g. Sauce: Beurre/huile d'olive 50g, Ail 10g, Gran cucina 50g, Citron, Amidon 5g, Ciboulette, Sel, poivre.",
-            "tr": "Somon 300g, İki renkli biber 100g, Havuç 100g, Kabak 100g, Brokoli 100g, Tereyağı/yağ 50g. Sos: Tereyağı/zeytinyağı 50g, Sarımsak 10g, Gran cucina 50g, Limon, Nişasta 5g, Frenk soğanı, Tuz, karabiber.",
-            "ru": "Лосось 300г, Двухцветный перец 100г, Морковь 100г, Кабачок 100г, Брокколи 100г, Сливочное/растительное масло 50г. Соус: Сливочное/оливковое масло 50г, Чеснок 10г, Gran cucina 50г, Лимон, Крахмал 5г, Шнитт-лук, Соль, перец.",
+            "ro": "Somon 300g, Ardei bicolor 100g, Morcov 100g, Dovlecel 100g, Broccoli 100g, Unt/ulei 50g. Sos: Unt/ulei măsline 50g, Usturoi 10g, Gran Cucina 50g, Lămâie, Amidon 5g, Arpagic, Sare, piper.",
+            "en": "Salmon 300g, Bicolor pepper 100g, Carrot 100g, Zucchini 100g, Broccoli 100g, Butter/oil 50g. Sauce: Butter/olive oil 50g, Garlic 10g, Gran Cucina 50g, Lemon, Starch 5g, Chives, Salt, pepper.",
+            "it": "Salmone 300g, Peperone bicolore 100g, Carota 100g, Zucchina 100g, Broccoli 100g, Burro/olio 50g. Salsa: Burro/olio d'oliva 50g, Aglio 10g, Gran Cucina 50g, Limone, Amido 5g, Erba cipollina, Sale, pepe.",
+            "es": "Salmón 300g, Pimiento bicolor 100g, Zanahoria 100g, Calabacín 100g, Brócoli 100g, Mantequilla/aceite 50g. Salsa: Mantequilla/aceite de oliva 50g, Ajo 10g, Gran Cucina 50g, Limón, Almidón 5g, Cebollino, Sal, pimienta.",
+            "fr": "Saumon 300g, Poivron bicolore 100g, Carotte 100g, Courgette 100g, Brocoli 100g, Beurre/huile 50g. Sauce: Beurre/huile d'olive 50g, Ail 10g, Gran Cucina 50g, Citron, Amidon 5g, Ciboulette, Sel, poivre.",
+            "tr": "Somon 300g, İki renkli biber 100g, Havuç 100g, Kabak 100g, Brokoli 100g, Tereyağı/yağ 50g. Sos: Tereyağı/zeytinyağı 50g, Sarımsak 10g, Gran Cucina 50g, Limon, Nişasta 5g, Frenk soğanı, Tuz, karabiber.",
+            "ru": "Лосось 300г, Двухцветный перец 100г, Морковь 100г, Кабачок 100г, Брокколи 100г, Сливочное/растительное масло 50г. Соус: Сливочное/оливковое масло 50г, Чеснок 10г, Gran Cucina 50г, Лимон, Крахмал 5г, Шнитт-лук, Соль, перец.",
             "ar": "سلمون 300ج، فلفل بلونين 100ج، جزر 100ج، كوسا 100ج، بروكلي 100ج، زبدة/زيت 50ج. صلصة: زبدة/زيت زيتون 50ج، ثوم 10ج، جران كوتشينا 50ج، ليمون، نشا 5ج، ثوم معمر، ملح، فلفل."
           },
           "image": "",
@@ -2036,7 +2036,7 @@
         },
         {
           "id": "midii-pane",
-          "name": "Midii panne servite cu lamaie",
+          "name": "Midii pane servite cu lămâie",
           "price": "46 lei",
           "ingredients": {
             "ro": "Midii 250g, Făină 100g, Ou 60g, Ulei de palmier 150g, Sare, piper 5g, Sos Samurai 30g, Lămâie, Pâine prăjită cu usturoi 125g.",
@@ -2062,7 +2062,7 @@
         },
         {
           "id": "scoici-vin-alb",
-          "name": "Scoici in sos vin alb",
+          "name": "Scoici în sos de vin alb",
           "price": "48 lei",
           "ingredients": {
             "ro": "Scoici 500g, Ulei de măsline 20ml, Unt 20g, Roșii cherry 75g, Usturoi 30g, Vin 100ml, Pătrunjel, Lămâie, Pâine prăjită cu usturoi 125g.",
@@ -2088,16 +2088,16 @@
         },
         {
           "id": "creveti-unt-vin",
-          "name": "Creveti in sos de unt si vin alb cu paine prajita",
+          "name": "Creveți în sos de unt și vin alb cu pâine prăjită",
           "price": "65 lei",
           "ingredients": {
-            "ro": "Creveți 250g, Gran cuccina 50g, Ulei de măsline 20ml, Unt 20g, Roșii cherry 75g, Usturoi 25g, Vin 100ml, Pătrunjel, Lămâie, Pâine prăjită cu usturoi 125g.",
-            "en": "Shrimp 250g, Gran cucina 50g, Olive oil 20ml, Butter 20g, Cherry tomatoes 75g, Garlic 25g, Wine 100ml, Parsley, Lemon, Garlic toast 125g.",
-            "it": "Gamberi 250g, Gran cucina 50g, Olio d'oliva 20ml, Burro 20g, Pomodorini 75g, Aglio 25g, Vino 100ml, Prezzemolo, Limone, Pane tostato all'aglio 125g.",
-            "es": "Gambas 250g, Gran cucina 50g, Aceite de oliva 20ml, Mantequilla 20g, Tomates cherry 75g, Ajo 25g, Vino 100ml, Perejil, Limón, Tostada con ajo 125g.",
-            "fr": "Crevettes 250g, Gran cucina 50g, Huile d'olive 20ml, Beurre 20g, Tomates cerises 75g, Ail 25g, Vin 100ml, Persil, Citron, Toast à l'ail 125g.",
-            "tr": "Karides 250g, Gran cucina 50g, Zeytinyağı 20ml, Tereyağı 20g, Çeri domates 75g, Sarımsak 25g, Şarap 100ml, Maydanoz, Limon, Sarımsaklı kızarmış ekmek 125g.",
-            "ru": "Креветки 250г, Gran cucina 50г, Оливковое масло 20мл, Сливочное масло 20г, Помидоры черри 75г, Чеснок 25г, Вино 100мл, Петрушка, Лимон, Чесночный тост 125г.",
+            "ro": "Creveți 250g, Gran Cucina 50g, Ulei de măsline 20ml, Unt 20g, Roșii cherry 75g, Usturoi 25g, Vin 100ml, Pătrunjel, Lămâie, Pâine prăjită cu usturoi 125g.",
+            "en": "Shrimp 250g, Gran Cucina 50g, Olive oil 20ml, Butter 20g, Cherry tomatoes 75g, Garlic 25g, Wine 100ml, Parsley, Lemon, Garlic toast 125g.",
+            "it": "Gamberi 250g, Gran Cucina 50g, Olio d'oliva 20ml, Burro 20g, Pomodorini 75g, Aglio 25g, Vino 100ml, Prezzemolo, Limone, Pane tostato all'aglio 125g.",
+            "es": "Gambas 250g, Gran Cucina 50g, Aceite de oliva 20ml, Mantequilla 20g, Tomates cherry 75g, Ajo 25g, Vino 100ml, Perejil, Limón, Tostada con ajo 125g.",
+            "fr": "Crevettes 250g, Gran Cucina 50g, Huile d'olive 20ml, Beurre 20g, Tomates cerises 75g, Ail 25g, Vin 100ml, Persil, Citron, Toast à l'ail 125g.",
+            "tr": "Karides 250g, Gran Cucina 50g, Zeytinyağı 20ml, Tereyağı 20g, Çeri domates 75g, Sarımsak 25g, Şarap 100ml, Maydanoz, Limon, Sarımsaklı kızarmış ekmek 125g.",
+            "ru": "Креветки 250г, Gran Cucina 50г, Оливковое масло 20мл, Сливочное масло 20г, Помидоры черри 75г, Чеснок 25г, Вино 100мл, Петрушка, Лимон, Чесночный тост 125г.",
             "ar": "جمبري 250ج، جران كوتشينا 50ج، زيت زيتون 20مل، زبدة 20ج، طماطم كرزية 75ج، ثوم 25ج، نبيذ 100مل، بقدونس، ليمون، خبز محمص بالثوم 125ج."
           },
           "image": "",
@@ -2114,10 +2114,10 @@
         },
         {
           "id": "creveti-pane-chilly",
-          "name": "Creveti pane cu sos sweet chilly",
+          "name": "Creveți pane cu sos sweet chili",
           "price": "62 lei",
           "ingredients": {
-            "ro": "Creveți 250g, Făină albă 100g, Ou 60g, Panko 100g, Sos sweet chilly 50g, Lămâie, Sare, piper 5g, Rucola 50g.",
+            "ro": "Creveți 250g, Făină albă 100g, Ou 60g, Panko 100g, Sos sweet chili 50g, Lămâie, Sare, piper 5g, Rucola 50g.",
             "en": "Shrimp 250g, White flour 100g, Egg 60g, Panko 100g, Sweet chili sauce 50g, Lemon, Salt, pepper 5g, Arugula 50g.",
             "it": "Gamberi 250g, Farina bianca 100g, Uovo 60g, Panko 100g, Salsa sweet chili 50g, Limone, Sale, pepe 5g, Rucola 50g.",
             "es": "Gambas 250g, Harina blanca 100g, Huevo 60g, Panko 100g, Salsa sweet chili 50g, Limón, Sal, pimienta 5g, Rúcula 50g.",
@@ -2140,10 +2140,10 @@
         },
         {
           "id": "creveti-crusta-cartofi",
-          "name": "Creveti in crusta de cartofi cu sos sweet chilli",
+          "name": "Creveți în crustă de cartofi cu sos sweet chili",
           "price": "48 lei",
           "ingredients": {
-            "ro": "Creveți în crustă de cartofi 250g, Sos sweet chilly 75g, Lămâie.",
+            "ro": "Creveți în crustă de cartofi 250g, Sos sweet chili 75g, Lămâie.",
             "en": "Potato crusted shrimp 250g, Sweet chili sauce 75g, Lemon.",
             "it": "Gamberi in crosta di patate 250g, Salsa sweet chili 75g, Limone.",
             "es": "Gambas con costra de patata 250g, Salsa sweet chili 75g, Limón.",
@@ -2166,7 +2166,7 @@
         },
         {
           "id": "inele-calamar-smantana",
-          "name": "Inele de calamar cu sos de smantana cu usturoi",
+          "name": "Inele de calamar cu sos de smântână cu usturoi",
           "price": "41 lei",
           "ingredients": {
             "ro": "Inele de calamari 250g, Ou 1 buc, Făină 50g, Panko 50g, Sare, piper 10g, Smântână cu usturoi 75g.",
@@ -2192,16 +2192,16 @@
         },
         {
           "id": "platou-fructe-mare-vin",
-          "name": "Platou fructe de mare in sos de vin 2 persoane",
+          "name": "Platou fructe de mare în sos de vin 2 persoane",
           "price": "195 lei",
           "ingredients": {
-            "ro": "Scoici 300g, Creveți 250g, Tentacule calamari 100g, Inele calamari 150g, Carne midii 150g, Roșii cherry 100g, Vin 50g, Gran cuccina 50g, Usturoi 25g, Unt 30g, Sare, piper 5g, Foccacia 1 buc.",
-            "en": "Mussels 300g, Shrimp 250g, Squid tentacles 100g, Squid rings 150g, Mussel meat 150g, Cherry tomatoes 100g, Wine 50g, Gran cucina 50g, Garlic 25g, Butter 30g, Salt, pepper 5g, Focaccia 1 pc.",
-            "it": "Cozze/Vongole 300g, Gamberi 250g, Tentacoli di calamari 100g, Anelli di calamari 150g, Carne di cozze 150g, Pomodorini 100g, Vino 50g, Gran cucina 50g, Aglio 25g, Burro 30g, Sale, pepe 5g, Focaccia 1 pz.",
-            "es": "Mejillones 300g, Gambas 250g, Tentáculos de calamar 100g, Anillos de calamar 150g, Carne de mejillón 150g, Tomates cherry 100g, Vino 50g, Gran cucina 50g, Ajo 25g, Mantequilla 30g, Sal, pimienta 5g, Focaccia 1 ud.",
-            "fr": "Coquillages 300g, Crevettes 250g, Tentacules de calamar 100g, Anneaux de calamar 150g, Chair de moules 150g, Tomates cerises 100g, Vin 50g, Gran cucina 50g, Ail 25g, Beurre 30g, Sel, poivre 5g, Focaccia 1 pc.",
-            "tr": "Midye 300g, Karides 250g, Kalamar dokunaçları 100g, Kalamar halkaları 150g, Midye eti 150g, Çeri domates 100g, Şarap 50g, Gran cucina 50g, Sarımsak 25g, Tereyağı 30g, Tuz, karabiber 5g, Fokaça 1 adet.",
-            "ru": "Моллюски 300г, Креветки 250г, Щупальца кальмара 100г, Кольца кальмара 150г, Мясо мидий 150г, Помидоры черри 100г, Вино 50г, Gran cucina 50г, Чеснок 25г, Сливочное масло 30г, Соль, перец 5г, Фокачча 1 шт.",
+            "ro": "Scoici 300g, Creveți 250g, Tentacule calamari 100g, Inele calamari 150g, Carne midii 150g, Roșii cherry 100g, Vin 50g, Gran Cucina 50g, Usturoi 25g, Unt 30g, Sare, piper 5g, Focaccia 1 buc.",
+            "en": "Mussels 300g, Shrimp 250g, Squid tentacles 100g, Squid rings 150g, Mussel meat 150g, Cherry tomatoes 100g, Wine 50g, Gran Cucina 50g, Garlic 25g, Butter 30g, Salt, pepper 5g, Focaccia 1 pc.",
+            "it": "Cozze/Vongole 300g, Gamberi 250g, Tentacoli di calamari 100g, Anelli di calamari 150g, Carne di cozze 150g, Pomodorini 100g, Vino 50g, Gran Cucina 50g, Aglio 25g, Burro 30g, Sale, pepe 5g, Focaccia 1 pz.",
+            "es": "Mejillones 300g, Gambas 250g, Tentáculos de calamar 100g, Anillos de calamar 150g, Carne de mejillón 150g, Tomates cherry 100g, Vino 50g, Gran Cucina 50g, Ajo 25g, Mantequilla 30g, Sal, pimienta 5g, Focaccia 1 ud.",
+            "fr": "Coquillages 300g, Crevettes 250g, Tentacules de calamar 100g, Anneaux de calamar 150g, Chair de moules 150g, Tomates cerises 100g, Vin 50g, Gran Cucina 50g, Ail 25g, Beurre 30g, Sel, poivre 5g, Focaccia 1 pc.",
+            "tr": "Midye 300g, Karides 250g, Kalamar dokunaçları 100g, Kalamar halkaları 150g, Midye eti 150g, Çeri domates 100g, Şarap 50g, Gran Cucina 50g, Sarımsak 25g, Tereyağı 30g, Tuz, karabiber 5g, Fokaça 1 adet.",
+            "ru": "Моллюски 300г, Креветки 250г, Щупальца кальмара 100г, Кольца кальмара 150г, Мясо мидий 150г, Помидоры черри 100г, Вино 50г, Gran Cucina 50г, Чеснок 25г, Сливочное масло 30г, Соль, перец 5г, Фокачча 1 шт.",
             "ar": "محار 300ج، جمبري 250ج، مخالب حبار 100ج، حلقات حبار 150ج، لحم بلح البحر 150ج، طماطم كرزية 100ج، نبيذ 50ج، جران كوتشينا 50ج، ثوم 25ج، زبدة 30ج، ملح، فلفل 5ج، فوكاتشيا قطعة."
           },
           "image": "",
@@ -2221,7 +2221,7 @@
           "name": "Platou fructe de mare pane 2 persoane",
           "price": "195 lei",
           "ingredients": {
-            "ro": "Creveți 250g, Inele calamari 150g, Creveți în crustă de cartofi 200g, Carne midii 200g, Cartofi prăjiți 300g, Sos tzatziky 100g, Sos sweet chilly 50g, Ulei palmier 250g, Foccacia 1 buc, Sare, piper 5g.",
+            "ro": "Creveți 250g, Inele calamari 150g, Creveți în crustă de cartofi 200g, Carne midii 200g, Cartofi prăjiți 300g, Sos tzatziki 100g, Sos sweet chili 50g, Ulei palmier 250g, Focaccia 1 buc, Sare, piper 5g.",
             "en": "Shrimp 250g, Squid rings 150g, Potato crusted shrimp 200g, Mussel meat 200g, Fries 300g, Tzatziki sauce 100g, Sweet chili sauce 50g, Palm oil 250g, Focaccia 1 pc, Salt, pepper 5g.",
             "it": "Gamberi 250g, Anelli di calamari 150g, Gamberi in crosta di patate 200g, Carne di cozze 200g, Patatine fritte 300g, Salsa tzatziki 100g, Salsa sweet chili 50g, Olio di palma 250g, Focaccia 1 pz, Sale, pepe 5g.",
             "es": "Gambas 250g, Anillos de calamar 150g, Gambas con costra de patata 200g, Carne de mejillón 200g, Patatas fritas 300g, Salsa tzatziki 100g, Salsa sweet chili 50g, Aceite de palma 250g, Focaccia 1 ud, Sal, pimienta 5g.",
@@ -2247,13 +2247,13 @@
           "name": "Platou fructe de mare Mix 4 persoane",
           "price": "375 lei",
           "ingredients": {
-            "ro": "Scoici 500g, Creveți 350g, Creveți în crustă cartofi 250g, Tentacule calamari 300g, Inele calamari 300g, Carne midii 200g, Roșii cherry 100g, Usturoi 25g, Vin 50g, Gran cuccina 50g, Unt 50g, Cartofi prăjiți 500g, Sos tzatziky 100g, Sos sweet chilly 50g, Ulei palmier 250g, Foccacia 1 buc, Sare, piper 10g.",
-            "en": "Mussels 500g, Shrimp 350g, Potato crusted shrimp 250g, Squid tentacles 300g, Squid rings 300g, Mussel meat 200g, Cherry tomatoes 100g, Garlic 25g, Wine 50g, Gran cucina 50g, Butter 50g, Fries 500g, Tzatziki sauce 100g, Sweet chili sauce 50g, Palm oil 250g, Focaccia 1 pc, Salt, pepper 10g.",
-            "it": "Cozze 500g, Gamberi 350g, Gamberi in crosta di patate 250g, Tentacoli di calamari 300g, Anelli di calamari 300g, Carne di cozze 200g, Pomodorini 100g, Aglio 25g, Vino 50g, Gran cucina 50g, Burro 50g, Patatine fritte 500g, Salsa tzatziki 100g, Salsa sweet chili 50g, Olio di palma 250g, Focaccia 1 pz, Sale, pepe 10g.",
-            "es": "Mejillones 500g, Gambas 350g, Gambas con costra de patata 250g, Tentáculos de calamar 300g, Anillos de calamar 300g, Carne de mejillón 200g, Tomates cherry 100g, Ajo 25g, Vino 50g, Gran cucina 50g, Mantequilla 50g, Patatas fritas 500g, Salsa tzatziki 100g, Salsa sweet chili 50g, Aceite de palma 250g, Focaccia 1 ud, Sal, pimienta 10g.",
-            "fr": "Coquillages 500g, Crevettes 350g, Crevettes en croûte de pommes de terre 250g, Tentacules de calamar 300g, Anneaux de calamar 300g, Chair de moules 200g, Tomates cerises 100g, Ail 25g, Vin 50g, Gran cucina 50g, Beurre 50g, Frites 500g, Sauce tzatziki 100g, Sauce sweet chili 50g, Huile de palme 250g, Focaccia 1 pc, Sel, poivre 10g.",
-            "tr": "Midye 500g, Karides 350g, Patates kabuklu karides 250g, Kalamar dokunaçları 300g, Kalamar halkaları 300g, Midye eti 200g, Çeri domates 100g, Sarımsak 25g, Şarap 50g, Gran cucina 50g, Tereyağı 50g, Patates kızartması 500g, Tzatziki sosu 100g, Sweet chili sosu 50g, Palmiye yağı 250g, Fokaça 1 adet, Tuz, karabiber 10g.",
-            "ru": "Моллюски 500г, Креветки 350г, Креветки в картофельной панировке 250г, Щупальца кальмара 300г, Кольца кальмара 300г, Мясо мидий 200г, Помидоры черри 100г, Чеснок 25г, Вино 50г, Gran cucina 50г, Сливочное масло 50г, Картофель фри 500г, Соус дзадзики 100г, Сладкий соус чили 50г, Пальмовое масло 250г, Фокачча 1 шт, Соль, перец 10г.",
+            "ro": "Scoici 500g, Creveți 350g, Creveți în crustă cartofi 250g, Tentacule calamari 300g, Inele calamari 300g, Carne midii 200g, Roșii cherry 100g, Usturoi 25g, Vin 50g, Gran Cucina 50g, Unt 50g, Cartofi prăjiți 500g, Sos tzatziki 100g, Sos sweet chili 50g, Ulei palmier 250g, Focaccia 1 buc, Sare, piper 10g.",
+            "en": "Mussels 500g, Shrimp 350g, Potato crusted shrimp 250g, Squid tentacles 300g, Squid rings 300g, Mussel meat 200g, Cherry tomatoes 100g, Garlic 25g, Wine 50g, Gran Cucina 50g, Butter 50g, Fries 500g, Tzatziki sauce 100g, Sweet chili sauce 50g, Palm oil 250g, Focaccia 1 pc, Salt, pepper 10g.",
+            "it": "Cozze 500g, Gamberi 350g, Gamberi in crosta di patate 250g, Tentacoli di calamari 300g, Anelli di calamari 300g, Carne di cozze 200g, Pomodorini 100g, Aglio 25g, Vino 50g, Gran Cucina 50g, Burro 50g, Patatine fritte 500g, Salsa tzatziki 100g, Salsa sweet chili 50g, Olio di palma 250g, Focaccia 1 pz, Sale, pepe 10g.",
+            "es": "Mejillones 500g, Gambas 350g, Gambas con costra de patata 250g, Tentáculos de calamar 300g, Anillos de calamar 300g, Carne de mejillón 200g, Tomates cherry 100g, Ajo 25g, Vino 50g, Gran Cucina 50g, Mantequilla 50g, Patatas fritas 500g, Salsa tzatziki 100g, Salsa sweet chili 50g, Aceite de palma 250g, Focaccia 1 ud, Sal, pimienta 10g.",
+            "fr": "Coquillages 500g, Crevettes 350g, Crevettes en croûte de pommes de terre 250g, Tentacules de calamar 300g, Anneaux de calamar 300g, Chair de moules 200g, Tomates cerises 100g, Ail 25g, Vin 50g, Gran Cucina 50g, Beurre 50g, Frites 500g, Sauce tzatziki 100g, Sauce sweet chili 50g, Huile de palme 250g, Focaccia 1 pc, Sel, poivre 10g.",
+            "tr": "Midye 500g, Karides 350g, Patates kabuklu karides 250g, Kalamar dokunaçları 300g, Kalamar halkaları 300g, Midye eti 200g, Çeri domates 100g, Sarımsak 25g, Şarap 50g, Gran Cucina 50g, Tereyağı 50g, Patates kızartması 500g, Tzatziki sosu 100g, Sweet chili sosu 50g, Palmiye yağı 250g, Fokaça 1 adet, Tuz, karabiber 10g.",
+            "ru": "Моллюски 500г, Креветки 350г, Креветки в картофельной панировке 250г, Щупальца кальмара 300г, Кольца кальмара 300г, Мясо мидий 200г, Помидоры черри 100г, Чеснок 25г, Вино 50г, Gran Cucina 50г, Сливочное масло 50г, Картофель фри 500г, Соус дзадзики 100г, Сладкий соус чили 50г, Пальмовое масло 250г, Фокачча 1 шт, Соль, перец 10г.",
             "ar": "محار 500ج، جمبري 350ج، جمبري بقشرة بطاطس 250ج، مخالب حبار 300ج، حلقات حبار 300ج، لحم بلح البحر 200ج، طماطم كرزية 100ج، ثوم 25ج، نبيذ 50ج، جران كوتشينا 50ج، زبدة 50ج، بطاطس مقلية 500ج، صلصة تزاتزيكي 100ج، صلصة فلفل حلو 50ج، زيت نخيل 250ج، فوكاتشيا قطعة، ملح، فلفل 10ج."
           },
           "image": "",
@@ -2272,7 +2272,7 @@
     },
     {
       "category": {
-        "ro": "Preparate la gratar",
+        "ro": "Preparate la grătar",
         "en": "Grill",
         "it": "Alla Griglia",
         "es": "A la Parrilla",
@@ -2284,7 +2284,7 @@
       "items": [
         {
           "id": "piept-pui-gratar",
-          "name": "Piept de pui la gratar cu cartofi prajiti",
+          "name": "Piept de pui la grătar cu cartofi prăjiți",
           "price": "39 lei",
           "ingredients": {
             "ro": "Piept de pui la grătar 250g. Legume la grătar (Ardei kapia 1 buc, Roșie 1 buc, Ardei iute 1 buc, Ceapă 1 buc). Cartofi prăjiți.",
@@ -2310,7 +2310,7 @@
         },
         {
           "id": "pulpa-pui-gratar",
-          "name": "Pulpa de pui la gratar cu cartofi prajiti",
+          "name": "Pulpă de pui la grătar cu cartofi prăjiți",
           "price": "39 lei",
           "ingredients": {
             "ro": "Pulpă de pui dezosată la grătar 250g. Legume la grătar (Ardei kapia 1 buc, Roșie 1 buc, Ardei iute 1 buc, Ceapă 1 buc). Cartofi prăjiți.",
@@ -2336,7 +2336,7 @@
         },
         {
           "id": "aripioare-pui-gratar",
-          "name": "Aripioare de pui la gratar cu cartofi prajiti",
+          "name": "Aripioare de pui la grătar cu cartofi prăjiți",
           "price": "36 lei",
           "ingredients": {
             "ro": "Aripioare de pui la grătar 350g. Legume la grătar (Ardei kapia 1 buc, Roșie 1 buc, Ardei iute 1 buc, Ceapă 1 buc). Cartofi prăjiți.",
@@ -2362,7 +2362,7 @@
         },
         {
           "id": "frigarui-pui-gratar",
-          "name": "Frigarui de pui la gratar cu cartofi prajiti",
+          "name": "Frigărui de pui la grătar cu cartofi prăjiți",
           "price": "44 lei",
           "ingredients": {
             "ro": "Frigărui piept pui 300g, Ardei kapia/Roșie/Ardei iute/Ceapă la grătar, Cartofi prăjiți 300g, Salată Coleslaw 100g, Maioneză+muștar 60g, Lămâie, Mărar.",
@@ -2388,7 +2388,7 @@
         },
         {
           "id": "mic-gratar",
-          "name": "Mic la gratar cu mustar",
+          "name": "Mici la grătar cu muștar",
           "price": "9 lei",
           "ingredients": {
             "ro": "Mic 100g, Muștar 75g.",
@@ -2414,7 +2414,7 @@
         },
         {
           "id": "mici-gratar-meniu",
-          "name": "3 mici la gratar cu cartofi prajiti si mustar",
+          "name": "3 mici la grătar cu cartofi prăjiți și muștar",
           "price": "41 lei",
           "ingredients": {
             "ro": "Mici 3x 100g, Cartofi 300g, Ulei de palmier 150g, Sare, piper 5g, Muștar 75g.",
@@ -2440,7 +2440,7 @@
         },
         {
           "id": "ceafa-porc-gratar",
-          "name": "Ceafa de porc la gratar cu cartofi prajiti",
+          "name": "Ceafă de porc la grătar cu cartofi prăjiți",
           "price": "47 lei",
           "ingredients": {
             "ro": "Ceafă de porc la grătar 300g. Legume la grătar (Ardei kapia 1 buc, Roșie 1 buc, Ardei iute 1 buc, Ceapă 1 buc). Cartofi prăjiți.",
@@ -2466,7 +2466,7 @@
         },
         {
           "id": "coaste-gratar",
-          "name": "Coaste la gratar cu cartofi prajiti",
+          "name": "Coaste la grătar cu cartofi prăjiți",
           "price": "66 lei",
           "ingredients": {
             "ro": "Coastă de porc la grătar 400g. Legume la grătar (Ardei kapia, Roșie, Ardei iute, Ceapă). Cartofi prăjiți.",
@@ -2492,7 +2492,7 @@
         },
         {
           "id": "mix-grill-1pers",
-          "name": "Mix Grill 1 persoana",
+          "name": "Mix grill 1 persoană",
           "price": "76 lei",
           "ingredients": {
             "ro": "Ceafă porc 150g, Pulpă pui 150g, Mici 100g, Cârnați semiafumați 100g, Slănină prăjită 125g, Cartofi 300g, Sos mujdei 75g, Muștar 75g. Ardei/Roșie/Ceapă la grătar.",
@@ -2572,7 +2572,7 @@
     },
     {
       "category": {
-        "ro": "Pizza si topping-uri",
+        "ro": "Pizza și topping-uri",
         "en": "Pizza & Toppings",
         "it": "Pizze e Aggiunte",
         "es": "Pizza y Ingredientes extra",
@@ -2584,7 +2584,7 @@
       "items": [
         {
           "id": "pizza-casa-ede-vita",
-          "name": "Pizza \"Casa Ede\" cu vita",
+          "name": "Pizza \"Casa Ede\" cu vită",
           "price": "56 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 30g, Sos Bolognese 50g, Carne tocată 200g, Mozzarella 125g, Parmezan 75g, Roșii cherry 50g, Rucola 30g, Ardei iute 1 buc.",
@@ -2662,7 +2662,7 @@
         },
         {
           "id": "pizza-capriciosa",
-          "name": "Pizza Capriciosa",
+          "name": "Pizza Capricciosa",
           "price": "42 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 75g, Mozzarella 125g, Șuncă 150g, Ciuperci 75g, Măsline feliate 75g.",
@@ -2688,7 +2688,7 @@
         },
         {
           "id": "pizza-quatro-carni",
-          "name": "Pizza Quatro Carni",
+          "name": "Pizza Quattro Carni",
           "price": "48 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 75g, Mozzarella 125g, Șuncă 75g, Bacon 75g, Cârnați 75g, Salam 75g.",
@@ -2714,7 +2714,7 @@
         },
         {
           "id": "pizza-proschiuto-funghi",
-          "name": "Pizza Proschiuto e Funghi",
+          "name": "Pizza Prosciutto e Funghi",
           "price": "44 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 75g, Mozzarella 125g, Șuncă/prosciutto 125g, Ciuperci 75g.",
@@ -2766,7 +2766,7 @@
         },
         {
           "id": "pizza-quatro-formaggi",
-          "name": "Pizza Quatro Formaggi",
+          "name": "Pizza Quattro Formaggi",
           "price": "48 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 50g, Mozzarella 125g, Gorgonzola 125g, Parmezan 75g, Cașcaval 75g.",
@@ -2792,7 +2792,7 @@
         },
         {
           "id": "pizza-vegetariana",
-          "name": "Pizza Vegetariana",
+          "name": "Pizza Vegetariană",
           "price": "40 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 50g, Mozzarella 125g, Ardei kapia 75g, Ciuperci 75g, Roșii 50g, Măsline feliate 50g, Ceapă 50g, Porumb 30g.",
@@ -2818,7 +2818,7 @@
         },
         {
           "id": "pizza-quatro-stagionni",
-          "name": "Pizza Quatro Stagionni",
+          "name": "Pizza Quattro Stagioni",
           "price": "46 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 75g, Mozzarella 125g, Șuncă 125g, Bacon 100g, Salam uscat 75g, Ciuperci 75g, Măsline feliate 75g.",
@@ -2844,7 +2844,7 @@
         },
         {
           "id": "pizza-ton",
-          "name": "Pizza cu Ton",
+          "name": "Pizza cu ton",
           "price": "43 lei",
           "ingredients": {
             "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Sos pizza 75g, Ton 140g, Ardei bicolor 50g, Ceapă roșie 25g, Porumb 50g, Rucola 25g, Măsline feliate 30g, Mozzarella 100g.",
@@ -2896,16 +2896,16 @@
         },
         {
           "id": "pizza-carbonara",
-          "name": "Pizza carbonara",
+          "name": "Pizza Carbonara",
           "price": "48 lei",
           "ingredients": {
-            "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Gran cuccina 100g, Mozzarella 125g, Bacon 150g, Parmezan 75g.",
-            "en": "Dough (Flour 125g, Salt 5g, Olive oil 15g, Yeast 7g, Water 100g), Gran cucina 100g, Mozzarella 125g, Bacon 150g, Parmesan 75g.",
-            "it": "Impasto (Farina 125g, Sale 5g, Olio d'oliva 15g, Lievito 7g, Acqua 100g), Gran cucina 100g, Mozzarella 125g, Pancetta 150g, Parmigiano 75g.",
-            "es": "Masa (Harina 125g, Sal 5g, Aceite de oliva 15g, Levadura 7g, Agua 100g), Gran cucina 100g, Mozzarella 125g, Tocino 150g, Parmesano 75g.",
-            "fr": "Pâte (Farine 125g, Sel 5g, Huile d'olive 15g, Levure 7g, Eau 100g), Gran cucina 100g, Mozzarella 125g, Bacon 150g, Parmesan 75g.",
-            "tr": "Hamur (Un 125g, Tuz 5g, Zeytinyağı 15g, Maya 7g, Su 100g), Gran cucina 100g, Mozzarella 125g, Pastırma 150g, Parmesan 75g.",
-            "ru": "Тесто (Мука 125г, Соль 5г, Оливковое масло 15г, Дрожжи 7г, Вода 100г), Gran cucina 100г, Моцарелла 125г, Бекон 150г, Пармезан 75г.",
+            "ro": "Aluat (Făină 125g, Sare 5g, Ulei măsline 15g, Drojdie 7g, Apă 100g), Gran Cucina 100g, Mozzarella 125g, Bacon 150g, Parmezan 75g.",
+            "en": "Dough (Flour 125g, Salt 5g, Olive oil 15g, Yeast 7g, Water 100g), Gran Cucina 100g, Mozzarella 125g, Bacon 150g, Parmesan 75g.",
+            "it": "Impasto (Farina 125g, Sale 5g, Olio d'oliva 15g, Lievito 7g, Acqua 100g), Gran Cucina 100g, Mozzarella 125g, Pancetta 150g, Parmigiano 75g.",
+            "es": "Masa (Harina 125g, Sal 5g, Aceite de oliva 15g, Levadura 7g, Agua 100g), Gran Cucina 100g, Mozzarella 125g, Tocino 150g, Parmesano 75g.",
+            "fr": "Pâte (Farine 125g, Sel 5g, Huile d'olive 15g, Levure 7g, Eau 100g), Gran Cucina 100g, Mozzarella 125g, Bacon 150g, Parmesan 75g.",
+            "tr": "Hamur (Un 125g, Tuz 5g, Zeytinyağı 15g, Maya 7g, Su 100g), Gran Cucina 100g, Mozzarella 125g, Pastırma 150g, Parmesan 75g.",
+            "ru": "Тесто (Мука 125г, Соль 5г, Оливковое масло 15г, Дрожжи 7г, Вода 100г), Gran Cucina 100г, Моцарелла 125г, Бекон 150г, Пармезан 75г.",
             "ar": "عجينة (دقيق 125ج، ملح 5ج، زيت زيتون 15ج، خميرة 7ج، ماء 100ج)، جران كوتشينا 100ج، موزاريلا 125ج، لحم مقدد 150ج، بارميزان 75ج."
           },
           "image": "",
@@ -2922,7 +2922,7 @@
         },
         {
           "id": "topping-uri-extra",
-          "name": "Topping-uri Extra / Optionale",
+          "name": "Topping-uri extra / opționale",
           "price": "4 - 12 lei",
           "ingredients": {
             "ro": "Ardei gras 50g (4 lei), Ardei iute 70g (4 lei), Bacon 50g (8 lei), Ceapă 50g (4 lei), Ciuperci 50g (7 lei), Gorgonzola 50g (10 lei), Mozzarella 50g (10 lei), Parmezan 50g (11 lei), Porumb 50g (7 lei), Carne pui 50g (12 lei), Salam 50g (10 lei), Brânză 50g (7 lei), Șuncă 50g (10 lei), Măsline 50g (7 lei), Cașcaval 50g (8 lei).",
@@ -2950,9 +2950,9 @@
     },
     {
       "category": {
-        "ro": "Spaghette/Penne",
-        "en": "Spaghetti/Penne",
-        "it": "Spaghetti/Penne",
+        "ro": "Spaghete / penne",
+        "en": "Spaghetti / Penne",
+        "it": "Spaghetti / Penne",
         "es": "Espaguetis/Penne",
         "fr": "Spaghettis/Penne",
         "tr": "Spagetti/Penne",
@@ -2963,7 +2963,7 @@
         {
           "id": "spaghette-carbonara",
           "name": {
-            "ro": "Spaghette Carbonara",
+            "ro": "Spaghete Carbonara",
             "en": "Spaghetti Carbonara",
             "it": "Spaghetti Carbonara",
             "es": "Espaguetis Carbonara",
@@ -2974,13 +2974,13 @@
           },
           "price": "45 lei",
           "ingredients": {
-            "ro": "Spaghete 200g, Bacon 125g, Gran cuccina 150g, Mozzarella 125g, Parmesan 75g, Ou 60g, Unt 30g, Sare, piper 5g.",
-            "en": "Spaghetti 200g, Bacon 125g, Gran cucina 150g, Mozzarella 125g, Parmesan 75g, Egg 60g, Butter 30g, Salt, pepper 5g.",
-            "it": "Spaghetti 200g, Pancetta 125g, Gran cucina 150g, Mozzarella 125g, Parmigiano 75g, Uovo 60g, Burro 30g, Sale, pepe 5g.",
-            "es": "Espaguetis 200g, Tocino 125g, Gran cucina 150g, Mozzarella 125g, Parmesano 75g, Huevo 60g, Mantequilla 30g, Sal, pimienta 5g.",
+            "ro": "Spaghete 200g, Bacon 125g, Gran Cucina 150g, Mozzarella 125g, Parmesan 75g, Ou 60g, Unt 30g, Sare, piper 5g.",
+            "en": "Spaghetti 200g, Bacon 125g, Gran Cucina 150g, Mozzarella 125g, Parmesan 75g, Egg 60g, Butter 30g, Salt, pepper 5g.",
+            "it": "Spaghetti 200g, Pancetta 125g, Gran Cucina 150g, Mozzarella 125g, Parmigiano 75g, Uovo 60g, Burro 30g, Sale, pepe 5g.",
+            "es": "Espaguetis 200g, Tocino 125g, Gran Cucina 150g, Mozzarella 125g, Parmesano 75g, Huevo 60g, Mantequilla 30g, Sal, pimienta 5g.",
             "fr": "Spaghettis 200g, Bacon 125g, Gran cuisine 150g, Mozzarella 125g, Parmesan 75g, Œuf 60g, Beurre 30g, Sel, poivre 5g.",
-            "tr": "Spagetti 200g, Pastırma 125g, Gran cucina 150g, Mozzarella 125g, Parmesan 75g, Yumurta 60g, Tereyağı 30g, Tuz, karabiber 5g.",
-            "ru": "Спагетти 200г, Бекон 125г, Gran cucina 150г, Моцарелла 125г, Пармезан 75г, Яйцо 60г, Сливочное масло 30г, Соль, перец 5г.",
+            "tr": "Spagetti 200g, Pastırma 125g, Gran Cucina 150g, Mozzarella 125g, Parmesan 75g, Yumurta 60g, Tereyağı 30g, Tuz, karabiber 5g.",
+            "ru": "Спагетти 200г, Бекон 125г, Gran Cucina 150г, Моцарелла 125г, Пармезан 75г, Яйцо 60г, Сливочное масло 30г, Соль, перец 5г.",
             "ar": "سباغيتي 200ج، لحم مقدد 125ج، جران كوتشينا 150ج، موزاريلا 125ج، بارميزان 75ج، بيض 60ج، زبدة 30ج، ملح، فلفل 5ج."
           },
           "image": "",
@@ -3009,13 +3009,13 @@
           },
           "price": "45 lei",
           "ingredients": {
-            "ro": "Penne 200g, Bacon 125g, Gran cuccina 150g, Mozzarella 125g, Parmesan 75g, Ou 60g, Unt 30g, Sare, piper 5g.",
-            "en": "Penne 200g, Bacon 125g, Gran cucina 150g, Mozzarella 125g, Parmesan 75g, Egg 60g, Butter 30g, Salt, pepper 5g.",
-            "it": "Penne 200g, Pancetta 125g, Gran cucina 150g, Mozzarella 125g, Parmigiano 75g, Uovo 60g, Burro 30g, Sale, pepe 5g.",
-            "es": "Penne 200g, Tocino 125g, Gran cucina 150g, Mozzarella 125g, Parmesano 75g, Huevo 60g, Mantequilla 30g, Sal, pimienta 5g.",
+            "ro": "Penne 200g, Bacon 125g, Gran Cucina 150g, Mozzarella 125g, Parmesan 75g, Ou 60g, Unt 30g, Sare, piper 5g.",
+            "en": "Penne 200g, Bacon 125g, Gran Cucina 150g, Mozzarella 125g, Parmesan 75g, Egg 60g, Butter 30g, Salt, pepper 5g.",
+            "it": "Penne 200g, Pancetta 125g, Gran Cucina 150g, Mozzarella 125g, Parmigiano 75g, Uovo 60g, Burro 30g, Sale, pepe 5g.",
+            "es": "Penne 200g, Tocino 125g, Gran Cucina 150g, Mozzarella 125g, Parmesano 75g, Huevo 60g, Mantequilla 30g, Sal, pimienta 5g.",
             "fr": "Penne 200g, Bacon 125g, Gran cuisine 150g, Mozzarella 125g, Parmesan 75g, Œuf 60g, Beurre 30g, Sel, poivre 5g.",
-            "tr": "Penne 200g, Pastırma 125g, Gran cucina 150g, Mozzarella 125g, Parmesan 75g, Yumurta 60g, Tereyağı 30g, Tuz, karabiber 5g.",
-            "ru": "Пенне 200г, Бекон 125г, Gran cucina 150г, Моцарелла 125г, Пармезан 75г, Яйцо 60г, Сливочное масло 30г, Соль, перец 5г.",
+            "tr": "Penne 200g, Pastırma 125g, Gran Cucina 150g, Mozzarella 125g, Parmesan 75g, Yumurta 60g, Tereyağı 30g, Tuz, karabiber 5g.",
+            "ru": "Пенне 200г, Бекон 125г, Gran Cucina 150г, Моцарелла 125г, Пармезан 75г, Яйцо 60г, Сливочное масло 30г, Соль, перец 5г.",
             "ar": "بيني 200ج، لحم مقدد 125ج، جران كوتشينا 150ج، موزاريلا 125ج، بارميزان 75ج، بيض 60ج، زبدة 30ج، ملح، فلفل 5ج."
           },
           "image": "",
@@ -3033,7 +3033,7 @@
         {
           "id": "spaghete-cu-creveti",
           "name": {
-            "ro": "Spaghette cu creveti",
+            "ro": "Spaghete cu creveți",
             "en": "Spaghetti with Shrimp",
             "it": "Spaghetti con Gamberi",
             "es": "Espaguetis con Gambas",
@@ -3068,7 +3068,7 @@
         {
           "id": "penne-quatro-formaggi",
           "name": {
-            "ro": "Penne Quatro Formaggi",
+            "ro": "Penne Quattro Formaggi",
             "en": "Penne Quattro Formaggi",
             "it": "Penne Quattro Formaggi",
             "es": "Penne Cuatro Quesos",
@@ -3079,13 +3079,13 @@
           },
           "price": "48 lei",
           "ingredients": {
-            "ro": "Penne 200g, Mozzarella 125g, Cașcaval de oaie 100g, Gorgonzola 100g, Gran cuccina 100g, Parmezan 75g, Unt/ulei 30g, Sare, piper 5g.",
-            "en": "Penne 200g, Mozzarella 125g, Sheep kashkaval cheese 100g, Gorgonzola 100g, Gran cucina 100g, Parmesan 75g, Butter/oil 30g, Salt, pepper 5g.",
-            "it": "Penne 200g, Mozzarella 125g, Caciocavallo di pecora 100g, Gorgonzola 100g, Gran cucina 100g, Parmigiano 75g, Burro/olio 30g, Sale, pepe 5g.",
-            "es": "Penne 200g, Mozzarella 125g, Queso kashkaval de oveja 100g, Gorgonzola 100g, Gran cucina 100g, Parmesano 75g, Mantequilla/aceite 30g, Sal, pimienta 5g.",
-            "fr": "Penne 200g, Mozzarella 125g, Fromage kashkaval de brebis 100g, Gorgonzola 100g, Gran cucina 100g, Parmesan 75g, Beurre/huile 30g, Sel, poivre 5g.",
-            "tr": "Penne 200g, Mozzarella 125g, Koyun kaşarı 100g, Gorgonzola 100g, Gran cucina 100g, Parmesan 75g, Tereyağı/yağ 30g, Tuz, karabiber 5g.",
-            "ru": "Пенне 200г, Моцарелла 125г, Овечий кашкавал 100г, Горгонзола 100г, Gran cucina 100г, Пармезан 75г, Сливочное/растительное масло 30г, Соль, перец 5г.",
+            "ro": "Penne 200g, Mozzarella 125g, Cașcaval de oaie 100g, Gorgonzola 100g, Gran Cucina 100g, Parmezan 75g, Unt/ulei 30g, Sare, piper 5g.",
+            "en": "Penne 200g, Mozzarella 125g, Sheep kashkaval cheese 100g, Gorgonzola 100g, Gran Cucina 100g, Parmesan 75g, Butter/oil 30g, Salt, pepper 5g.",
+            "it": "Penne 200g, Mozzarella 125g, Caciocavallo di pecora 100g, Gorgonzola 100g, Gran Cucina 100g, Parmigiano 75g, Burro/olio 30g, Sale, pepe 5g.",
+            "es": "Penne 200g, Mozzarella 125g, Queso kashkaval de oveja 100g, Gorgonzola 100g, Gran Cucina 100g, Parmesano 75g, Mantequilla/aceite 30g, Sal, pimienta 5g.",
+            "fr": "Penne 200g, Mozzarella 125g, Fromage kashkaval de brebis 100g, Gorgonzola 100g, Gran Cucina 100g, Parmesan 75g, Beurre/huile 30g, Sel, poivre 5g.",
+            "tr": "Penne 200g, Mozzarella 125g, Koyun kaşarı 100g, Gorgonzola 100g, Gran Cucina 100g, Parmesan 75g, Tereyağı/yağ 30g, Tuz, karabiber 5g.",
+            "ru": "Пенне 200г, Моцарелла 125г, Овечий кашкавал 100г, Горгонзола 100г, Gran Cucina 100г, Пармезан 75г, Сливочное/растительное масло 30г, Соль, перец 5г.",
             "ar": "بيني 200ج، موزاريلا 125ج، قشقوان غنم 100ج، جورجونزولا 100ج، جران كوتشينا 100ج، بارميزان 75ج، زبدة/زيت 30ج، ملح، فلفل 5ج."
           },
           "image": "",
@@ -3103,7 +3103,7 @@
         {
           "id": "penne-all-arabbiata",
           "name": {
-            "ro": "Penne all’Arabbiata",
+            "ro": "Penne all'Arrabbiata",
             "en": "Penne all’Arrabbiata",
             "it": "Penne all’Arrabbiata",
             "es": "Penne all’Arrabbiata",
@@ -3138,7 +3138,7 @@
         {
           "id": "spaghette-milanesse",
           "name": {
-            "ro": "Spaghette Milanesse",
+            "ro": "Spaghete Milanese",
             "en": "Spaghetti Milanese",
             "it": "Spaghetti Milanese",
             "es": "Espaguetis Milanesa",
@@ -3208,7 +3208,7 @@
         {
           "id": "spaghete-bolognese",
           "name": {
-            "ro": "Spaghette Bolognese",
+            "ro": "Spaghete Bolognese",
             "en": "Spaghetti Bolognese",
             "it": "Spaghetti Bolognese",
             "es": "Espaguetis Boloñesa",
@@ -3243,7 +3243,7 @@
         {
           "id": "tagliatele-cu-somon",
           "name": {
-            "ro": "Tagliatele cu somon",
+            "ro": "Tagliatelle cu somon",
             "en": "Tagliatelle with Salmon",
             "it": "Tagliatelle con Salmone",
             "es": "Tagliatelle con Salmón",
@@ -3254,13 +3254,13 @@
           },
           "price": "62 lei",
           "ingredients": {
-            "ro": "Tagliatele 150g, Somon proaspăt 125g, Gran cuccina 150g, Dovlecei sau baby spanac 100g, Parmezan 75g, Somon afumat 50g, Roșii cherry 50g, Supă de legume/pește 50g, Ceapă 50g, Usturoi 15g, Unt 30g, Sare, piper 5g.",
-            "en": "Tagliatelle 150g, Fresh salmon 125g, Gran cucina 150g, Zucchini or baby spinach 100g, Parmesan 75g, Smoked salmon 50g, Cherry tomatoes 50g, Vegetable/fish broth 50g, Onion 50g, Garlic 15g, Butter 30g, Salt, pepper 5g.",
-            "it": "Tagliatelle 150g, Salmone fresco 125g, Gran cucina 150g, Zucchine o spinacini 100g, Parmigiano 75g, Salmone affumicato 50g, Pomodorini 50g, Brodo di verdure/pesce 50g, Cipolla 50g, Aglio 15g, Burro 30g, Sale, pepe 5g.",
-            "es": "Tagliatelle 150g, Salmón fresco 125g, Gran cucina 150g, Calabacín o espinacas baby 100g, Parmesano 75g, Salmón ahumado 50g, Tomates cherry 50g, Caldo de verduras/pescado 50g, Cebolla 50g, Ajo 15g, Mantequilla 30g, Sal, pimienta 5g.",
+            "ro": "Tagliatelle 150g, Somon proaspăt 125g, Gran Cucina 150g, Dovlecei sau baby spanac 100g, Parmezan 75g, Somon afumat 50g, Roșii cherry 50g, Supă de legume/pește 50g, Ceapă 50g, Usturoi 15g, Unt 30g, Sare, piper 5g.",
+            "en": "Tagliatelle 150g, Fresh salmon 125g, Gran Cucina 150g, Zucchini or baby spinach 100g, Parmesan 75g, Smoked salmon 50g, Cherry tomatoes 50g, Vegetable/fish broth 50g, Onion 50g, Garlic 15g, Butter 30g, Salt, pepper 5g.",
+            "it": "Tagliatelle 150g, Salmone fresco 125g, Gran Cucina 150g, Zucchine o spinacini 100g, Parmigiano 75g, Salmone affumicato 50g, Pomodorini 50g, Brodo di verdure/pesce 50g, Cipolla 50g, Aglio 15g, Burro 30g, Sale, pepe 5g.",
+            "es": "Tagliatelle 150g, Salmón fresco 125g, Gran Cucina 150g, Calabacín o espinacas baby 100g, Parmesano 75g, Salmón ahumado 50g, Tomates cherry 50g, Caldo de verduras/pescado 50g, Cebolla 50g, Ajo 15g, Mantequilla 30g, Sal, pimienta 5g.",
             "fr": "Tagliatelle 150g, Saumon frais 125g, Gran cuisine 150g, Courgettes ou pousses d'épinards 100g, Parmesan 75g, Saumon fumé 50g, Tomates cerises 50g, Bouillon de légumes/poisson 50g, Oignon 50g, Ail 15g, Beurre 30g, Sel, poivre 5g.",
-            "tr": "Tagliatelle 150g, Taze somon 125g, Gran cucina 150g, Kabak veya bebek ıspanak 100g, Parmesan 75g, Füme somon 50g, Çeri domates 50g, Sebze/balık suyu 50g, Soğan 50g, Sarımsak 15g, Tereyağı 30g, Tuz, karabiber 5g.",
-            "ru": "Тальятелле 150г, Свежий лосось 125г, Gran cucina 150г, Кабачки или бэби-шпинат 100г, Пармезан 75г, Копченый лосось 50г, Помидоры черри 50г, Овощной/рыбный бульон 50г, Лук 50г, Чеснок 15г, Сливочное масло 30г, Соль, перец 5г.",
+            "tr": "Tagliatelle 150g, Taze somon 125g, Gran Cucina 150g, Kabak veya bebek ıspanak 100g, Parmesan 75g, Füme somon 50g, Çeri domates 50g, Sebze/balık suyu 50g, Soğan 50g, Sarımsak 15g, Tereyağı 30g, Tuz, karabiber 5g.",
+            "ru": "Тальятелле 150г, Свежий лосось 125г, Gran Cucina 150г, Кабачки или бэби-шпинат 100г, Пармезан 75г, Копченый лосось 50г, Помидоры черри 50г, Овощной/рыбный бульон 50г, Лук 50г, Чеснок 15г, Сливочное масло 30г, Соль, перец 5г.",
             "ar": "تالياتيلي 150ج، سلمون طازج 125ج، جران كوتشينا 150ج، كوسا أو سبانخ صغيرة 100ج، بارميزان 75ج، سلمون مدخن 50ج، طماطم كرزية 50ج، مرق خضروات/سمك 50ج، بصل 50ج، ثوم 15ج، زبدة 30ج، ملح، فلفل 5ج."
           },
           "image": "",
@@ -3278,7 +3278,7 @@
         {
           "id": "tagliatele-cu-creveti",
           "name": {
-            "ro": "Tagliatele cu creveti",
+            "ro": "Tagliatelle cu creveți",
             "en": "Tagliatelle with Shrimp",
             "it": "Tagliatelle con Gamberi",
             "es": "Tagliatelle con Gambas",
@@ -3289,7 +3289,7 @@
           },
           "price": "58 lei",
           "ingredients": {
-            "ro": "Tagliatele 150g, Creveți 200g, Dovlecei 100g, Roșii cherry 75g, Parmezan 75g, Sos de roșii 50g, Usturoi 15g, Unt 30g, Sare, piper 5g.",
+            "ro": "Tagliatelle 150g, Creveți 200g, Dovlecei 100g, Roșii cherry 75g, Parmezan 75g, Sos de roșii 50g, Usturoi 15g, Unt 30g, Sare, piper 5g.",
             "en": "Tagliatelle 150g, Shrimp 200g, Zucchini 100g, Cherry tomatoes 75g, Parmesan 75g, Tomato sauce 50g, Garlic 15g, Butter 30g, Salt, pepper 5g.",
             "it": "Tagliatelle 150g, Gamberi 200g, Zucchine 100g, Pomodorini 75g, Parmigiano 75g, Salsa di pomodoro 50g, Aglio 15g, Burro 30g, Sale, pepe 5g.",
             "es": "Tagliatelle 150g, Gambas 200g, Calabacín 100g, Tomates cherry 75g, Parmesano 75g, Salsa de tomate 50g, Ajo 15g, Mantequilla 30g, Sal, pimienta 5g.",
@@ -3349,7 +3349,7 @@
     },
     {
       "category": {
-        "ro": "Mancare gatita",
+        "ro": "Mâncare gătită",
         "en": "Cooked Meals",
         "it": "Piatti Pronti",
         "es": "Comida Casera",
@@ -3361,7 +3361,7 @@
       "items": [
         {
           "id": "pui-gorgonzola",
-          "name": "Pui cu sos gorgonzola si garnitura la alegere",
+          "name": "Pui cu sos gorgonzola și garnitură la alegere",
           "price": "50 lei",
           "ingredients": {
             "ro": "Piept de pui la grătar 200g, Brânză gorgonzola 150g, Smântână lichidă 100g, Parmezan 50g, Sare, piper 5g.",
@@ -3387,7 +3387,7 @@
         },
         {
           "id": "pui-ciuperci-mamaliga",
-          "name": "Pui cu gran cuccina, ciuperci si mamaliga",
+          "name": "Pui cu Gran Cucina, ciuperci și mămăligă",
           "price": "48 lei",
           "ingredients": {
             "ro": "Piept de pui 200g, Ciuperci 150g, Smântână lichidă 100g, Ceapă 50g, Făină de mălai 150g, Ulei 75g, Unt 30g, Pătrunjel, Sare, piper 5g.",
@@ -3413,7 +3413,7 @@
         },
         {
           "id": "tigaie-pui-mamaliguta",
-          "name": "Tigaie de pui ne/picanta cu mamaliguta",
+          "name": "Tigaie de pui nepicantă / picantă, cu mămăliguță",
           "price": "49 lei",
           "ingredients": {
             "ro": "Piept de pui 200g, Ardei gras bicolor 100g, Ciuperci 75g, Roșii 50g, Ceapă 50g, Usturoi 25g, Vin 30g, Pastă de roșii 10g, Făină de mălai 100g, Ulei 75g, Unt 50g, Sare, piper, boia 5g, Ardei iute (opțional).",
@@ -3439,7 +3439,7 @@
         },
         {
           "id": "ficatei-pui-piure",
-          "name": "Ficatei de pui la tigaie / cu sos rosu si cartofi piure",
+          "name": "Ficăței de pui la tigaie / cu sos roșu și cartofi piure",
           "price": "45 lei",
           "ingredients": {
             "ro": "Ficăței de pui 400g, Roșie 100g, Ceapă 100g, Ardei gras bicolor 100g, Sos ardei + sos roșii 15g, Cartofi 300g, Ulei 50ml, Unt 50g, Lapte 50ml, Sare, piper 5g.",
@@ -3465,7 +3465,7 @@
         },
         {
           "id": "aripioare-pui-prajite",
-          "name": "Aripioare de pui ne/picante cu cartofi prajiti",
+          "name": "Aripioare de pui nepicante / picante, cu cartofi prăjiți",
           "price": "41 lei",
           "ingredients": {
             "ro": "Aripioare de pui 450g, Cartofi 300g, Ulei de palmier 150g, Sare, piper.",
@@ -3491,7 +3491,7 @@
         },
         {
           "id": "ostropel-pui-mamaliguta",
-          "name": "Ostropel de pui cu mamaliguta",
+          "name": "Ostropel de pui cu mămăliguță",
           "price": "42 lei",
           "ingredients": {
             "ro": "Piept de pui 200g, Ardei kapia 75g, Roșii 50g, Ceapă 50g, Sos de roșii 10g, Făină de mălai 150g, Unt 30g, Ulei 75g, Sare, piper 5g.",
@@ -3517,7 +3517,7 @@
         },
         {
           "id": "pomana-porcului-mamaliguta",
-          "name": "Pomana porcului cu mamaliguta",
+          "name": "Pomana porcului cu mămăliguță",
           "price": "50 lei",
           "ingredients": {
             "ro": "Carne de porc (pulpă, ceafă) 250g, Cârnat semiafumat de porc 150g, Usturoi 25g, Vin 50g, Ulei 75g, Făină de mălai 100g, Unt 30g, Sare, piper 5g.",
@@ -3543,7 +3543,7 @@
         },
         {
           "id": "tochitura-moldoveneasca",
-          "name": "Tochitura moldoveneasca cu mamaliguta, ou si branza telemea",
+          "name": "Tochitură moldovenească cu mămăliguță, ou și brânză telemea",
           "price": "55 lei",
           "ingredients": {
             "ro": "Carne de porc 150g, Piept de pui 150g, Cârnat semiafumat 100g, Sos de roșii 100g, Usturoi 25g, Brânză telemea 75g, Ou 1 buc (60g), Făină de mălai 150g, Unt 30g, Ulei 75g.",
@@ -3569,7 +3569,7 @@
         },
         {
           "id": "tigaie-porc-mamaliguta",
-          "name": "Tigaie porc ne/picanta cu mamaliguta",
+          "name": "Tigaie de porc nepicantă / picantă, cu mămăliguță",
           "price": "52 lei",
           "ingredients": {
             "ro": "Carne de porc (pulpă, ceafă) 300g, Ardei kapia 75g, Roșii cherry 75g, Sos de roșii 100g, Făină de mălai 150g, Ulei 75g, Unt 30g, Sare, piper 5g, Ardei iute (opțional).",
@@ -3595,7 +3595,7 @@
         },
         {
           "id": "mazare-carnati-porc",
-          "name": "Mazare cu carnati si carne de porc",
+          "name": "Mazăre cu cârnați și carne de porc",
           "price": "42 lei",
           "ingredients": {
             "ro": "Carne de porc 200g, Mazăre verde 400g, Ceapă 100g, Ardei gras bicolor 100g, Roșie 100g, Sos ardei + sos roșii 15g, Ulei 50ml, Unt 50g, Sare, piper 5g.",
@@ -3635,7 +3635,7 @@
       "items": [
         {
           "id": "salata-vinete",
-          "name": "Salata de vinete",
+          "name": "Salată de vinete",
           "price": "30 lei",
           "ingredients": {
             "ro": "Vinete coapte 250g, Ceapă 50g, Maioneză 50g, Ulei 50g, Sare, piper 10g.",
@@ -3661,7 +3661,7 @@
         },
         {
           "id": "fasole-batuta",
-          "name": "Fasole batuta cu ceapa calita cu boia",
+          "name": "Fasole bătută cu ceapă călită cu boia",
           "price": "30 lei",
           "ingredients": {
             "ro": "Fasole fiartă (conservă) 250g, Ulei 75g, Ceapă 50g, Boia de ardei, sare 15g, Pastă de ardei/roșii 10g.",
@@ -3687,7 +3687,7 @@
         },
         {
           "id": "tocanita-ardei-copti",
-          "name": "Tocanita de ardei copt cu mamaliguta",
+          "name": "Tocăniță de ardei copt cu mămăliguță",
           "price": "38 lei",
           "ingredients": {
             "ro": "Ardei kapia copt 300g, Roșii 100g, Ceapă 50g, Unt/mărgărină 50g, Usturoi 10g, Făină de mălai 100g, Sare, piper 5g.",
@@ -3713,7 +3713,7 @@
         },
         {
           "id": "tocanita-ciuperci",
-          "name": "Tocanita de ciuperci cu mamaliguta",
+          "name": "Tocăniță de ciuperci cu mămăliguță",
           "price": "36 lei",
           "ingredients": {
             "ro": "Ciuperci champignon 250g, Smântână vegetală 150g, Ceapă 75g, Ardei roșu 50g, Unt/ulei 50g, Făină de mălai 150g, Sare, piper 5g.",
@@ -3739,7 +3739,7 @@
         },
         {
           "id": "ciulama-ciuperci-vegetala",
-          "name": "Ciulama de ciuperci cu smantana vegetala si mamaliguta",
+          "name": "Ciulama de ciuperci cu smântână vegetală și mămăliguță",
           "price": "40 lei",
           "ingredients": {
             "ro": "Ciuperci champignon 250g, Smântână lichidă vegetală 150g, Ceapă 75g, Ardei roșu 50g, Făină de mălai 150g, Unt vegetal 50g, Sare, piper 5g.",
@@ -3817,7 +3817,7 @@
         },
         {
           "id": "iahnie-fasole-muraturi",
-          "name": "lahnie de fasole cu castraveti murati",
+          "name": "Iahnie de fasole cu castraveți murați",
           "price": "38 lei",
           "ingredients": {
             "ro": "Fasole boabe 250g, Ceapă 100g, Morcov 50g, Sos de roșii 50g, Castraveți murați 150g, Ulei 50g, Cimbru, Mărar, Sare, piper.",
@@ -3845,7 +3845,7 @@
     },
     {
       "category": {
-        "ro": "Salate insotitoare",
+        "ro": "Salate însoțitoare",
         "en": "Side Salads",
         "it": "Insalate di Accompagnamento",
         "es": "Ensaladas de Acompañamiento",
@@ -3857,7 +3857,7 @@
       "items": [
         {
           "id": "salata-rosii",
-          "name": "Salata de rosii",
+          "name": "Salată de roșii",
           "price": "17 lei",
           "ingredients": {
             "ro": "Roșii proaspete 180g, Ulei de floarea soarelui sau măsline 15g, Sare 5g.",
@@ -3883,7 +3883,7 @@
         },
         {
           "id": "salata-rosii-telemea",
-          "name": "Salata de rosii cu branza telemea",
+          "name": "Salată de roșii cu brânză telemea",
           "price": "23 lei",
           "ingredients": {
             "ro": "Roșii proaspete 180g, Brânză telemea rasă sau cuburi 65g, Ulei 5g, Sare.",
@@ -3909,7 +3909,7 @@
         },
         {
           "id": "salata-castraveti-verzi",
-          "name": "Salata de castraveti verzi",
+          "name": "Salată de castraveți verzi",
           "price": "18 lei",
           "ingredients": {
             "ro": "Castraveți verzi proaspeți 220g, Ulei 20g, Oțet de masă 5g, Sare 5g, Mărar.",
@@ -3935,7 +3935,7 @@
         },
         {
           "id": "salata-vara-asortata",
-          "name": "Salata de vara asortata",
+          "name": "Salată de vară asortată",
           "price": "22 lei",
           "ingredients": {
             "ro": "Roșii 100g, Castraveți verzi 75g, Ardei gras bicolor 50g, Ceapă roșie 20g, Dressing de ulei și oțet, Sare.",
@@ -3961,7 +3961,7 @@
         },
         {
           "id": "salata-varza-alba",
-          "name": "Salata de varza alba",
+          "name": "Salată de varză albă",
           "price": "15 lei",
           "ingredients": {
             "ro": "Varză albă răzuită fin 175g, Ulei de floarea soarelui 15g, Oțet 5g, Sare 5g, Mărar proaspăt.",
@@ -3987,7 +3987,7 @@
         },
         {
           "id": "salata-varza-maioneza",
-          "name": "Salata de varza alba cu maioneza",
+          "name": "Salată de varză albă cu maioneză",
           "price": "19 lei",
           "ingredients": {
             "ro": "Varză albă fină 150g, Sos de maioneză cremos 45g, Suc de lămâie, Sare, Piper negru.",
@@ -4013,7 +4013,7 @@
         },
         {
           "id": "salata-varza-murata",
-          "name": "Salata de varza murata",
+          "name": "Salată de varză murată",
           "price": "17 lei",
           "ingredients": {
             "ro": "Varză acră/murată feliată 180g, Ulei de floarea soarelui 15g, Boia de ardei dulce (pentru decor).",
@@ -4039,7 +4039,7 @@
         },
         {
           "id": "salata-ardei-copt",
-          "name": "Salata de ardei copt",
+          "name": "Salată de ardei copt",
           "price": "18 lei",
           "ingredients": {
             "ro": "Ardei capia copți și curățați 170g, Oțet de masă 15g, Ulei 10g, Usturoi mărunțit 5g, Sare.",
@@ -4065,7 +4065,7 @@
         },
         {
           "id": "salata-castraveti-gogosari-murati",
-          "name": "Salata de castraveti murati si gogosari murati",
+          "name": "Salată de castraveți murați și gogoșari murați",
           "price": "20 lei",
           "ingredients": {
             "ro": "Castraveți murați în saramură 125g, Gogoșari murați în oțet 125g (feliate).",
@@ -4091,7 +4091,7 @@
         },
         {
           "id": "salata-verde-lamaie",
-          "name": "Salata verde cu lamaie",
+          "name": "Salată verde cu lămâie",
           "price": "17 lei",
           "ingredients": {
             "ro": "Frunze de salată verde proaspătă 160g, Suc de lămâie stors 25g, Ulei de măsline 10g, Sare.",
@@ -4117,7 +4117,7 @@
         },
         {
           "id": "salata-tabbouleh",
-          "name": "Salata Tabbouleh",
+          "name": "Salată Tabbouleh",
           "price": "24 lei",
           "ingredients": {
             "ro": "Pătrunjel proaspăt tocat fin 120g, Roșii tăiate cubulețe 40g, Bulgur hidratat 20g, Ulei de măsline extravirgin, Suc de lămâie, Mentă proaspătă, Sare.",
@@ -4143,7 +4143,7 @@
         },
         {
           "id": "salata-allepo",
-          "name": "Salata Allepo",
+          "name": "Salată Aleppo",
           "price": "24 lei",
           "ingredients": {
             "ro": "Iaurt crecesc strecurat, Castraveți proaspeți mărrunțiți, Usturoi pisat, Mentă uscată, Ulei de măsline, Sare (Gramaj total preparat 200g).",
@@ -4184,7 +4184,7 @@
         {
           "id": "cartofi-prajiti",
           "name": {
-            "ro": "Cartofi prajiti",
+            "ro": "Cartofi prăjiți",
             "en": "French Fries",
             "it": "Patate Fritte",
             "es": "Patatas Fritas",
@@ -4254,7 +4254,7 @@
         {
           "id": "cartofi-chips-parmezan-usturoi",
           "name": {
-            "ro": "Cartofi chips cu parmezan si usturoi",
+            "ro": "Cartofi chips cu parmezan și usturoi",
             "en": "Potato Chips with Parmesan and Garlic",
             "it": "Patate Chips con Parmigiano e Aglio",
             "es": "Patatas Chips con Parmesano y Ajo",
@@ -4429,7 +4429,7 @@
         {
           "id": "orez-caju-alune-stafide",
           "name": {
-            "ro": "Orez cu caju, alune si stafide",
+            "ro": "Orez cu caju, alune și stafide",
             "en": "Rice with Cashews, Peanuts and Raisins",
             "it": "Riso con Anacardi, Arachidi e Uvetta",
             "es": "Arroz con Anacardos, Cacahuetes y Pasas",
@@ -4464,7 +4464,7 @@
         {
           "id": "legume-gratar",
           "name": {
-            "ro": "Legume la gratar",
+            "ro": "Legume la grătar",
             "en": "Grilled Vegetables",
             "it": "Verdure alla Griglia",
             "es": "Verduras a la Parrilla",
@@ -4604,7 +4604,7 @@
         {
           "id": "mamaliguta",
           "name": {
-            "ro": "Mamaliguta",
+            "ro": "Mămăliguță",
             "en": "Polenta",
             "it": "Polenta",
             "es": "Polenta",
@@ -4639,7 +4639,7 @@
         {
           "id": "fasole-pastai-tigaie",
           "name": {
-            "ro": "Fasole pastai la tigaie",
+            "ro": "Fasole păstăi la tigaie",
             "en": "Pan-Fried Green Beans",
             "it": "Fagiolini in Padella",
             "es": "Judías Verdes a la Sartén",
@@ -4758,7 +4758,7 @@
         {
           "id": "sos-maioneza",
           "name": {
-            "ro": "Sos Maioneza",
+            "ro": "Sos Maioneză",
             "en": "Mayonnaise Sauce",
             "it": "Salsa Maionese",
             "es": "Salsa Mayonesa",
@@ -4793,7 +4793,7 @@
         {
           "id": "sos-maioneza-usturoi",
           "name": {
-            "ro": "Sos Maioneza cu usturoi",
+            "ro": "Sos Maioneză cu usturoi",
             "en": "Garlic Mayonnaise Sauce",
             "it": "Salsa Maionese all'Aglio",
             "es": "Salsa Mayonesa con Ajo",
@@ -4863,7 +4863,7 @@
         {
           "id": "sos-mujdei-legume-coapte",
           "name": {
-            "ro": "Sos mujdei de usturoi, ardei kapia si rosie coapta",
+            "ro": "Sos mujdei de usturoi, ardei kapia și roșie coaptă",
             "en": "Roasted Garlic, Kapia Pepper and Tomato Sauce",
             "it": "Salsa all'Aglio, Peperone Kapia e Pomodoro Arrosto",
             "es": "Salsa de Ajo, Pimiento Kapia y Tomate Asado",
@@ -4933,12 +4933,12 @@
         {
           "id": "sos-tzatziky",
           "name": {
-            "ro": "Sos Tzatziky",
+            "ro": "Sos Tzatziki",
             "en": "Tzatziki Sauce",
-            "it": "Salsa Tzatziky",
-            "es": "Salsa Tzatziky",
-            "fr": "Sauce Tzatziky",
-            "tr": "Tzatziky Sosu",
+            "it": "Salsa Tzatziki",
+            "es": "Salsa Tzatziki",
+            "fr": "Sauce Tzatziki",
+            "tr": "Tzatziki Sosu",
             "ru": "Соус Цацики",
             "ar": "صلصة تزاتزيكي"
           },
@@ -5004,7 +5004,7 @@
     },
     {
       "category": {
-        "ro": "Deserturi delicioase",
+        "ro": "Deserturi",
         "en": "Delicious Desserts",
         "it": "Dolci Deliziosi",
         "es": "Postres Deliciosos",
@@ -5016,7 +5016,7 @@
       "items": [
         {
           "id": "papanasi-traditionali",
-          "name": "Papanasi traditionali cu dulceata",
+          "name": "Papanași tradiționali cu dulceață",
           "price": "34 lei",
           "ingredients": {
             "ro": "Aluat de papanași 240g (Brânză de vaci, Făină de grâu, Ouă, Zahăr vanilat, Coajă lămâie/portocală, Bicarbonat), Dulceață de afine/vișine 75g, Smântână 20% grăsime 85g, Sare, Ulei pentru prăjit.",
@@ -5042,7 +5042,7 @@
         },
         {
           "id": "bilute-papanasi-3-sosuri",
-          "name": "Bilute de papanasi cu 3 sosuri",
+          "name": "Biluțe de papanași cu 3 sosuri",
           "price": "34 lei",
           "ingredients": {
             "ro": "Aluat de papanași modelat în biluțe 240g, Finetti 50g, Dulceață de afine 50g, Smântână dulce/Topping vanilie 60g, Zahăr pudră, Ulei pentru prăjit.",
@@ -5068,7 +5068,7 @@
         },
         {
           "id": "clatite-dulceata",
-          "name": "Clatite cu dulceata",
+          "name": "Clătite cu dulceață",
           "price": "17 lei",
           "ingredients": {
             "ro": "Făină de grâu, Lapte, Apă minerală, Ouă, Zahăr, Coajă de lămâie, Dulceață de afine/vișine/căpșuni 75g, Fructe decor 30g, Sare, Ulei.",
@@ -5094,7 +5094,7 @@
         },
         {
           "id": "clatite-branza-stafide",
-          "name": "Clatite cu branza dulce si stafide",
+          "name": "Clătite cu brânză dulce și stafide",
           "price": "22 lei",
           "ingredients": {
             "ro": "Foi de clătite, Brânză dulce de vaci 120g, Stafide aurii 30g, Zahăr, Zahăr vanilat, Esență rom, Smântână și zahăr pudră pentru servit 40g.",
@@ -5120,7 +5120,7 @@
         },
         {
           "id": "clatite-nutella",
-          "name": "Clatite cu nutella",
+          "name": "Clătite cu nutella",
           "price": "20 lei",
           "ingredients": {
             "ro": "Foi de clătite, Cremă de cacao cu alune Nutella 75g, Topping de ciocolată 15g, Zahăr pudră.",
@@ -5146,7 +5146,7 @@
         },
         {
           "id": "clatite-nutella-fructe",
-          "name": "Clatite cu nutella si fructe",
+          "name": "Clătite cu nutella și fructe",
           "price": "24 lei",
           "ingredients": {
             "ro": "Foi de clătite, Cremă de cacao cu alune Nutella 60g, Banane și fructe de pădure proaspete 70g, Topping ciocolată, Zahăr pudră.",
@@ -5172,7 +5172,7 @@
         },
         {
           "id": "clatita-brasoveana",
-          "name": "Clatita Brasoveana",
+          "name": "Clătită brașoveană",
           "price": "27 lei",
           "ingredients": {
             "ro": "Foie de clătită mare, Brânză dulce de vaci, Stafide, Ou, Pesmet, Făină, Smântână și dulceață la cuptor, Zahăr vanilat, Scorțișoară.",
@@ -5198,7 +5198,7 @@
         },
         {
           "id": "inghetata-asortata",
-          "name": "Inghetata asortata 3 cupe",
+          "name": "Înghețată asortată, 3 cupe",
           "price": "27 lei",
           "ingredients": {
             "ro": "3 cupe de înghețată asortată (ciocolată, vanilie, fistic/fructe) 210g, Frișcă 20g, Topping fructe/ciocolată 10g, Wafer decor.",
@@ -5224,7 +5224,7 @@
         },
         {
           "id": "profiterol",
-          "name": "Profiterol de ciocolata sau vanilie",
+          "name": "Profiterol de ciocolată sau vanilie",
           "price": "28 lei",
           "ingredients": {
             "ro": "Gogoși de profiterol cu cremă, Înghețată de ciocolată sau vanilie 120g, Sos cald de ciocolată 50g, Frișcă bătută 30g, Alune măcinate.",
@@ -5302,7 +5302,7 @@
         },
         {
           "id": "cheesecake-mango",
-          "name": "Cheescake de mango cu ciocolata",
+          "name": "Cheesecake de mango cu ciocolată",
           "price": "39 lei",
           "ingredients": {
             "ro": "Blat de biscuiți, Cremă de brânză cu piure de mango, Zahăr, Decor de sos de ciocolată și fulgi de ciocolată.",
@@ -5328,7 +5328,7 @@
         },
         {
           "id": "marchiza-inghetata",
-          "name": "Marchiza cu inghetata",
+          "name": "Marchiza cu înghețată",
           "price": "28 lei",
           "ingredients": {
             "ro": "Blat fin de ciocolată (tip marchiză), O cupă de înghețată la alegere 70g, Frișcă, Topping decor.",
@@ -5354,7 +5354,7 @@
         },
         {
           "id": "brownie-inghetata",
-          "name": "Prajitura Brownnie cu inghetata",
+          "name": "Prăjitură brownie cu înghețată",
           "price": "26 lei",
           "ingredients": {
             "ro": "Negresă americană caldă cu ciocolată și nuci, O cupă de înghețată de vanilie 70g, Sos de ciocolată.",
@@ -5380,7 +5380,7 @@
         },
         {
           "id": "baileys-bomb-inghetata",
-          "name": "Bailey’s Bomb cu inghetata",
+          "name": "Bailey’s Bomb cu înghețată",
           "price": "28 lei",
           "ingredients": {
             "ro": "Desert sferic de ciocolată cu cremă aromată cu lichior Bailey's, O cupă de înghețată 70g, Topping.",
@@ -5406,7 +5406,7 @@
         },
         {
           "id": "pistachio-bomb-inghetata",
-          "name": "Pistacio Bomb cu inghetata",
+          "name": "Pistachio Bomb cu înghețată",
           "price": "28 lei",
           "ingredients": {
             "ro": "Desert sferic de ciocolată cu inimă cremoasă de fistic, O cupă de înghețată de vanilie/fistic 70g, Fistic mărunțit.",
@@ -5432,7 +5432,7 @@
         },
         {
           "id": "chocolate-mousse-inghetata",
-          "name": "Chocolate Mouse cu inghetata",
+          "name": "Chocolate Mousse cu înghețată",
           "price": "28 lei",
           "ingredients": {
             "ro": "Spumă fină și aerată de ciocolată neagră/cu lapte, O cupă de înghețată asortată 70g, Decor de ciocolată.",
@@ -5458,7 +5458,7 @@
         },
         {
           "id": "tarta-mere-inghetata",
-          "name": "Tarta cu mere si inghetata",
+          "name": "Tarta cu mere și înghețată",
           "price": "27 lei",
           "ingredients": {
             "ro": "Aluat fraged de tartă, Umplutură de mere călite cu scorțișoară și zahăr, O cupă de înghețată de vanilie 70g, Zahăr pudră.",
@@ -5514,11 +5514,11 @@
   "drinksMenuCategories": [
     {
       "category": {
-        "ro": "Cafea si bauturi calde",
+        "ro": "Cafea și băuturi calde",
         "en": "Coffee & Hot Drinks",
         "it": "Caffè e Bevande Calde",
         "es": "Café y Bebidas Calientes",
-        "fr": "Café et Boisson Chaudes",
+        "fr": "Café et boissons chaudes",
         "tr": "Kahve ve Sıcak İçecekler",
         "ru": "Кофе и горячие напитки",
         "ar": "قهوة ومشروبات ساخنة"
@@ -5648,7 +5648,7 @@
         {
           "id": "cappuccino-vienez",
           "name": {
-            "ro": "Cappucino Vienez",
+            "ro": "Cappuccino Vienez",
             "en": "Viennese Cappuccino",
             "it": "Cappuccino Viennese",
             "es": "Capuchino Vienés",
@@ -5738,7 +5738,7 @@
         {
           "id": "cafea-4-culori",
           "name": {
-            "ro": "Cafea in 4 culori",
+            "ro": "Cafea în 4 culori",
             "en": "Four-Layer Coffee",
             "it": "Caffè in 4 Colori",
             "es": "Café en 4 Colores",
@@ -5768,12 +5768,12 @@
         {
           "id": "ness-caffe-frappe-special",
           "name": {
-            "ro": "Ness Caffe Frappe Special",
+            "ro": "Nescafé Frappe Special",
             "en": "Special Nescafé Frappe",
             "it": "Ness Caffè Frappé Speciale",
             "es": "Ness Caffé Frappé Especial",
             "fr": "Ness Café Frappé Spécial",
-            "tr": "Özel Ness Caffe Frappe",
+            "tr": "Özel Nescafé Frappe",
             "ru": "Специальный Несс Кофе Фраппе",
             "ar": "نسكافيه فرابيه خاص"
           },
@@ -5798,7 +5798,7 @@
         {
           "id": "irish-coffee",
           "name": {
-            "ro": "Irish Coffe",
+            "ro": "Irish Coffee",
             "en": "Irish Coffee",
             "it": "Caffè Irlandese",
             "es": "Café Irlandés",
@@ -5829,7 +5829,7 @@
         {
           "id": "rom-coffee",
           "name": {
-            "ro": "Rom Coffe",
+            "ro": "Rom Coffee",
             "en": "Rum Coffee",
             "it": "Caffè al Rum",
             "es": "Café con Ron",
@@ -5860,7 +5860,7 @@
         {
           "id": "french-coffee",
           "name": {
-            "ro": "French Coffe",
+            "ro": "French Coffee",
             "en": "French Coffee",
             "it": "Caffè Francese",
             "es": "Café Francés",
@@ -5891,7 +5891,7 @@
         {
           "id": "mexican-coffee",
           "name": {
-            "ro": "Mexican Coffe",
+            "ro": "Mexican Coffee",
             "en": "Mexican Coffee",
             "it": "Caffè Messicano",
             "es": "Café Mexicano",
@@ -5922,7 +5922,7 @@
         {
           "id": "russian-coffee",
           "name": {
-            "ro": "Russian Coffe",
+            "ro": "Russian Coffee",
             "en": "Russian Coffee",
             "it": "Caffè Russo",
             "es": "Café Ruso",
@@ -5953,7 +5953,7 @@
         {
           "id": "hot-chocolate-flavor-dense",
           "name": {
-            "ro": "Ciocolata calda densa cu arome diverse",
+            "ro": "Ciocolată caldă densă cu arome diverse",
             "en": "Dense Hot Chocolate with Various Flavors",
             "it": "Cioccolata Calda Densa con Aromi Diversi",
             "es": "Chocolate Caliente Denso con Sabores Diversos",
@@ -5965,7 +5965,7 @@
           "price": "19 lei",
           "volume": "200ml",
           "ingredients": {
-            "ro": "Specialitate italiană de ciocolată caldă extrem de densă și cremoasă, infuzată cu diverse arome rafinate și decorată cu frișcă bătută[cite: 1].",
+            "ro": "Specialitate italiană de ciocolată caldă extrem de densă și cremoasă, infuzată cu diverse arome rafinate și decorată cu frișcă bătută.",
             "en": "Extremely dense and creamy Italian-style hot chocolate specialty, infused with various refined flavors and decorated with whipped cream[cite: 1].",
             "it": "Specialità italiana di cioccolata calda estremamente densa e cremosa, infusa con vari aromi raffinati e decorata con panna montata[cite: 1].",
             "es": "Especialidad italiana de chocolate caliente extremadamente denso y cremoso, infusionado con varios sabores refinados y decorado con crema.",
@@ -5983,7 +5983,7 @@
         {
           "id": "ceai-infuzie-premium-200",
           "name": {
-            "ro": "Ceai diverse arome",
+            "ro": "Ceai cu arome diverse",
             "en": "Tea - Various Flavors",
             "it": "Tè - Aromi Diversi",
             "es": "Té - Sabores Diversos",
@@ -5995,7 +5995,7 @@
           "price": "17 lei",
           "volume": "200ml",
           "ingredients": {
-            "ro": "Infuzie caldă din selecție de ceaiuri aromate (fructe, plante sau verzi), servită cu miere naturală și lămâie proaspătă[cite: 1].",
+            "ro": "Infuzie caldă din selecție de ceaiuri aromate (fructe, plante sau verzi), servită cu miere naturală și lămâie proaspătă.",
             "en": "Warm infusion from a selection of flavored teas (fruit, herbal, or green), served with natural honey and fresh lemon[cite: 1].",
             "it": "Infuso caldo da una selezione di tè aromatizzati (frutta, erbe o verdi), servito con miele naturale e limone fresco[cite: 1].",
             "es": "Infusión caliente de una selección de tés de sabores (frutas, hierbas o verdes), servida con miel natural y limón fresco[cite: 1].",
@@ -6014,7 +6014,7 @@
     },
     {
       "category": {
-        "ro": "Racoritoare",
+        "ro": "Răcoritoare",
         "en": "Soft Drinks",
         "it": "Bevande Analcoliche",
         "es": "Refrescos",
@@ -6183,7 +6183,7 @@
           "price": "24 lei",
           "volume": "250ml",
           "ingredients": {
-            "ro": "Băutură funcțională premium pe bază de extracte naturale, guarana și vitamine, pentru revigorare instantă.",
+            "ro": "Băutură funcțională premium pe bază de extracte naturale, guarana și vitamine, pentru revigorare imediată.",
             "en": "Premium functional drink based on natural extracts, guarana, and vitamins, for instant refreshment.",
             "it": "Bevanda funzionale premium a base di estratti naturali, guaranà e vitamine, per un rinfresco istantaneo.",
             "es": "Bebida funcional premium a base de extractos naturales, guaraná y vitaminas, para un refresco instantáneo.",
@@ -6207,7 +6207,7 @@
         {
           "id": "apa-borsec-330",
           "name": {
-            "ro": "Apa Plata / Minerala Borsec",
+            "ro": "Apă plată / minerală Borsec",
             "en": "Borsec Still / Sparkling Water",
             "it": "Acqua Borsec Naturale / Frizzante",
             "es": "Agua Borsec Sin Gas / Con Gas",
@@ -6243,7 +6243,7 @@
         {
           "id": "apa-borsec-750",
           "name": {
-            "ro": "Apa Plata / Minerala Borsec",
+            "ro": "Apă plată / minerală Borsec",
             "en": "Borsec Still / Sparkling Water",
             "it": "Acqua Borsec Naturale / Frizzante",
             "es": "Agua Borsec Sin Gas / Con Gas",
@@ -6315,7 +6315,7 @@
         {
           "id": "limonada-clasica",
           "name": {
-            "ro": "Limonada",
+            "ro": "Limonadă",
             "en": "Lemonade",
             "it": "Limonata",
             "es": "Limonada",
@@ -6351,7 +6351,7 @@
         {
           "id": "limonada-arome",
           "name": {
-            "ro": "Limonada cu piure duverse arome",
+            "ro": "Limonadă cu piure de arome diverse",
             "en": "Lemonade with Fruit Puree Flavors",
             "it": "Limonata con Purea di Frutta",
             "es": "Limonada con Puré de Frutas",
@@ -6732,13 +6732,13 @@
         {
           "id": "beeks-5",
           "name": {
-            "ro": "Beek's",
-            "en": "Beek's",
-            "it": "Beek's",
-            "es": "Beek's",
-            "fr": "Beek's",
-            "tr": "Beek's",
-            "ru": "Beek's",
+            "ro": "Beck's",
+            "en": "Beck's",
+            "it": "Beck's",
+            "es": "Beck's",
+            "fr": "Beck's",
+            "tr": "Beck's",
+            "ru": "Beck's",
             "ar": "بيكس"
           },
           "price": "16 lei",
@@ -6917,11 +6917,11 @@
     },
     {
       "category": {
-        "ro": "Bauturi alcoolice",
+        "ro": "Băuturi alcoolice",
         "en": "Alcoholic Drinks",
         "it": "Bevande Alcoliche",
         "es": "Bebidas Alcohólicas",
-        "fr": "Boissons Alcolisées",
+        "fr": "Boissons alcoolisées",
         "tr": "Alkollü İçecekler",
         "ru": "Алкогольные напитки",
         "ar": "مشروبات كحولية"
@@ -6985,7 +6985,7 @@
         },
         {
           "id": "palinca-salaj",
-          "name": "Palinca de Salaj",
+          "name": "Palincă de Sălaj",
           "price": "25 lei",
           "volume": "30ml",
           "alcohol": "50%",
@@ -7069,7 +7069,7 @@
         },
         {
           "id": "jagermeister",
-          "name": "Jagermeister",
+          "name": "Jägermeister",
           "price": "24 lei",
           "volume": "50ml",
           "alcohol": "35%",
@@ -7097,7 +7097,7 @@
         },
         {
           "id": "brancoveanu",
-          "name": "Brancoveanu Vinars",
+          "name": "Brâncoveanu Vinars",
           "price": "28 lei",
           "volume": "50ml",
           "alcohol": "40%",
@@ -8393,7 +8393,7 @@
     },
     {
       "category": {
-        "ro": "Prosecco si Sampanie",
+        "ro": "Prosecco și șampanie",
         "en": "Prosecco & Champagne",
         "it": "Prosecco e Champagne",
         "es": "Prosecco y Champaña",
@@ -8476,7 +8476,7 @@
           "volume": "750ml",
           "alcohol": "11%",
           "ingredients": {
-            "ro": "Vin spumant elegant, faimos pentru stilul său fin, crocant și efervescența proaspătă de înaltă calitate.",
+            "ro": "Vin spumant elegant, faimos pentru stilul său fin, crocant și efervescența proaspătă de înaltă călităte.",
             "en": "An elegant sparkling wine, famous for its fine, crisp style and fresh, high-quality effervescence.",
             "it": "Un elegante vino spumante, famoso per il suo stile raffinato, fresco e per un'effervescenza fresca di alta qualità.",
             "es": "Un elegante vino espumoso, famoso por su estilo fino y crujiente, con una frescura efervescente de alta calidad.",
@@ -8493,7 +8493,7 @@
         },
         {
           "id": "moet-chandon-brut",
-          "name": "Moet & Chandon Brut",
+          "name": "Moët & Chandon Brut",
           "price": "450 lei",
           "volume": "750ml",
           "alcohol": "12%",
@@ -8515,7 +8515,7 @@
         },
         {
           "id": "moet-chandon-rose",
-          "name": "Moet & Chandon Rose",
+          "name": "Moët & Chandon Rose",
           "price": "600 lei",
           "volume": "750ml",
           "alcohol": "12%",
@@ -8537,7 +8537,7 @@
         },
         {
           "id": "prosecco-gold-edition",
-          "name": "Prosecco gold edition italia",
+          "name": "Prosecco Gold Edition Italia",
           "price": "32 lei",
           "volume": "200ml",
           "ingredients": {
@@ -8560,7 +8560,7 @@
     },
     {
       "category": {
-        "ro": "Vin Alb (Sticla / Pahar)",
+        "ro": "Vin alb (sticlă / pahar)",
         "en": "White Wine (Bottle / Glass)",
         "it": "Vino Bianco (Bottiglia / Calice)",
         "es": "Vino Blanco (Botella / Copa)",
@@ -8572,7 +8572,7 @@
       "items": [
         {
           "id": "budureasca-fume",
-          "name": "Budureasca Clasic Fume",
+          "name": "Budureasca Clasic Fumé",
           "price": "70 lei",
           "volume": "750ml",
           "alcohol": "13.5%",
@@ -8616,7 +8616,7 @@
         },
         {
           "id": "feteasca-tohani",
-          "name": "Feteasca de Tohani",
+          "name": "Fetească de Tohani",
           "price": "90 lei",
           "volume": "750ml",
           "alcohol": "11.7%",
@@ -8638,7 +8638,7 @@
         },
         {
           "id": "caii-de-la-letea-alb",
-          "name": "Sarica Niculitei Caii de la Letea",
+          "name": "Sarica Niculițel Caii de la Letea",
           "price": "85 lei",
           "volume": "750ml",
           "alcohol": "12.5%",
@@ -8660,7 +8660,7 @@
         },
         {
           "id": "aniversarium-alb",
-          "name": "Sarica Niculitei Aniversarium",
+          "name": "Sarica Niculițel Aniversarium",
           "price": "70 lei",
           "volume": "750ml",
           "alcohol": "12.5%",
@@ -8770,7 +8770,7 @@
         },
         {
           "id": "recas-sole",
-          "name": "Recas Sole",
+          "name": "Recaș Sole",
           "price": "140 lei",
           "volume": "750ml",
           "alcohol": "12.5%",
@@ -8859,7 +8859,7 @@
     },
     {
       "category": {
-        "ro": "Vin Rose (Sticla / Pahar)",
+        "ro": "Vin rose (sticlă / pahar)",
         "en": "Rosé Wine (Bottle / Glass)",
         "it": "Vino Rosato (Bottiglia / Calice)",
         "es": "Vino Rosado (Botella / Copa)",
@@ -8915,7 +8915,7 @@
         },
         {
           "id": "feteasca-tohani-rose",
-          "name": "Feteasca de Tohani Rose",
+          "name": "Fetească de Tohani Rose",
           "price": "90 lei",
           "volume": "750ml",
           "alcohol": "11.7%",
@@ -8937,7 +8937,7 @@
         },
         {
           "id": "caii-de-la-letea-rose",
-          "name": "Sarica Niculitei Caii de la Letea",
+          "name": "Sarica Niculițel Caii de la Letea",
           "price": "85 lei",
           "volume": "750ml",
           "alcohol": "12.5%",
@@ -8959,7 +8959,7 @@
         },
         {
           "id": "aniversarium-rose",
-          "name": "Sarica Niculitei Aniversarium",
+          "name": "Sarica Niculițel Aniversarium",
           "price": "70 lei",
           "volume": "750ml",
           "alcohol": "12%",
@@ -8981,7 +8981,7 @@
         },
         {
           "id": "aerosoli-murfatlar-rose",
-          "name": "Aerolosi Murfatlar",
+          "name": "Aerosoli Murfatlar",
           "price": "98 lei",
           "volume": "750ml",
           "alcohol": "12%",
@@ -9003,7 +9003,7 @@
         },
         {
           "id": "busuioaca-bohotin-rose",
-          "name": "Busuioaca de Bohotin Rose",
+          "name": "Busuioacă de Bohotin Rose",
           "price": "70 lei",
           "volume": "750ml",
           "alcohol": "13.5%",
@@ -9091,7 +9091,7 @@
         },
         {
           "id": "recas-sole-rose",
-          "name": "Recas Sole Rose",
+          "name": "Recaș Sole Rose",
           "price": "140 lei",
           "volume": "750ml",
           "alcohol": "12.5%",
@@ -9202,7 +9202,7 @@
     },
     {
       "category": {
-        "ro": "Vin Rosu (Sticla / Pahar / Carafa)",
+        "ro": "Vin roșu (sticlă / pahar / carafă)",
         "en": "Red Wine (Bottle / Glass / Carafe)",
         "it": "Vino Rosso (Bottiglia / Calice / Caraffa)",
         "es": "Vino Tinto (Botella / Copa / Carafa)",
@@ -9214,7 +9214,7 @@
       "items": [
         {
           "id": "budureasca-feteasca-neagra",
-          "name": "Budureasca Standard Feteasca Neagra",
+          "name": "Budureasca Standard Fetească Neagră",
           "price": "70 lei",
           "volume": "750ml",
           "alcohol": "14.5%",
@@ -9258,7 +9258,7 @@
         },
         {
           "id": "purcari-1827-rosu",
-          "name": "Purcari 1827 Rosu",
+          "name": "Purcari 1827 Roșu",
           "price": "90 lei",
           "volume": "750ml",
           "alcohol": "13%",
@@ -9280,7 +9280,7 @@
         },
         {
           "id": "caii-de-la-letea-rosu",
-          "name": "Sarica Niculitei Caii de la Letea Rosu",
+          "name": "Sarica Niculițel Caii de la Letea Roșu",
           "price": "85 lei",
           "volume": "750ml",
           "alcohol": "14%",
@@ -9302,7 +9302,7 @@
         },
         {
           "id": "prince-mircea-feteasca-neagra",
-          "name": "Prince Mircea Feteasca Neagra",
+          "name": "Prince Mircea Fetească Neagră",
           "price": "160 lei",
           "volume": "750ml",
           "alcohol": "13.5%",
@@ -9345,7 +9345,7 @@
         },
         {
           "id": "vin-rosu-pahar",
-          "name": "Vin rosu la pahar",
+          "name": "Vin roșu la pahar",
           "price": "25 lei",
           "volume": "150ml",
           "alcohol": "12.5%",
@@ -9367,12 +9367,12 @@
         },
         {
           "id": "vin-rosu-fiert-pahar",
-          "name": "Vin rosu fiert la pahar",
+          "name": "Vin roșu fiert la pahar",
           "price": "25 lei",
           "volume": "250ml",
           "alcohol": "8%",
           "ingredients": {
-            "ro": "Băutură tradițională caldă de iarnă, preparată din vin roșu infuzat cu batoane de scorțișoară, cuișoare aromatice, zahăr și felii proaspâte de portocale[cite: 1].",
+            "ro": "Băutură tradițională caldă de iarnă, preparată din vin roșu infuzat cu batoane de scorțișoară, cuișoare aromatice, zahăr și felii proaspâte de portocale.",
             "en": "Traditional warm winter drink, made from red wine infused with cinnamon sticks, aromatic cloves, sugar, and fresh orange slices[cite: 1].",
             "it": "Tradizionale bevanda calda invernale, a base di vino rosso infuso con stecche di cannella, chiodi di garofano aromatici, zucchero e fette d'arancia fresca[cite: 1].",
             "es": "Bebida caliente invernal tradicional, hecha de vino tinto infundido con ramas de canela, clavos de olor aromáticos, azúcar y rodajas de naranja fresca[cite: 1].",
@@ -9389,12 +9389,12 @@
         },
         {
           "id": "vin-rosu-fiert-carafa",
-          "name": "Vin rosu fiert la carafa",
+          "name": "Vin roșu fiert la carafă",
           "price": "45 lei",
           "volume": "1L",
           "alcohol": "8%",
           "ingredients": {
-            "ro": "Carafă generoasă de vin roșu fiert aromatizat, ideală pentru a fi împărțită la masă; infuzat cu scorțișoară, cuișoare și citrice proaspete[cite: 1].",
+            "ro": "Carafă generoasă de vin roșu fiert aromatizat, ideală pentru a fi împărțită la masă; infuzat cu scorțișoară, cuișoare și citrice proaspete.",
             "en": "A generous carafe of aromatic mulled red wine, ideal for sharing; infused with cinnamon, cloves, and fresh citrus fruits[cite: 1].",
             "it": "Caraffa generosa di vin brulé rosso aromatico, ideale da condividere a tavola; infuso con cannella, chiodi di garofano e agrumi freschi[cite: 1].",
             "es": "Una generosa jarra de vino tinto caliente aromático, ideal para compartir; infundido con canela, clavos de olor y cítricos frescos[cite: 1].",

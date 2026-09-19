@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback, useEffect, useMemo, type MouseEvent } from "react";
+import { useRef, useState, useCallback, useEffect, useLayoutEffect, useMemo, type MouseEvent } from "react";
 import HTMLFlipBook from "react-pageflip";
 import type { MenuBookConfig, MenuItem } from "@/data/config";
 import { getMenuItem } from "@/data/config";
@@ -26,10 +26,30 @@ export default function MenuFlipbook({
   const { locale, dir } = useLocale();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const bookRef = useRef<any>(null);
+  const shellRef = useRef<HTMLDivElement>(null);
   const flippingRef = useRef(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [bookSize, setBookSize] = useState<{ width: number; height: number } | null>(null);
   const selectedItem = selectedId ? getMenuItem(selectedId) ?? null : null;
+
+  useLayoutEffect(() => {
+    const shell = shellRef.current;
+    if (!shell) return;
+
+    const apply = () => {
+      const width = Math.max(280, Math.round(shell.getBoundingClientRect().width));
+      const height = Math.round(width * 1.5);
+      setBookSize((prev) => {
+        if (prev && Math.abs(prev.width - width) < 12) return prev;
+        return { width, height };
+      });
+    };
+
+    apply();
+    window.addEventListener("resize", apply);
+    return () => window.removeEventListener("resize", apply);
+  }, [isExpanded]);
 
   const handleItemClick = useCallback((event: MouseEvent<HTMLButtonElement>, id: string) => {
     event.preventDefault();
@@ -224,43 +244,42 @@ export default function MenuFlipbook({
         </button>
 
         <div
-          className={
-            isExpanded
-              ? "mx-auto w-full max-w-[720px]"
-              : "flipbook-wrapper relative mx-auto w-full max-w-[480px]"
-          }
+          ref={shellRef}
+          className={`flipbook-shell ${isExpanded ? "is-expanded" : ""}`}
         >
-          <HTMLFlipBook
-            key={`${book.id}-${locale}-${isExpanded ? "xl" : "md"}`}
-            ref={bookRef}
-            width={320}
-            height={480}
-            size="stretch"
-            minWidth={280}
-            maxWidth={isExpanded ? 720 : 480}
-            minHeight={400}
-            maxHeight={isExpanded ? 900 : 640}
-            startPage={0}
-            drawShadow
-            flippingTime={800}
-            usePortrait
-            startZIndex={0}
-            autoSize
-            maxShadowOpacity={0.55}
-            showCover
-            mobileScrollSupport
-            clickEventForward
-            useMouseEvents
-            swipeDistance={30}
-            showPageCorners
-            disableFlipByClick={false}
-            renderOnlyPageLengthChange
-            onChangeState={onChangeState}
-            className="mx-auto"
-            style={BOOK_STYLE}
-          >
-            {pageNodes}
-          </HTMLFlipBook>
+          {bookSize && (
+            <HTMLFlipBook
+              key={`${book.id}-${locale}-${isExpanded ? "xl" : "md"}-${bookSize.width}`}
+              ref={bookRef}
+              width={bookSize.width}
+              height={bookSize.height}
+              size="fixed"
+              minWidth={bookSize.width}
+              maxWidth={bookSize.width}
+              minHeight={bookSize.height}
+              maxHeight={bookSize.height}
+              startPage={0}
+              drawShadow
+              flippingTime={800}
+              usePortrait
+              startZIndex={0}
+              autoSize={false}
+              maxShadowOpacity={0.55}
+              showCover
+              mobileScrollSupport
+              clickEventForward
+              useMouseEvents
+              swipeDistance={30}
+              showPageCorners
+              disableFlipByClick={false}
+              renderOnlyPageLengthChange
+              onChangeState={onChangeState}
+              className="mx-auto"
+              style={BOOK_STYLE}
+            >
+              {pageNodes}
+            </HTMLFlipBook>
+          )}
         </div>
       </div>
 
@@ -268,14 +287,14 @@ export default function MenuFlipbook({
         <button
           type="button"
           onClick={flipPrev}
-          className="rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-xs tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5"
+          className="menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5"
         >
           {ui("menu.flipPrev")}
         </button>
         <button
           type="button"
           onClick={flipNext}
-          className="rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-xs tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5"
+          className="menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5"
         >
           {ui("menu.flipNext")}
         </button>

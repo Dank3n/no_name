@@ -147,12 +147,34 @@ body {
   padding: 1.25rem 1rem;
 }
 
-.flipbook-wrapper {
-  min-height: 480px;
+.flipbook-shell {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin-inline: auto;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  touch-action: manipulation;
 }
 
-.flipbook-wrapper .stf__parent {
+.flipbook-shell.is-expanded {
+  max-width: 720px;
+}
+
+.flipbook-shell .stf__parent,
+.flipbook-shell .stf__wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  padding-bottom: 0 !important;
   margin: 0 auto;
+}
+
+.menu-flip-control {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Linie punctată între nume preparat și hover */

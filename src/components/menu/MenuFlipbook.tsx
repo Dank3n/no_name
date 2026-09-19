@@ -2,6 +2,7 @@
 
 import { useRef, useState, useCallback, useEffect, useLayoutEffect, useMemo, type MouseEvent } from "react";
 import HTMLFlipBook from "react-pageflip";
+import { ChevronRight, List } from "lucide-react";
 import type { MenuBookConfig, MenuItem } from "@/data/config";
 import { getMenuItem } from "@/data/config";
 import { useLocale } from "@/contexts/LocaleContext";
@@ -51,9 +52,13 @@ export default function MenuFlipbook({
     return () => window.removeEventListener("resize", apply);
   }, [isExpanded]);
 
-  const handleTocClick = useCallback((event: MouseEvent<HTMLButtonElement>, pageIndex: number) => {
-    event.preventDefault();
-    event.stopPropagation();
+  const tocPageIndex = useMemo(
+    () => book.pages.findIndex((page) => page.variant === "toc"),
+    [book.pages]
+  );
+
+  const turnTo = useCallback((pageIndex: number) => {
+    if (pageIndex < 0) return;
     const flip = bookRef.current?.pageFlip?.();
     if (!flip) return;
     flippingRef.current = true;
@@ -62,6 +67,21 @@ export default function MenuFlipbook({
       flippingRef.current = false;
     }, 200);
   }, []);
+
+  const handleTocClick = useCallback((event: MouseEvent<HTMLButtonElement>, pageIndex: number) => {
+    event.preventDefault();
+    event.stopPropagation();
+    turnTo(pageIndex);
+  }, [turnTo]);
+
+  const goToToc = useCallback(
+    (event?: MouseEvent<HTMLButtonElement>) => {
+      event?.preventDefault();
+      event?.stopPropagation();
+      turnTo(tocPageIndex);
+    },
+    [turnTo, tocPageIndex]
+  );
 
   const handleItemClick = useCallback((event: MouseEvent<HTMLButtonElement>, id: string) => {
     event.preventDefault();
@@ -155,32 +175,28 @@ export default function MenuFlipbook({
 
             {page.variant === "toc" && (
               <div className="flex min-h-0 w-full flex-1 flex-col self-stretch">
-                <div className="menu-ornament mx-auto mb-4 w-full max-w-[140px]">
+                <div className="menu-ornament mx-auto mb-3 w-full max-w-[140px]">
                   <span className="menu-ornament-diamond" />
                 </div>
                 <h4 className="text-center font-[family-name:var(--font-cormorant)] text-2xl font-light tracking-[0.28em] text-gold-gradient uppercase">
                   {ui("menu.tocTitle")}
                 </h4>
-                <p className="mt-2 text-center text-[10px] tracking-[0.22em] text-[var(--color-text-muted)] uppercase">
+                <p className="mt-2 text-center text-[11px] tracking-[0.18em] text-[var(--color-gold)]/80 uppercase">
                   {page.id === "toc" ? ui("menu.tocHint") : ui("menu.tocContinued")}
                 </p>
-                <ul className="mt-5 flex min-h-0 w-full flex-1 flex-col justify-evenly">
+                <ul className="mt-4 flex min-h-0 w-full flex-1 flex-col justify-evenly gap-2">
                   {page.tocEntries?.map((entry) => (
                     <li key={entry.id}>
                       <button
                         type="button"
                         onClick={(event) => handleTocClick(event, entry.pageIndex)}
-                        className="menu-flip-control group flex w-full items-baseline gap-2 py-1 text-start"
+                        className="menu-flip-control group flex w-full items-center gap-3 rounded-sm border border-[var(--color-gold)]/45 bg-[var(--color-gold)]/[0.08] px-3 py-2.5 text-start transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/10"
                       >
-                        <span className="min-w-0 flex-1 break-words font-[family-name:var(--font-cormorant)] text-sm leading-snug tracking-wide text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-base">
+                        <span className="min-w-0 flex-1 break-words font-[family-name:var(--font-cormorant)] text-base font-medium leading-snug tracking-wide text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-lg">
                           {t(entry.title)}
                         </span>
-                        <span
-                          className="mb-1 flex-grow border-b border-dotted border-[var(--color-gold)]/30"
-                          aria-hidden
-                        />
-                        <span className="flex-none text-[10px] tracking-[0.18em] text-[var(--color-gold)]/70">
-                          →
+                        <span className="flex h-7 w-7 flex-none items-center justify-center rounded-full border border-[var(--color-gold)]/55 text-[var(--color-gold)] transition group-hover:border-[var(--color-emerald)] group-hover:text-[var(--color-emerald)]">
+                          <ChevronRight className="h-4 w-4 rtl:rotate-180" aria-hidden />
                         </span>
                       </button>
                     </li>
@@ -255,6 +271,27 @@ export default function MenuFlipbook({
   const ui = (path: string) => getUi(locale, path);
   const title = pickText(book.title, locale);
   const subtitle = book.subtitle ? pickText(book.subtitle, locale) : "";
+  const flipControlClass =
+    "menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5";
+  const flipControls = (
+    <div className="flex flex-wrap items-center justify-center gap-3">
+      <button type="button" onClick={flipPrev} className={flipControlClass}>
+        {ui("menu.flipPrev")}
+      </button>
+      <button
+        type="button"
+        onClick={goToToc}
+        className="menu-flip-control inline-flex items-center gap-2 rounded-sm border border-[var(--color-gold)] bg-[var(--color-gold)]/20 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/15"
+        aria-label={ui("menu.tocBack")}
+      >
+        <List className="h-4 w-4" aria-hidden />
+        {ui("menu.tocBack")}
+      </button>
+      <button type="button" onClick={flipNext} className={flipControlClass}>
+        {ui("menu.flipNext")}
+      </button>
+    </div>
+  );
 
   return (
     <div className="flex w-full flex-col items-center" dir={dir}>
@@ -276,7 +313,7 @@ export default function MenuFlipbook({
       <div
         className={`${
           isExpanded
-            ? "fixed inset-0 z-[95] flex items-center justify-center bg-black/90 px-4 py-10 backdrop-blur-sm sm:px-8"
+            ? "fixed inset-0 z-[95] flex flex-col items-center justify-center bg-black/90 px-4 py-10 backdrop-blur-sm sm:px-8"
             : "relative w-full max-w-4xl"
         }`}
       >
@@ -329,24 +366,11 @@ export default function MenuFlipbook({
             </HTMLFlipBook>
           )}
         </div>
+
+        {isExpanded && <div className="mt-6">{flipControls}</div>}
       </div>
 
-      <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-        <button
-          type="button"
-          onClick={flipPrev}
-          className="menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5"
-        >
-          {ui("menu.flipPrev")}
-        </button>
-        <button
-          type="button"
-          onClick={flipNext}
-          className="menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5"
-        >
-          {ui("menu.flipNext")}
-        </button>
-      </div>
+      {!isExpanded && <div className="mt-8">{flipControls}</div>}
 
       {showPdfButton && pdfUrl && (
         <a

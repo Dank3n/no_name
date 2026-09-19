@@ -45,7 +45,7 @@ export default function SiteFooter() {
             <p>{contact.address}</p>
             <p className="mt-2">
               <a
-                href={`tel:${contact.phone.replace(/\s/g, "")}`}
+                href="tel:+40747171361"
                 className="text-[var(--color-gold-light)] transition hover:text-[var(--color-emerald)]"
               >
                 {contact.phone}

@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
    *  output: "export",
    *  images: { unoptimized: true },
    */
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   turbopack: {
     root: __dirname,
   },

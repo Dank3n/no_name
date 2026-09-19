@@ -47,6 +47,8 @@ export const siteConfig = {
     reviewCount: 300,
     priceRange: "60–120 lei",
     plusCode: "C5M6+M7",
+    lat: 44.4342128,
+    lng: 26.160696,
     placeUrl:
       "https://www.google.com/maps/place/No+Name+By+Casa+Ede/@44.4342128,26.160696,17z",
     photosUrl:
@@ -57,14 +59,14 @@ export const siteConfig = {
       "https://www.google.com/maps/embed?pb=!4v1726680000000!6m8!1m7!1sr9-WILHl9uVi_8jK2XHtDw!2m2!1d44.4342128!2d26.160696!3f73.689804!4f0!5f0.7",
   },
   gallery: [
-    { src: "/images/venue/hero.jpg", alt: "Fațada No Name Cafe by Casa Ede", captionKey: "gallery.facade" },
-    { src: "/images/venue/food-5.jpg", alt: "Interior restaurant", captionKey: "gallery.interior" },
-    { src: "/images/venue/food-2.jpg", alt: "Mămăligă și tocăniță", captionKey: "gallery.polenta" },
-    { src: "/images/venue/food-3.jpg", alt: "Papanași cu afine", captionKey: "gallery.papanasi" },
-    { src: "/images/venue/vibe-1.jpg", alt: "Grill și salată", captionKey: "gallery.grill" },
-    { src: "/images/venue/food-4.jpg", alt: "Coaste glazurate", captionKey: "gallery.ribs" },
-    { src: "/images/venue/vibe-3.jpg", alt: "Ciorbă cremă", captionKey: "gallery.soup" },
-    { src: "/images/venue/streetview.jpg", alt: "Locația pe Bulevardul Nicolae Grigorescu", captionKey: "gallery.street" },
+    { src: "/images/venue/hero.webp", alt: "Fațada No Name Cafe by Casa Ede", captionKey: "gallery.facade" },
+    { src: "/images/venue/food-5.webp", alt: "Interior restaurant", captionKey: "gallery.interior" },
+    { src: "/images/venue/food-2.webp", alt: "Mămăligă și tocăniță", captionKey: "gallery.polenta" },
+    { src: "/images/venue/food-3.webp", alt: "Papanași cu afine", captionKey: "gallery.papanasi" },
+    { src: "/images/venue/vibe-1.webp", alt: "Grill și salată", captionKey: "gallery.grill" },
+    { src: "/images/venue/food-4.webp", alt: "Coaste glazurate", captionKey: "gallery.ribs" },
+    { src: "/images/venue/vibe-3.webp", alt: "Ciorbă cremă", captionKey: "gallery.soup" },
+    { src: "/images/venue/streetview.webp", alt: "Locația pe Bulevardul Nicolae Grigorescu", captionKey: "gallery.street" },
   ],
   menuPdfUrl: "/meniu-mancare-bauturi.pdf",
   hero: {
@@ -78,7 +80,8 @@ export const siteConfig = {
       ru: "Румынская кухня · Терраса · До 4:00",
       ar: "مطبخ روماني · تراس · مفتوح حتى 4:00",
     },
-    backgroundImage: "/images/venue/hero.jpg",
+    backgroundImage: "/images/venue/hero.webp",
+    atmosphereVideo: "/videos/hero-banner.mp4",
     ctaMenu: {
       ro: "Meniul Principal",
       en: "Main Menu",
@@ -103,6 +106,8 @@ export const siteConfig = {
   contact: {
     address: "Bulevardul Nicolae Grigorescu 1A, 030431 București",
     phone: "+40747171361",
+    phoneHref: "tel:+40747171361",
+    whatsappHref: "https://wa.me/40747171361",
     email: "",
     hours: [
       {
@@ -119,7 +124,7 @@ export const siteConfig = {
         time: "12:00 - 04:00",
       },
     ],
-    mapPlaceholder: "/images/venue/streetview.jpg",
+    mapPlaceholder: "/images/venue/streetview.webp",
     mapEmbedUrl:
       "https://www.google.com/maps?q=No+Name+By+Casa+Ede,+Bulevardul+Nicolae+Grigorescu+1A,+Bucure%C8%99ti&hl=ro&z=17&output=embed",
   },
@@ -127,6 +132,7 @@ export const siteConfig = {
     { id: "hero" as const, href: "/" },
     { id: "menu" as const, href: "/menu" },
     { id: "events" as const, href: "/evenimente" },
+    { id: "gallery" as const, href: "/galerie" },
     { id: "contact" as const, href: "/contact" },
   ],
 };

@@ -1,17 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/config";
 import BrandLogo from "@/components/brand/BrandLogo";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import SocialLinks from "@/components/layout/SocialLinks";
+import OpenNowBadge from "@/components/layout/OpenNowBadge";
+import ReserveButton from "@/components/reservation/ReserveButton";
 import { useLocale } from "@/contexts/LocaleContext";
 import { PawPrint } from "lucide-react";
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { ui, dir } = useLocale();
   const pathname = usePathname();
 
@@ -20,43 +23,43 @@ export default function SiteHeader() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 border-b border-[var(--color-gold)]/10 bg-black/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4">
+    <header
+      className={`sticky top-0 z-50 border-b backdrop-blur-md transition-colors duration-300 ${
+        scrolled
+          ? "border-[var(--color-gold)]/20 bg-black/95 shadow-[0_8px_30px_rgba(0,0,0,0.45)]"
+          : "border-[var(--color-gold)]/10 bg-black/90"
+      }`}
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" onClick={closeMenu} className="shrink-0 text-left">
           <BrandLogo size="sm" align="left" />
         </Link>
 
-        <div className="hidden items-center gap-6 md:flex">
-          <nav className="flex items-center gap-6">
-            {siteConfig.navigation.map((item) => (
-              <Link
-                key={item.id}
-                href={item.href}
-                className={`text-[10px] tracking-[0.25em] uppercase transition ${
-                  isActive(item.href)
-                    ? "text-[var(--color-gold)]"
-                    : "text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
-                }`}
-              >
-                {ui(`nav.${item.id}`)}
-              </Link>
-            ))}
-            <span
-              className="inline-flex items-center gap-1.5 text-[10px] tracking-[0.22em] text-[var(--color-gold)] uppercase"
-              title={ui("nav.petFriendly")}
-              aria-label={ui("nav.petFriendly")}
-            >
-              <PawPrint className="h-3.5 w-3.5" />
-              {ui("nav.petFriendly")}
-            </span>
-          </nav>
-          <SocialLinks size="sm" />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <OpenNowBadge compact className="hidden sm:inline-flex" />
+          <span
+            className="hidden items-center text-[var(--color-gold)] sm:inline-flex"
+            title={ui("nav.petFriendly")}
+            aria-label={ui("nav.petFriendly")}
+          >
+            <PawPrint className="h-4 w-4" />
+          </span>
           <LanguageSwitcher variant="header" />
-        </div>
-
-        <div className="flex items-center gap-2 md:hidden">
-          <LanguageSwitcher variant="header" />
+          <ReserveButton className="hidden border border-[var(--color-gold)]/60 px-4 py-2 text-[10px] tracking-[0.18em] text-[var(--color-gold-light)] uppercase hover:border-[var(--color-gold)] hover:bg-[var(--color-gold)]/10 sm:inline-flex">
+            {ui("cta.reserveNow")}
+          </ReserveButton>
           <button
             type="button"
             className="flex flex-col gap-1.5"
@@ -74,28 +77,36 @@ export default function SiteHeader() {
       {open && (
         <nav
           dir={dir}
-          className="border-t border-[var(--color-gold)]/10 bg-black/98 px-4 py-4 md:hidden"
+          className="border-t border-[var(--color-gold)]/10 bg-black/98 px-4 py-4 sm:px-6 lg:px-8"
         >
-          {siteConfig.navigation.map((item) => (
-            <Link
-              key={item.id}
-              href={item.href}
+          <div className="mx-auto max-w-7xl">
+            {siteConfig.navigation.map((item) => (
+              <Link
+                key={item.id}
+                href={item.href}
+                onClick={closeMenu}
+                className={`block w-full py-3 text-start text-xs tracking-[0.25em] uppercase ${
+                  isActive(item.href)
+                    ? "text-[var(--color-gold)]"
+                    : "text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
+                }`}
+              >
+                {ui(`nav.${item.id}`)}
+              </Link>
+            ))}
+            <div className="mt-2 flex items-center gap-2 py-3 text-[11px] tracking-[0.2em] text-[var(--color-gold)] uppercase sm:hidden">
+              <PawPrint className="h-4 w-4" />
+              <span>{ui("nav.petFriendly")}</span>
+            </div>
+            <ReserveButton
               onClick={closeMenu}
-              className={`block w-full py-3 text-start text-xs tracking-[0.25em] uppercase ${
-                isActive(item.href)
-                  ? "text-[var(--color-gold)]"
-                  : "text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
-              }`}
+              className="mt-2 w-full border border-[var(--color-gold)]/50 py-3 text-[11px] tracking-[0.2em] text-[var(--color-gold-light)] uppercase sm:hidden"
             >
-              {ui(`nav.${item.id}`)}
-            </Link>
-          ))}
-          <div className="mt-2 flex items-center gap-2 py-3 text-[11px] tracking-[0.2em] text-[var(--color-gold)] uppercase">
-            <PawPrint className="h-4 w-4" />
-            <span>{ui("nav.petFriendly")}</span>
-          </div>
-          <div className="mt-4 border-t border-[var(--color-gold)]/10 pt-4">
-            <SocialLinks size="sm" showLabel />
+              {ui("cta.reserveNow")}
+            </ReserveButton>
+            <div className="mt-4 border-t border-[var(--color-gold)]/10 pt-4">
+              <SocialLinks size="sm" showLabel />
+            </div>
           </div>
         </nav>
       )}

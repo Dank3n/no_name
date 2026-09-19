@@ -3,6 +3,8 @@
 import { siteConfig } from "@/data/config";
 import BrandLogo from "@/components/brand/BrandLogo";
 import { useLocale } from "@/contexts/LocaleContext";
+import ReserveButton from "@/components/reservation/ReserveButton";
+import OpenNowBadge from "@/components/layout/OpenNowBadge";
 
 export default function ContactSection() {
   const { contact, google } = siteConfig;
@@ -55,7 +57,7 @@ export default function ContactSection() {
               </h3>
               <p className="mt-2">
                 <a
-                  href={`tel:${contact.phone.replace(/\s/g, "")}`}
+                  href="tel:+40747171361"
                   className="text-xl text-[var(--color-gold-light)] transition hover:text-[var(--color-emerald)]"
                 >
                   {contact.phone}
@@ -67,6 +69,9 @@ export default function ContactSection() {
               <h3 className="text-[10px] font-medium tracking-[0.3em] text-[var(--color-gold)] uppercase">
                 {ui("contact.hours")}
               </h3>
+              <div className="mt-3">
+                <OpenNowBadge />
+              </div>
               <ul className="mt-3 space-y-2">
                 {contact.hours.map((row, i) => (
                   <li
@@ -94,17 +99,20 @@ export default function ContactSection() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <a
-                href={`tel:${contact.phone.replace(/\s/g, "")}`}
-                className="inline-block border border-[var(--color-pink)]/60 px-8 py-3 text-xs tracking-[0.25em] text-[var(--color-pink)] uppercase transition hover:bg-[var(--color-pink)]/10"
-              >
+              <ReserveButton className="inline-block border border-[var(--color-pink)]/60 px-8 py-3 text-xs tracking-[0.25em] text-[var(--color-pink)] uppercase hover:bg-[var(--color-pink)]/10">
                 {ui("contact.reserveCta")}
+              </ReserveButton>
+              <a
+                href="tel:+40747171361"
+                className="btn-premium inline-block border border-[var(--color-gold)]/50 px-8 py-3 text-xs tracking-[0.25em] text-[var(--color-gold-light)] uppercase hover:bg-[var(--color-gold)]/10"
+              >
+                {ui("cta.callNow")}
               </a>
               <a
                 href={google.placeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block border border-[var(--color-gold)]/50 px-8 py-3 text-xs tracking-[0.25em] text-[var(--color-gold-light)] uppercase transition hover:bg-[var(--color-gold)]/10"
+                className="btn-premium inline-block border border-[var(--color-gold)]/50 px-8 py-3 text-xs tracking-[0.25em] text-[var(--color-gold-light)] uppercase hover:bg-[var(--color-gold)]/10"
               >
                 {ui("contact.openInMaps")}
               </a>

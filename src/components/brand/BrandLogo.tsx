@@ -4,12 +4,14 @@ type BrandLogoProps = {
   size?: "sm" | "md" | "lg";
   align?: "center" | "left";
   className?: string;
+  emphasis?: boolean;
 };
 
 export default function BrandLogo({
   size = "md",
   align = "center",
   className = "",
+  emphasis = false,
 }: BrandLogoProps) {
   const { brand } = siteConfig;
 
@@ -31,12 +33,16 @@ export default function BrandLogo({
   return (
     <div className={`flex flex-col ${alignClass} ${className}`}>
       <span
-        className={`font-[family-name:var(--font-cormorant)] font-light text-gold-gradient uppercase ${primarySizes[size]}`}
+        className={`font-[family-name:var(--font-cormorant)] uppercase ${
+          emphasis ? "hero-logo-title font-semibold" : "font-light text-gold-gradient"
+        } ${primarySizes[size]}`}
       >
         {brand.primary}
       </span>
       <span
-        className={`font-[family-name:var(--font-italiana)] -mt-1 self-end text-[var(--color-gold)]/75 italic ${secondarySizes[size]}`}
+        className={`font-[family-name:var(--font-italiana)] -mt-1 self-end italic ${
+          emphasis ? "hero-logo-sub" : "text-[var(--color-gold)]/75"
+        } ${secondarySizes[size]}`}
       >
         {brand.secondary}
       </span>

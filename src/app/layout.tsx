@@ -4,6 +4,7 @@ import "./globals.css";
 import AppProviders from "@/components/providers/AppProviders";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import JsonLd from "@/components/seo/JsonLd";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -46,9 +47,10 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col antialiased">
+        <JsonLd />
         <AppProviders>
           <SiteHeader />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 pb-24">{children}</main>
           <SiteFooter />
         </AppProviders>
       </body>

@@ -47,7 +47,7 @@ export function localBusinessJsonLd() {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: [...DAYS],
       opens: "12:00",
-      closes: "04:00",
+      closes: "02:00",
     },
     hasMenu: {
       "@type": "Menu",

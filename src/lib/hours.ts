@@ -1,6 +1,6 @@
 const TIMEZONE = "Europe/Bucharest";
 const OPEN_HOUR = 12;
-const CLOSE_HOUR = 4;
+const CLOSE_HOUR = 2;
 
 export type VenueStatus = {
   isOpen: boolean;
@@ -21,7 +21,7 @@ function bucharestClock(now = new Date()) {
   return { hour, minute, mins: hour * 60 + minute };
 }
 
-/** Program 12:00–04:00 (trece de miezul nopții), fus Europe/Bucharest. */
+/** Program 12:00–02:00 (trece de miezul nopții), fus Europe/Bucharest. */
 export function getVenueStatus(now = new Date()): VenueStatus {
   const { mins } = bucharestClock(now);
   const openAt = OPEN_HOUR * 60;
@@ -30,7 +30,7 @@ export function getVenueStatus(now = new Date()): VenueStatus {
 
   return {
     isOpen,
-    until: isOpen ? "04:00" : "12:00",
+    until: isOpen ? "02:00" : "12:00",
   };
 }
 
@@ -39,9 +39,9 @@ export const RESERVATION_TIMES = (() => {
   for (let hour = 12; hour < 24; hour += 1) {
     slots.push(`${String(hour).padStart(2, "0")}:00`, `${String(hour).padStart(2, "0")}:30`);
   }
-  for (let hour = 0; hour < 4; hour += 1) {
+  for (let hour = 0; hour < 2; hour += 1) {
     slots.push(`${String(hour).padStart(2, "0")}:00`);
-    if (hour < 3) slots.push(`${String(hour).padStart(2, "0")}:30`);
+    if (hour < 1) slots.push(`${String(hour).padStart(2, "0")}:30`);
   }
   return slots;
 })();

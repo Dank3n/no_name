@@ -46,9 +46,6 @@ export default function ContactSection() {
                 {ui("contact.address")}
               </h3>
               <p className="mt-2 text-lg text-[var(--color-text)]">{contact.address}</p>
-              <p className="mt-1 text-xs tracking-[0.18em] text-[var(--color-text-muted)] uppercase">
-                {ui("contact.plusCode")}: {google.plusCode}
-              </p>
             </div>
 
             <div>

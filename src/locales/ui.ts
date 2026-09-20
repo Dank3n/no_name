@@ -82,14 +82,14 @@ export const uiTranslations: UiTranslationTree = {
     sectionLabel: L("La masă", "At the table", "A tavola", "En la mesa", "À table", "Masada", "За столом", "على الطاولة"),
     title: L("Rămâi până târziu", "Stay out late", "Resta fino a tardi", "Quédate hasta tarde", "Reste jusqu'à tard", "Geceye kal", "Останься допоздна", "ابقَ حتى وقت متأخر"),
     sectionDesc: L(
-      "Terasă deschisă până la 4:00, grill pe jar și o felie de cheesecake când orașul s-a liniștit.",
-      "Terrace open until 4:00, grill on the coals and a slice of cheesecake once the city goes quiet.",
-      "Terrazza aperta fino alle 4:00, grill sulla brace e una fetta di cheesecake quando la città si calma.",
-      "Terraza abierta hasta las 4:00, parrilla al fuego y una porción de cheesecake cuando la ciudad se calla.",
-      "Terrasse ouverte jusqu'à 4h00, grill sur la braise et une part de cheesecake quand la ville s'endort.",
-      "04:00'e kadar açık teras, közde ızgara ve şehir sakinleşince bir dilim cheesecake.",
-      "Терраса до 4:00, гриль на углях и кусочек чизкейка, когда город затихает.",
-      "تراس مفتوح حتى 4:00 ومشاوي على الجمر وقطعة تشيزكيك حين تهدأ المدينة."
+      "Terasă deschisă până la 2:00, grill pe jar și o felie de cheesecake când orașul s-a liniștit.",
+      "Terrace open until 2:00, grill on the coals and a slice of cheesecake once the city goes quiet.",
+      "Terrazza aperta fino alle 2:00, grill sulla brace e una fetta di cheesecake quando la città si calma.",
+      "Terraza abierta hasta las 2:00, parrilla al fuego y una porción de cheesecake cuando la ciudad se calla.",
+      "Terrasse ouverte jusqu'à 2h00, grill sur la braise et une part de cheesecake quand la ville s'endort.",
+      "02:00'e kadar açık teras, közde ızgara ve şehir sakinleşince bir dilim cheesecake.",
+      "Терраса до 2:00, гриль на углях и кусочек чизкейка, когда город затихает.",
+      "تراس مفتوح حتى 2:00 ومشاوي على الجمر وقطعة تشيزكيك حين تهدأ المدينة."
     ),
     cardTerraceTitle: L("Terasă, lumini, noapte lungă", "Terrace, lights, a long night", "Terrazza, luci, notte lunga", "Terraza, luces, noche larga", "Terrasse, lumières, nuit longue", "Teras, ışıklar, uzun gece", "Терраса, свет, долгая ночь", "تراس وأضواء وليلة طويلة"),
     cardTerraceText: L(
@@ -133,7 +133,7 @@ export const uiTranslations: UiTranslationTree = {
     dineIn: L("Servire la masă", "Dine-in", "Consumazione sul posto", "Comer en el local", "Sur place", "Masada servis", "Обслуживание в зале", "تناول في المكان"),
     delivery: L("Livrare", "Delivery", "Consegna", "Entrega", "Livraison", "Teslimat", "Доставка", "توصيل"),
     pickup: L("Ridicare la bordură", "Kerbside pickup", "Ritiro a bordo strada", "Recogida en acera", "Retrait en bordure", "Kenardan teslim", "Самовывоз у входа", "استلام من الرصيف"),
-    hours: L("Deschis până la 4:00", "Open until 4:00", "Aperto fino alle 4:00", "Abierto hasta las 4:00", "Ouvert jusqu'à 4h00", "04:00'e kadar açık", "Открыто до 4:00", "مفتوح حتى 4:00"),
+    hours: L("Deschis până la 2:00", "Open until 2:00", "Aperto fino alle 2:00", "Abierto hasta las 2:00", "Ouvert jusqu'à 2h00", "02:00'e kadar açık", "Открыто до 2:00", "مفتوح حتى 2:00"),
   },
   gallery: {
     sectionLabel: L("Galerie", "Gallery", "Galleria", "Galería", "Galerie", "Galeri", "Галерея", "معرض"),
@@ -312,7 +312,6 @@ export const uiTranslations: UiTranslationTree = {
       "افتح في خرائط Google"
     ),
     streetView: L("Street View", "Street View", "Street View", "Street View", "Street View", "Street View", "Street View", "عرض الشارع"),
-    plusCode: L("Cod Plus", "Plus code", "Plus code", "Plus code", "Plus code", "Plus code", "Plus code", "رمز Plus"),
     price: L("Preț mediu", "Average price", "Prezzo medio", "Precio medio", "Prix moyen", "Ortalama fiyat", "Средний чек", "متوسط السعر"),
     rating: L("Evaluare Google", "Google rating", "Valutazione Google", "Valoración de Google", "Note Google", "Google puanı", "Оценка Google", "تقييم Google"),
   },

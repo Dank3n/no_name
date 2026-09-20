@@ -249,6 +249,31 @@ const slugify = (value: string): string =>
 
 const MAX_ITEMS_PER_PAGE = 8;
 const MAX_TOC_ENTRIES_PER_PAGE = 6;
+const MENU_NAME_CHARS_PER_LINE = 38;
+
+const itemLineCost = (item: MenuItem): number => {
+  const name = typeof item.name === "string" ? item.name : item.name.ro;
+  return Math.min(3, Math.max(1, Math.ceil(name.length / MENU_NAME_CHARS_PER_LINE)));
+};
+
+const chunkItemsByLineBudget = (items: MenuItem[], maxSlots: number): MenuItem[][] => {
+  const chunks: MenuItem[][] = [];
+  let current: MenuItem[] = [];
+  let used = 0;
+  for (const item of items) {
+    const cost = itemLineCost(item);
+    if (current.length > 0 && used + cost > maxSlots) {
+      chunks.push(current);
+      current = [item];
+      used = cost;
+    } else {
+      current.push(item);
+      used += cost;
+    }
+  }
+  if (current.length) chunks.push(current);
+  return chunks;
+};
 
 const CONTINUATION_BY_LOCALE: Record<Locale, string> = {
   ro: "continuare",
@@ -297,7 +322,7 @@ const buildBookPages = (
 
   for (const section of categories) {
     const categoryId = slugify(section.category.ro);
-    const itemChunks = chunkItems(section.items, MAX_ITEMS_PER_PAGE);
+    const itemChunks = chunkItemsByLineBudget(section.items, MAX_ITEMS_PER_PAGE);
     tocEntries.push({
       id: `cat-${categoryId}`,
       title: section.category,

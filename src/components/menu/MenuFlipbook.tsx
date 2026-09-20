@@ -352,11 +352,11 @@ export default function MenuFlipbook({
                           onClick={(event) => handleItemClick(event, id)}
                           className="group relative w-full text-start transition"
                         >
-                          <div className="flex w-full items-start gap-3">
-                            <h3 className="min-w-0 flex-1 text-pretty break-words font-[family-name:var(--font-cormorant)] text-[0.95rem] font-light leading-snug tracking-normal text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-base">
+                          <div className="flipbook-item-row">
+                            <h3 className="flipbook-item-name font-[family-name:var(--font-cormorant)] text-[0.95rem] font-light tracking-normal text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-base">
                               {localizedName}
                             </h3>
-                            <span className="shrink-0 pt-0.5 whitespace-nowrap text-xs tracking-wider text-[var(--color-pink)]/80">
+                            <span className="flipbook-item-price text-xs tracking-wider text-[var(--color-pink)]/80">
                               {item.price || "—"}
                             </span>
                           </div>

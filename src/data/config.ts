@@ -247,7 +247,7 @@ const slugify = (value: string): string =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 
-const MAX_ITEMS_PER_PAGE = 6;
+const MAX_ITEMS_PER_PAGE = 8;
 const MAX_TOC_ENTRIES_PER_PAGE = 6;
 
 const CONTINUATION_BY_LOCALE: Record<Locale, string> = {

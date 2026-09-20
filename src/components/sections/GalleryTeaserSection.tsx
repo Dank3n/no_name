@@ -3,77 +3,111 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Expand } from "lucide-react";
-import { siteConfig } from "@/data/config";
 import { useLocale } from "@/contexts/LocaleContext";
 import ImageLightbox from "@/components/gallery/ImageLightbox";
 
+const TEASER_PHOTOS = [
+  {
+    src: "/images/venue/teaser-1.webp",
+    alt: "Interior NO NAME by Casa Ede",
+    captionKey: "gallery.interior",
+  },
+  {
+    src: "/images/venue/teaser-2.webp",
+    alt: "Interior NO NAME by Casa Ede",
+    captionKey: "gallery.interior",
+  },
+  {
+    src: "/images/venue/teaser-3.webp",
+    alt: "Coaste la grătar",
+    captionKey: "gallery.ribs",
+  },
+] as const;
+
 export default function GalleryTeaserSection() {
   const { ui } = useLocale();
+  const [active, setActive] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const photos = useMemo(
-    () => [
-      ...siteConfig.gallery.filter((item) => item.category === "interior").slice(0, 2),
-      ...siteConfig.gallery.filter((item) => item.category === "food").slice(0, 2),
-    ],
-    []
-  );
+
+  const photos = TEASER_PHOTOS;
+
   const lightboxItems = useMemo(
     () => photos.map((photo) => ({ src: photo.src, alt: photo.alt, caption: ui(photo.captionKey) })),
     [photos, ui]
   );
 
   return (
-    <section className="relative border-t border-[var(--color-gold)]/10 bg-[var(--color-base)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-12 text-center">
-          <span className="text-[10px] tracking-[0.45em] text-[var(--color-gold)]/70 uppercase">
-            {ui("gallery.sectionLabel")}
-          </span>
-          <h2 className="mt-4 font-[family-name:var(--font-cormorant)] text-3xl font-light tracking-[0.22em] text-gold-gradient uppercase sm:text-4xl">
-            {ui("gallery.teaserTitle")}
-          </h2>
-          <p className="mx-auto mt-5 max-w-xl text-sm text-[var(--color-text-muted)]">
-            {ui("gallery.teaserDesc")}
-          </p>
-          <div className="gold-line mx-auto mt-6 max-w-sm" />
-        </div>
-
-        <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-          {photos.map((photo, index) => (
-            <button
-              key={photo.src}
-              type="button"
-              onClick={() => setLightboxIndex(index)}
-              className="group relative aspect-[4/5] cursor-zoom-in overflow-hidden border border-[var(--color-gold)]/15 bg-black text-left"
-              aria-label={`${ui("a11y.enlarge")}: ${photo.alt}`}
+    <section className="relative overflow-hidden border-t border-[var(--color-gold)]/10 bg-black py-20">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-col gap-8 lg:h-[600px] lg:flex-row">
+          <div className="flex h-full flex-col justify-center rounded-2xl border border-white/5 bg-[var(--color-charcoal)]/80 p-8 shadow-2xl backdrop-blur-md lg:w-1/3 lg:p-12">
+            <h2 className="font-[family-name:var(--font-dm-sans)] text-4xl font-bold uppercase leading-tight tracking-[0.18em] text-white">
+              {ui("gallery.teaserTitle")}
+              <br />
+              <span className="text-[var(--color-gold)]">{ui("gallery.teaserTitleAccent")}</span>
+            </h2>
+            <div className="my-8 h-1 w-16 bg-[var(--color-gold)]" />
+            <h3 className="mb-4 text-xl font-semibold uppercase tracking-wide text-[var(--color-text)]">
+              {ui("gallery.teaserLead")}
+            </h3>
+            <p className="text-base leading-relaxed text-[var(--color-text-muted)]">{ui("gallery.teaserDesc")}</p>
+            <Link
+              href="/galerie"
+              className="btn-premium mt-8 inline-flex w-fit items-center border border-[var(--color-gold)] px-6 py-2.5 text-[10px] tracking-[0.22em] text-[var(--color-gold-light)] uppercase transition hover:bg-[var(--color-gold)] hover:text-black"
             >
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                loading="lazy"
-                sizes="(max-width: 1024px) 50vw, 25vw"
-                className="object-cover transition duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-              <span className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center border border-[var(--color-gold)]/40 bg-black/50 text-[var(--color-gold-light)] opacity-0 transition group-hover:opacity-100">
-                <Expand className="h-4 w-4" />
-              </span>
-              <span className="absolute inset-x-0 bottom-0 p-3 text-[10px] tracking-[0.2em] text-[var(--color-gold-light)] uppercase">
-                {ui(photo.captionKey)}
-              </span>
-            </button>
-          ))}
-        </div>
+              {ui("gallery.seePage")}
+            </Link>
+          </div>
 
-        <div className="mt-8 text-center">
-          <Link
-            href="/galerie"
-            className="btn-premium inline-flex items-center justify-center border border-[var(--color-gold)] bg-[var(--color-gold)]/10 px-8 py-3.5 text-[10px] tracking-[0.22em] text-[var(--color-gold-light)] uppercase hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/10"
-          >
-            {ui("gallery.seePage")}
-          </Link>
+          <div className="flex h-[500px] flex-col gap-2 lg:h-full lg:w-2/3 lg:flex-row">
+            {photos.map((photo, index) => {
+              const isActive = active === index;
+              return (
+                <button
+                  key={photo.src}
+                  type="button"
+                  onMouseEnter={() => setActive(index)}
+                  onFocus={() => setActive(index)}
+                  onClick={() => {
+                    if (isActive) setLightboxIndex(index);
+                    else setActive(index);
+                  }}
+                  className={`group relative cursor-zoom-in overflow-hidden rounded-xl text-left transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+                    isActive ? "flex-[3]" : "flex-1"
+                  }`}
+                  aria-label={`${ui("a11y.enlarge")}: ${photo.alt}`}
+                >
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    loading="lazy"
+                    sizes={isActive ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 1024px) 100vw, 18vw"}
+                    className={`object-cover transition-transform duration-1000 ${isActive ? "scale-105" : "scale-100"}`}
+                  />
+                  <div
+                    className={`absolute inset-0 transition-colors duration-500 ${
+                      isActive ? "bg-transparent" : "bg-black/60"
+                    }`}
+                  />
+                  <div
+                    className={`pointer-events-none absolute inset-0 rounded-xl border-2 border-[var(--color-gold)] transition-opacity duration-500 ${
+                      isActive ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                  <div
+                    className={`absolute bottom-6 left-6 transition-all duration-500 ${
+                      isActive ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+                    }`}
+                  >
+                    <span className="rounded-sm bg-[var(--color-gold)] px-3 py-1 text-xs font-bold tracking-widest text-black uppercase">
+                      {ui(photo.captionKey)}
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 

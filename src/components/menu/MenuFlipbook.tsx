@@ -84,12 +84,38 @@ export default function MenuFlipbook({
   useLayoutEffect(() => {
     const shell = shellRef.current;
     if (!shell) return;
+    const PAGE_RATIO = 1.5;
 
     const apply = () => {
-      const width = Math.max(280, Math.round(shell.getBoundingClientRect().width));
-      const height = Math.round(width * 1.5);
+      let width: number;
+      let height: number;
+
+      if (isExpanded) {
+        const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+        const maxW = Math.max(240, window.innerWidth - 32);
+        const maxH = Math.max(300, viewportHeight - 220);
+        const MIN_W = 280;
+        width = maxW;
+        height = width * PAGE_RATIO;
+        if (height > maxH) {
+          height = maxH;
+          width = height / PAGE_RATIO;
+          if (width < MIN_W) {
+            width = Math.min(MIN_W, maxW);
+            height = width * PAGE_RATIO;
+          }
+        }
+        width = Math.round(width);
+        height = Math.round(height);
+      } else {
+        width = Math.max(280, Math.round(shell.getBoundingClientRect().width));
+        height = Math.round(width * PAGE_RATIO);
+      }
+
       setBookSize((prev) => {
-        if (prev && Math.abs(prev.width - width) < 12) return prev;
+        if (prev && Math.abs(prev.width - width) < 8 && Math.abs(prev.height - height) < 8) {
+          return prev;
+        }
         return { width, height };
       });
     };
@@ -102,7 +128,11 @@ export default function MenuFlipbook({
       /* book not ready yet */
     }
     window.addEventListener("resize", apply);
-    return () => window.removeEventListener("resize", apply);
+    window.visualViewport?.addEventListener("resize", apply);
+    return () => {
+      window.removeEventListener("resize", apply);
+      window.visualViewport?.removeEventListener("resize", apply);
+    };
   }, [isExpanded]);
 
   const tocPageIndex = useMemo(
@@ -226,10 +256,19 @@ export default function MenuFlipbook({
         const ui = (path: string) => getUi(locale, path);
 
         return (
-          <FlipbookPage key={page.id}>
+          <FlipbookPage
+            key={page.id}
+            className={
+              page.variant === "items"
+                ? "flipbook-page--items"
+                : page.variant === "toc"
+                  ? "flipbook-page--toc"
+                  : ""
+            }
+          >
             {page.variant === "cover" && (
               <div className="flex w-full flex-col items-center text-center">
-                <h4 className="max-w-full break-words whitespace-normal font-[family-name:var(--font-cormorant)] text-4xl font-light tracking-[0.45em] text-gold-gradient uppercase sm:text-5xl">
+                <h4 className="max-w-full break-words whitespace-normal font-[family-name:var(--font-cormorant)] text-3xl font-light tracking-[0.22em] text-gold-gradient uppercase sm:text-4xl sm:tracking-[0.32em]">
                   {page.title ? t(page.title) : ui("menu.coverMenu")}
                 </h4>
                 {page.subtitle && (
@@ -247,7 +286,7 @@ export default function MenuFlipbook({
             )}
 
             {page.variant === "toc" && (
-              <div className="flex min-h-0 w-full flex-1 flex-col self-stretch">
+              <div className="flipbook-toc">
                 <div className="menu-ornament mx-auto mb-3 w-full max-w-[140px]">
                   <span className="menu-ornament-diamond" />
                 </div>
@@ -295,13 +334,13 @@ export default function MenuFlipbook({
             )}
 
             {page.variant === "items" && (
-              <div className="flex w-full flex-col gap-4">
+              <div className="flipbook-items">
                 {page.title && (
-                  <h5 className="w-full break-words whitespace-normal text-center font-[family-name:var(--font-cormorant)] text-base tracking-[0.18em] text-[var(--color-gold)] uppercase sm:text-lg">
+                  <h5 className="w-full shrink-0 break-words whitespace-normal text-center font-[family-name:var(--font-cormorant)] text-sm tracking-[0.14em] text-[var(--color-gold)] uppercase sm:text-base">
                     {t(page.title)}
                   </h5>
                 )}
-                <ul className="flex w-full flex-col gap-4">
+                <ul className="flipbook-items-list">
                   {page.itemIds?.map((id) => {
                     const item = getMenuItem(id);
                     if (!item) return null;
@@ -311,21 +350,17 @@ export default function MenuFlipbook({
                         <button
                           type="button"
                           onClick={(event) => handleItemClick(event, id)}
-                          className="group w-full text-start transition"
+                          className="group relative w-full text-start transition"
                         >
-                          <div className="flex w-full items-baseline justify-between">
-                            <h3 className="text-left max-w-[65%] flex-none break-words whitespace-normal font-[family-name:var(--font-cormorant)] text-base font-light tracking-wide text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-lg">
+                          <div className="flex w-full items-start gap-3">
+                            <h3 className="min-w-0 flex-1 text-pretty break-words font-[family-name:var(--font-cormorant)] text-[0.95rem] font-light leading-snug tracking-normal text-[var(--color-gold-light)] transition group-hover:text-[var(--color-emerald)] sm:text-base">
                               {localizedName}
                             </h3>
-                            <div
-                              className="mx-2 mb-1 flex-grow border-b-2 border-dotted border-gray-500/40"
-                              aria-hidden
-                            />
-                            <span className="flex-none whitespace-nowrap text-right text-xs tracking-wider text-[var(--color-pink)]/80">
+                            <span className="shrink-0 pt-0.5 whitespace-nowrap text-xs tracking-wider text-[var(--color-pink)]/80">
                               {item.price || "—"}
                             </span>
                           </div>
-                          <span className="mt-1 block text-[10px] tracking-widest text-[var(--color-pink)]/50 uppercase opacity-0 transition group-hover:opacity-100">
+                          <span aria-hidden className="pointer-events-none absolute -bottom-3 left-0 text-[9px] tracking-widest text-[var(--color-pink)]/50 uppercase opacity-0 transition group-hover:opacity-100">
                             {ui("menu.details")}
                           </span>
                         </button>
@@ -344,17 +379,22 @@ export default function MenuFlipbook({
   const ui = (path: string) => getUi(locale, path);
   const title = pickText(book.title, locale);
   const subtitle = book.subtitle ? pickText(book.subtitle, locale) : "";
-  const flipControlClass =
-    "menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5";
+  const flipControlClass = isExpanded
+    ? "menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-3 py-2 text-sm tracking-[0.16em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5"
+    : "menu-flip-control rounded-sm border border-[var(--color-gold)]/35 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/5";
   const flipControls = (
-    <div className="flex flex-wrap items-center justify-center gap-3">
+    <div className={`flex items-center justify-center ${isExpanded ? "flex-nowrap gap-2" : "flex-wrap gap-3"}`}>
       <button type="button" onClick={flipPrev} className={flipControlClass}>
         {ui("menu.flipPrev")}
       </button>
       <button
         type="button"
         onClick={goToToc}
-        className="menu-flip-control inline-flex items-center gap-2 rounded-sm border border-[var(--color-gold)] bg-[var(--color-gold)]/20 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/15"
+        className={
+          isExpanded
+            ? "menu-flip-control inline-flex items-center gap-1.5 rounded-sm border border-[var(--color-gold)] bg-[var(--color-gold)]/20 px-3 py-2 text-sm tracking-[0.16em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/15"
+            : "menu-flip-control inline-flex items-center gap-2 rounded-sm border border-[var(--color-gold)] bg-[var(--color-gold)]/20 px-5 py-2 text-base tracking-[0.2em] text-[var(--color-gold-light)] uppercase transition hover:border-[var(--color-emerald)] hover:bg-[var(--color-emerald)]/15"
+        }
         aria-label={ui("menu.tocBack")}
       >
         <List className="h-4 w-4" aria-hidden />
@@ -386,7 +426,7 @@ export default function MenuFlipbook({
       <div
         className={`${
           isExpanded
-            ? "fixed inset-0 z-[95] flex flex-col items-center justify-center bg-black/90 px-4 py-10 backdrop-blur-sm sm:px-8"
+            ? "fixed inset-0 z-[95] flex flex-col items-center overflow-y-auto bg-black/90 px-4 pt-16 pb-[max(5.5rem,env(safe-area-inset-bottom))]"
             : "relative w-full max-w-4xl"
         }`}
       >
@@ -401,10 +441,16 @@ export default function MenuFlipbook({
           {isExpanded ? `✕ ${ui("menu.collapse")}` : `⤢ ${ui("menu.expand")}`}
         </button>
 
-        <div
-          ref={shellRef}
-          className={`flipbook-shell ${isExpanded ? "is-expanded" : ""}`}
-        >
+        <div className={isExpanded ? "flex min-h-0 w-full flex-1 flex-col items-center justify-center" : ""}>
+          <div
+            ref={shellRef}
+            className={`flipbook-shell ${isExpanded ? "is-expanded" : ""}`}
+            style={
+              isExpanded && bookSize
+                ? { width: bookSize.width, height: bookSize.height, maxWidth: "100%" }
+                : undefined
+            }
+          >
           {bookSize && (
             <ManagedHTMLFlipBook
               innerRef={bookRef}
@@ -440,8 +486,9 @@ export default function MenuFlipbook({
             </ManagedHTMLFlipBook>
           )}
         </div>
+        </div>
 
-        {isExpanded && <div className="mt-6">{flipControls}</div>}
+        {isExpanded && <div className="mt-4 shrink-0">{flipControls}</div>}
       </div>
 
       {!isExpanded && <div className="mt-8">{flipControls}</div>}

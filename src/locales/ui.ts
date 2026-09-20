@@ -151,16 +151,27 @@ export const uiTranslations: UiTranslationTree = {
       "معرضان: داخل المحل وأطباق المائدة — NO NAME by Casa Ede."
     ),
     seeMaps: L("Vezi mai multe pe Google Maps", "See more on Google Maps", "Altro su Google Maps", "Más en Google Maps", "Plus sur Google Maps", "Google Maps'te daha fazla", "Ещё в Google Maps", "المزيد على خرائط Google"),
-    teaserTitle: L("Înăuntru și la masă", "Inside and at the table", "Dentro e a tavola", "Dentro y en la mesa", "Dedans et à table", "İçeride ve masada", "Внутри и за столом", "في الداخل وعلى المائدة"),
+    teaserTitle: L("Înăuntru", "Inside", "Dentro", "Dentro", "Dedans", "İçeride", "Внутри", "في الداخل"),
+    teaserTitleAccent: L("și la masă", "and at the table", "e a tavola", "y en la mesa", "et à table", "ve masada", "и за столом", "وعلى المائدة"),
+    teaserLead: L(
+      "Locul, masa, atmosfera.",
+      "The place, the table, the mood.",
+      "Il luogo, il tavolo, l'atmosfera.",
+      "El lugar, la mesa, el ambiente.",
+      "Le lieu, la table, l'ambiance.",
+      "Mekan, masa, atmosfer.",
+      "Место, стол, атмосфера.",
+      "المكان والمائدة والأجواء."
+    ),
     teaserDesc: L(
-      "Câteva cadre din interior și de la masă. Restul pozelor sunt în galerie.",
-      "A few frames from the interior and the table. The rest of the photos are in the gallery.",
-      "Qualche scatto dall'interno e dalla tavola. Il resto è in galleria.",
-      "Algunas fotos del interior y de la mesa. El resto está en la galería.",
-      "Quelques images de l'intérieur et de la table. Le reste est dans la galerie.",
-      "İç mekân ve masadan birkaç kare. Geri kalanı galeride.",
-      "Несколько кадров из интерьера и со стола. Остальное — в галерее.",
-      "لقطات من الداخل ومن المائدة. بقية الصور في المعرض."
+      "Pășiți într-un spațiu gândit pentru seri lungi. Interiorul localului și preparatele de la masă se văd aici — restul cadrelor sunt în galerie.",
+      "Step into a room made for late nights. The interior and the dishes from the table are here — the rest of the frames are in the gallery.",
+      "Entrate in uno spazio pensato per le serate lunghe. L'interno e i piatti a tavola sono qui — il resto è in galleria.",
+      "Entrad en un espacio pensado para noches largas. El interior y los platos de la mesa están aquí — el resto está en la galería.",
+      "Entrez dans un lieu pensé pour les soirées longues. L'intérieur et les plats à table sont ici — le reste est dans la galerie.",
+      "Uzun geceler için düşünülmüş bir mekâna adım atın. İç mekân ve masadaki yemekler burada — geri kalanı galeride.",
+      "Войдите в пространство для долгих вечеров. Интерьер и блюда со стола — здесь, остальное в галерее.",
+      "ادخلوا إلى مكان صُمم للأمسيات الطويلة. الداخل وأطباق المائدة هنا — وبقية الصور في المعرض."
     ),
     seePage: L("Vezi galeria", "See the gallery", "Vedi la galleria", "Ver la galería", "Voir la galerie", "Galeriyi gör", "Смотреть галерею", "شاهد المعرض"),
     facade: L("Fațadă", "Facade", "Facciata", "Fachada", "Façade", "Cephe", "Фасад", "واجهة"),

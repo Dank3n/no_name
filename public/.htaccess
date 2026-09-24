@@ -1,0 +1,17 @@
+DirectoryIndex index.html
+Options -MultiViews
+RewriteEngine On
+
+# Serving of Next.js assets (folder starts with underscore)
+<IfModule mod_authz_core.c>
+  <FilesMatch "^_next">
+    Require all granted
+  </FilesMatch>
+</IfModule>
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)$ $1/ [R=301,L]
+
+ErrorDocument 404 /404.html

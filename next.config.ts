@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /** Pentru hosting static (cPanel, Netlify etc.), decomentează:
-   *  output: "export",
-   *  images: { unoptimized: true },
-   */
+  output: "export",
+  trailingSlash: true,
   images: {
-    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
   },
   turbopack: {
     root: __dirname,

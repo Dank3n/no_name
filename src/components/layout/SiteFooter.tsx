@@ -63,6 +63,30 @@ export default function SiteFooter() {
         <p className="mt-6 text-center text-[10px] tracking-[0.3em] text-[var(--color-text-muted)] uppercase">
           © {year} {brand.primary} · {brand.secondary} · {ui("footer.rights")}
         </p>
+
+        <div className="relative mx-auto mt-8 w-full max-w-[36rem]">
+          <img
+            src="/images/legal/anpc-sol.png"
+            alt=""
+            width={932}
+            height={174}
+            className="h-auto w-full"
+          />
+          <a
+            href="https://ec.europa.eu/consumers/odr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-y-[12%] left-[1%] w-[46%]"
+            aria-label={ui("footer.sol")}
+          />
+          <a
+            href="https://anpc.ro/ce-este-sal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-y-[12%] right-[1%] w-[51%]"
+            aria-label={ui("footer.anpc")}
+          />
+        </div>
       </div>
     </footer>
   );

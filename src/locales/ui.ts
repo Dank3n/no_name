@@ -327,6 +327,26 @@ export const uiTranslations: UiTranslationTree = {
       "جميع الحقوق محفوظة"
     ),
     followUs: L("Urmărește-ne", "Follow us", "Seguici", "Síguenos", "Suivez-nous", "Bizi takip edin", "Мы в соцсетях", "تابعنا"),
+    sol: L(
+      "Soluționarea online a litigiilor",
+      "Online dispute resolution",
+      "Risoluzione online delle controversie",
+      "Resolución de litigios en línea",
+      "Règlement en ligne des litiges",
+      "Çevrimiçi uyuşmazlık çözümü",
+      "Онлайн-урегулирование споров",
+      "تسوية النزاعات عبر الإنترنت"
+    ),
+    anpc: L(
+      "ANPC — Soluționarea alternativă a litigiilor",
+      "ANPC — Alternative dispute resolution",
+      "ANPC — Risoluzione alternativa delle controversie",
+      "ANPC — Resolución alternativa de litigios",
+      "ANPC — Règlement extrajudiciaire des litiges",
+      "ANPC — Alternatif uyuşmazlık çözümü",
+      "ANPC — Альтернативное урегулирование споров",
+      "ANPC — التسوية البديلة للنزاعات"
+    ),
   },
   lang: {
     label: L("Limbă", "Language", "Lingua", "Idioma", "Langue", "Dil", "Язык", "اللغة"),
